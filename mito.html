@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>水戸市 不動産マップ（大字・用途地域・学区・施設）</title>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <div class="app">
+    <aside class="sidebar" id="sidebar">
+      <div class="side-head">
+        <div class="city-nav">
+          <a href="index.html" class="city-nav-back">◀ 都市選択</a>
+          <div class="city-nav-switch">
+            <a href="hitachinaka.html" class="city-nav-link">ひたちなか市</a>
+            <span class="city-nav-cur">水戸市</span>
+            <a href="naka.html" class="city-nav-link">那珂市</a>
+          </div>
+        </div>
+        <div class="title">水戸市マップ</div>
+        <div class="subtitle">大字 / 用途地域 / 学区 / 施設</div>
+      </div>
+
+      <!-- 検索 -->
+      <div class="panel">
+        <label class="panel-label">地区を検索</label>
+        <div class="search-row">
+          <input list="oazaList" id="oazaSearch" placeholder="例：千波" autocomplete="off" />
+          <button id="oazaSearchBtn">表示</button>
+        </div>
+        <datalist id="oazaList"></datalist>
+      </div>
+
+      <!-- 区域（面） -->
+      <div class="panel">
+        <label class="panel-label">区域（面）</label>
+        <label class="toggle"><input type="checkbox" id="tg-oaza" checked /> <span class="sw sw-oaza"></span>大字の区切り線</label>
+        <label class="toggle"><input type="checkbox" id="tg-label" checked /> <span class="sw sw-label"></span>地名ラベル</label>
+        <label class="toggle"><input type="checkbox" id="tg-yochi" /> <span class="sw sw-yochi"></span>用途地域</label>
+        <div class="yochi-ctrl" id="yochiCtrl" hidden>
+          <div class="opacity-row">
+            <span>濃さ</span>
+            <input type="range" id="yochiOpacity" min="0" max="80" value="45" />
+          </div>
+          <div class="yochi-legend" id="yochiLegend"></div>
+        </div>
+        <label class="toggle" id="tg-senbiki-wrap" hidden><input type="checkbox" id="tg-senbiki" /> <span class="sw sw-senbiki"></span>市街化調整区域（線引き）</label>
+        <a class="erias-link" href="https://www.city.mito.lg.jp/page/4988.html" target="_blank">エリア指定区域（水戸市公式ページ）</a>
+        <label class="toggle"><input type="checkbox" id="tg-elem" /> <span class="sw sw-elem"></span>小学校区</label>
+        <label class="toggle"><input type="checkbox" id="tg-jun" /> <span class="sw sw-jun"></span>中学校区</label>
+      </div>
+
+      <!-- 学校・施設（点） -->
+      <div class="panel">
+        <label class="panel-label">学校・施設（点）</label>
+        <div class="poi-grid" id="poiGrid"></div>
+      </div>
+
+      <!-- 背景地図 -->
+      <div class="panel">
+        <label class="panel-label">背景地図</label>
+        <div class="seg" id="baseSeg">
+          <button data-base="pale" class="active">淡色</button>
+          <button data-base="std">標準</button>
+          <button data-base="photo">写真</button>
+        </div>
+      </div>
+
+      <!-- 選択中の地区情報 -->
+      <div class="panel info-panel" id="infoPanel" hidden>
+        <div class="info-head">
+          <span class="info-name" id="infoName"></span>
+          <button class="info-close" id="infoClose">✕</button>
+        </div>
+        <div class="info-meta" id="infoMeta"></div>
+        <div class="info-school" id="infoSchool"></div>
+        <div class="info-neighbors-label">隣接する地区（クリックで移動）</div>
+        <div class="info-neighbors" id="infoNeighbors"></div>
+      </div>
+
+      <div class="credit">
+        出典：国土地理院タイル ／ 総務省 令和2年国勢調査 町丁・字等別境界データ ／
+        国土交通省 国土数値情報（用途地域A29）／ 学区は水戸市公式「学区検索」通学区域をもとに作成 ／ エリア指定区域図：水戸市建築指導課（概算位置）／ © OpenStreetMap contributors
+      </div>
+    </aside>
+
+    <div id="map"></div>
+    <button class="sidebar-toggle" id="sidebarToggle" title="パネル開閉">☰</button>
+  </div>
+
+  <script>window.CITY_CONFIG = {
+    center: [36.37, 140.47], zoom: 12,
+  }</script>
+  <script src="data/mito-senbiki.js"></script>
+  <script src="data/mito-oaza.js"></script>
+  <script src="data/mito-chome.js"></script>
+  <script src="data/mito-yochi.js"></script>
+  <script src="data/mito-elementary.js"></script>
+  <script src="data/mito-junior.js"></script>
+  <script src="data/mito-poi.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>

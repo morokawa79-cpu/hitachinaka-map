@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>茨城県 不動産マップ</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    html, body { height: 100%; font-family: "Segoe UI", "Hiragino Kaku Gothic ProN", "Meiryo", sans-serif; }
+    body { background: #111827; color: #e6e9ed; display: flex; align-items: center; justify-content: center; min-height: 100vh; }
+    .hub { text-align: center; padding: 40px 20px; }
+    .hub-title { font-size: 26px; font-weight: 800; color: #fff; margin-bottom: 6px; letter-spacing: .02em; }
+    .hub-sub { font-size: 14px; color: #9fb3c8; margin-bottom: 40px; }
+    .cities { display: flex; gap: 24px; justify-content: center; flex-wrap: wrap; }
+    .city-card {
+      display: flex; flex-direction: column; align-items: center; justify-content: center;
+      width: 200px; padding: 32px 20px; border-radius: 16px;
+      background: #1f2933; border: 2px solid #2d3946;
+      text-decoration: none; color: #e6e9ed;
+      transition: border-color .18s, transform .18s, box-shadow .18s;
+      cursor: pointer;
+    }
+    .city-card:hover { border-color: #16a34a; transform: translateY(-4px); box-shadow: 0 12px 32px rgba(22,163,74,.22); }
+    .city-icon { font-size: 48px; margin-bottom: 14px; line-height: 1; }
+    .city-name { font-size: 20px; font-weight: 800; color: #fff; margin-bottom: 6px; }
+    .city-sub { font-size: 11px; color: #6b7a8a; line-height: 1.6; }
+    .credit { margin-top: 48px; font-size: 11px; color: #4b5563; }
+  </style>
+</head>
+<body>
+  <div class="hub">
+    <div class="hub-title">茨城県 不動産マップ</div>
+    <div class="hub-sub">都市を選択してください</div>
+    <div class="cities">
+      <a href="mito.html" class="city-card">
+        <span class="city-icon">🏯</span>
+        <span class="city-name">水戸市</span>
+        <span class="city-sub">大字 / 用途地域<br>学区 / 施設</span>
+      </a>
+      <a href="hitachinaka.html" class="city-card">
+        <span class="city-icon">🌊</span>
+        <span class="city-name">ひたちなか市</span>
+        <span class="city-sub">大字 / 用途地域<br>学区 / 施設</span>
+      </a>
+      <a href="naka.html" class="city-card">
+        <span class="city-icon">🚉</span>
+        <span class="city-name">那珂市</span>
+        <span class="city-sub">大字 / 用途地域<br>学区 / 施設</span>
+      </a>
+    </div>
+    <div class="credit">国土地理院 / 総務省 令和2年国勢調査 / 国土交通省 国土数値情報 / © OpenStreetMap contributors</div>
+  </div>
+</body>
+</html>

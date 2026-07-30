@@ -3,8 +3,20 @@
  * 地理院タイル上に表示。データは data/*.js。
  */
 
+;(function initializeMapApp() {
 // ===== 地図 =====
 const _cfg = window.CITY_CONFIG || {}
+const _deepLink = window.MapDeepLink
+const _currentCity = _deepLink?.cityFromPath(window.location.pathname)
+const _cityRedirectUrl = _deepLink?.cityRedirectUrl(
+  window.location.search,
+  _currentCity,
+  window.location.hash,
+)
+if (_cityRedirectUrl) {
+  window.location.replace(_cityRedirectUrl)
+  return
+}
 const map = L.map('map', { zoomControl: true }).setView(_cfg.center || [36.39, 140.55], _cfg.zoom || 12)
 const GSI = 'https://cyberjapandata.gsi.go.jp/xyz'
 const attr = "<a href='https://maps.gsi.go.jp/development/ichiran.html'>国土地理院</a> | © OpenStreetMap"
@@ -237,6 +249,30 @@ function doSearch() {
 document.getElementById('oazaSearchBtn').addEventListener('click', doSearch)
 document.getElementById('oazaSearch').addEventListener('keydown', (e) => { if (e.key === 'Enter') doSearch() })
 
+// ===== URL連携 =====
+function applyMapDeepLink() {
+  if (!_deepLink) return
+  const action = _deepLink.resolveMapAction(
+    window.location.search,
+    Object.keys(oazaByName),
+  )
+  const searchInput = document.getElementById('oazaSearch')
+  if (action.requestedOaza) searchInput.value = action.requestedOaza
+  if (action.type === 'oaza') {
+    selectOaza(action.name)
+    return
+  }
+  if (action.type !== 'marker') return
+
+  const point = [action.lat, action.lng]
+  L.marker(point)
+    .addTo(map)
+    .bindTooltip('指定地点', { direction: 'top', offset: [0, -8] })
+    .openTooltip()
+  map.setView(point, _cfg.deepLinkZoom || 16)
+}
+applyMapDeepLink()
+
 // ===== 線引き（市街化調整区域）: SENBIKI_GEO が存在する市のみ =====
 if (window.SENBIKI_GEO) {
   // 市街化調整区域 = 橙填充、市街化区域 = 青枠線のみ
@@ -261,3 +297,4 @@ if (window.SENBIKI_GEO) {
 // ===== サイドバー開閉 =====
 document.getElementById('sidebarToggle').addEventListener('click', () =>
   document.getElementById('sidebar').classList.toggle('collapsed'))
+})()

@@ -6,27 +6,48 @@
     "sourceYear": 2026,
     "sourceTitle": "国税庁・地域別・構造別の工事費用表（令和8年分用）茨城県",
     "sourceUrl": "https://www.nta.go.jp/taxes/shiraberu/saigai/h30/0018008-045/07.htm",
-    "verifiedAt": "2026-09-17"
+    "verifiedAt": "2026-09-17",
+    "sourceStructure": "木造"
   },
   "light_steel_thin": {
     "label": "軽量鉄骨",
-    "unitCost": 20,
-    "usefulLife": 19
+    "unitCost": 34,
+    "usefulLife": 19,
+    "sourceYear": 2026,
+    "sourceTitle": "国税庁・地域別・構造別の工事費用表（令和8年分用）茨城県",
+    "sourceUrl": "https://www.nta.go.jp/taxes/shiraberu/saigai/h30/0018008-045/07.htm",
+    "verifiedAt": "2026-09-17",
+    "sourceStructure": "鉄骨造"
   },
   "heavy_steel": {
     "label": "重量鉄骨",
-    "unitCost": 22,
-    "usefulLife": 34
+    "unitCost": 34,
+    "usefulLife": 34,
+    "sourceYear": 2026,
+    "sourceTitle": "国税庁・地域別・構造別の工事費用表（令和8年分用）茨城県",
+    "sourceUrl": "https://www.nta.go.jp/taxes/shiraberu/saigai/h30/0018008-045/07.htm",
+    "verifiedAt": "2026-09-17",
+    "sourceStructure": "鉄骨造"
   },
   "rc": {
     "label": "コンクリート造",
-    "unitCost": 25,
-    "usefulLife": 47
+    "unitCost": 38.5,
+    "usefulLife": 47,
+    "sourceYear": 2026,
+    "sourceTitle": "国税庁・地域別・構造別の工事費用表（令和8年分用）茨城県",
+    "sourceUrl": "https://www.nta.go.jp/taxes/shiraberu/saigai/h30/0018008-045/07.htm",
+    "verifiedAt": "2026-09-17",
+    "sourceStructure": "鉄筋コンクリート造"
   },
   "unknown": {
     "label": "不明",
     "unitCost": 23.2,
     "usefulLife": 22,
-    "assumption": "構造不明のため、木造として仮計算しています。"
+    "assumption": "構造不明のため、木造として仮計算しています。",
+    "sourceYear": 2026,
+    "sourceTitle": "国税庁・地域別・構造別の工事費用表（令和8年分用）茨城県",
+    "sourceUrl": "https://www.nta.go.jp/taxes/shiraberu/saigai/h30/0018008-045/07.htm",
+    "verifiedAt": "2026-09-17",
+    "sourceStructure": "木造"
   }
 }

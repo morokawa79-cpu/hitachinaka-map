@@ -10,7 +10,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./style.css?v=646890b91fe4">
-  <link rel="stylesheet" href="./brand.css?v=811e21efd518">
+  <link rel="stylesheet" href="./brand.css?v=0f7d60ca2542">
 </head>
 <body>
   <header class="site-header"><p class="header-tagline wrap">ひたちなか市の不動産売却・売買仲介専門店　有限会社ビーイング</p>
@@ -29,16 +29,16 @@
       <section class="form-panel" aria-labelledby="form-heading">
         <h2 id="form-heading"><span class="step">01</span> 物件情報を入力</h2><p class="small">地番・お名前・電話番号の入力は不要です。</p>
         <form id="assessment-form">
-          <fieldset class="type-field"><legend>査定する不動産</legend><div class="type-switch"><label><input type="radio" name="kind" value="land" checked><span>土地のみ<span class="type-sub">更地・土地売却</span></span></label><label><input type="radio" name="kind" value="house"><span>土地 ＋ 建物<span class="type-sub">住宅・事業用</span></span></label></div></fieldset>
+          <fieldset class="type-field"><legend>まず、査定する不動産を選んでください <span class="required">必須</span></legend><div class="type-switch"><label><input type="radio" name="kind" value="land" required><span>土地のみ<span class="type-sub">更地・土地売却</span></span></label><label><input type="radio" name="kind" value="house"><span>土地 ＋ 建物<span class="type-sub">住宅・事業用</span></span></label></div></fieldset>
           <fieldset class="type-field" id="use-field" hidden><legend>建物の用途</legend><div class="type-switch"><label><input type="radio" name="use" value="residential" checked><span>住宅</span></label><label><input type="radio" name="use" value="business"><span>事業用</span></label></div></fieldset>
           <div id="business-notice" class="result-warning" hidden>店舗・事務所・工場・倉庫などの事業用物件は、個別にお話を伺って査定します。<br><a href="https://lin.ee/hH9SPoe" target="_blank" rel="noopener noreferrer">LINEで相談する ↗</a></div>
-          <div id="property-fields">
+          <div id="property-fields" hidden>
           <div class="field"><label for="address">土地の場所 <span class="required">必須</span></label><div class="city-label">茨城県 ひたちなか市</div><input id="address" name="address" type="text" list="town-list" autocomplete="off" placeholder="町名を選択・入力（例：中根）" aria-describedby="address-help"><datalist id="town-list"></datalist><input id="town" name="town" type="hidden"><p class="field-note" id="address-help">地番不要・町名だけでOK。候補から選択、または直接入力。</p><p class="field-note" id="address-match" role="status"></p></div>
           <div class="field"><label for="zone">市街化区域・調整区域</label><select id="zone" name="zone"><option value="unknown">不明（わからなくても査定できます）</option><option value="urban">市街化区域</option><option value="control">市街化調整区域</option></select></div>
           <div class="field"><label for="land-area">土地の面積 <span class="required">必須</span></label><div class="number-unit"><input id="land-area" name="landArea" type="number" min="30" max="2000" step="any" inputmode="decimal" placeholder="例：200" required><select id="land-unit" aria-label="土地面積の単位"><option value="sqm">㎡</option><option value="tsubo">坪</option></select></div><p class="field-note area-conversion" id="land-conversion">㎡を入力すると、ここに坪数が表示されます。</p></div>
           <div id="building-fields" hidden><div class="field"><label for="building-area">建物の延床面積 <span class="required">必須</span></label><div class="number-unit"><input id="building-area" name="buildingArea" type="number" min="20" max="500" step="any" inputmode="decimal" placeholder="例：100" required><select id="building-unit" aria-label="建物面積の単位"><option value="sqm">㎡</option><option value="tsubo">坪</option></select></div><p class="field-note" id="building-conversion">各階の床面積を合計した広さです。</p></div><div class="field"><label for="age">建物の築年数 <span class="required">必須</span></label><div class="number-unit age-field"><input id="age" name="age" type="number" min="0" max="100" step="1" inputmode="numeric" placeholder="例：20" required><span>年</span></div></div></div>
           <div class="field" id="structure-field" hidden><label for="structure">建物の構造</label><select id="structure" name="structure"><option value="wood">木造（標準設定）</option></select><p class="field-note">不明を選ぶと、木造として仮計算します。</p></div>
-          </div><p id="form-error" class="error" role="alert" hidden></p><button class="primary submit" type="submit" disabled>売却価格の目安を見る <span aria-hidden="true">→</span></button>
+          </div><p id="form-error" class="error" role="alert" hidden></p><div id="next-step" class="next-step"><p id="input-progress" role="status" aria-live="polite">入力後、こちらから査定結果へ進めます。</p><button class="primary submit" type="submit" aria-describedby="input-progress" disabled>査定結果を見る <span aria-hidden="true">→</span></button><p class="next-step-note">ボタンを押すと、結果まで自動で移動します。</p></div>
         <p class="form-privacy">入力した物件情報は、この画面内で計算します。相談時は公式フォーム・LINEへ移動します。</p><noscript><p class="error">かんたん査定にはJavaScriptが必要です。<a href="https://www.beingfudousan.com/satei/">公式フォームからご相談ください。</a></p></noscript></form>
       </section>
       <section id="result" class="result-panel" aria-live="polite" aria-labelledby="result-heading">
@@ -51,5 +51,5 @@
     <div class="source-note"><p>運営：有限会社ビーイング。本サービスは概算の参考情報で、不動産鑑定評価書ではありません。個別の敷地・建物条件を確認したうえで、詳しい査定をご案内します。</p><details><summary>データの出典・ご利用について</summary><p>出典：国土交通省「不動産取引価格情報」「地価公示」（<a href="https://www.reinfolib.mlit.go.jp/" target="_blank" rel="noopener noreferrer">不動産情報ライブラリ</a>）。APIで取得済みのデータをビーイングが加工し、独自の方法で算出しています。</p><p>このサービスは、国土交通省の不動産情報ライブラリのAPI機能を使用していますが、提供情報の最新性、正確性、完全性等が保証されたものではありません</p><p>入力内容・結果はこの画面で表示するために使用し、当社への相談内容として自動送信しません。お問い合わせ先の個人情報の取扱いは、<a href="https://www.beingfudousan.com/privacy/">公式HPのプライバシーポリシー</a>をご確認ください。</p></details></div>
   </main>
   <footer class="brand-footer"><div class="wrap footer-inner"><div class="footer-company"><a href="https://www.beingfudousan.com/"><img src="https://www.beingfudousan.com/images/top/header_logo.webp" width="176" height="67" alt="有限会社ビーイング"></a><p>ひたちなか市の不動産売却・売買仲介専門店</p><p>〒312-0011 茨城県ひたちなか市大字中根888番地1<br>茨城県知事 (5) 第6224号</p><a class="phone" href="tel:0293544000">☎ 029-354-4000</a></div><div class="footer-links"><a href="#assessment-form">かんたん査定をする</a><a href="https://www.beingfudousan.com/satei/">詳しい売却査定を相談する</a><a href="https://www.beingfudousan.com/pg-sale/">売りたい方へ</a><a href="https://www.beingfudousan.com/company/">会社案内</a><a href="https://www.beingfudousan.com/privacy/">プライバシーポリシー</a><a href="https://www.beingfudousan.com/">公式ホームページ</a></div></div><p class="copyright">© 有限会社ビーイング</p></footer>
-  <script type="module" src="./app-v2.js?v=09ebede8efda"></script>
+  <script type="module" src="./app-v2.js?v=a66bc6f1ff2d"></script>
 </body></html>

@@ -14,6 +14,14 @@ function clearResult(){cancelCalculation();output.innerHTML=initial;$('#form-err
 function toggleBuilding(){const house=kind()==='house',business=house&&form.elements.use.value==='business';$('#use-field').hidden=!house;$('#business-notice').hidden=!business;$('#property-fields').hidden=business;$('.submit').hidden=business;for(const control of $('#property-fields').querySelectorAll('input,select'))control.disabled=business;$('#building-fields').hidden=!house;$('#structure-field').hidden=!house;for(const id of ['building-area','building-unit','age','structure'])$(`#${id}`).disabled=!house||business;if(business)render({status:'consultation',input:{kind:'house',use:'business'}});}
 function conversion(field){const n=Number($(`#${field}-area`).value);$(`#${field}-conversion`).textContent=!n?'㎡を入力すると、ここに坪数が表示されます。':$(`#${field}-unit`).value==='sqm'?`約 ${fmt.format(n/TSUBO)} 坪`:`約 ${fmt.format(n*TSUBO)} ㎡`;}
 function publicHtml(result){const p=result.publicPoint;return `<div class="reference"><h3>公示地価から見る土地の参考値</h3>${p?`<p><strong>${esc(p.label)} ／ ${p.year}年</strong><br>${esc(p.address)}</p><p>１㎡あたり <strong>${fmt.format(p.price)}円</strong>（約${man(p.price*TSUBO)}万円／坪）<br>入力した土地面積に当てはめると <strong>約${man(p.price*result.input.landArea)}万円</strong></p><p class="small">${esc(p.areaDivision||p.zoning)} ／ 町域の代表点から約${p.distance.toFixed(1)}km。番地の位置・土地条件は一致しません。建物の価格は含みません。</p>`:'<p>近くに区域条件の合う公示地価が見つかりませんでした。公示地価による照合は行っていません。</p>'}</div>`;}
+function propertyWarnings(zone){
+  const zoneNote=zone==='control'
+    ?'市街化調整区域では、建築・再建築の可否や許可条件によって価格が大きく変わります。この概算では建築の可否を確認していません。必ず個別査定をご相談ください。'
+    :zone==='unknown'
+      ?'区域が不明のため、市街化区域・調整区域を限定せず比較しています。市街化調整区域に該当する場合は、建築・再建築の条件によって価格が大きく変わります。区域の確認と個別査定をおすすめします。'
+      :'市街化区域を選んだ場合も、実際の区域や建築条件の確認が必要です。市街化調整区域に該当する場合は、表示した査定額と大きく異なることがあります。区域に自信がない方は、個別査定をご相談ください。';
+  return `<aside class="property-caution" aria-labelledby="property-caution-title"><h3 id="property-caution-title"><span aria-hidden="true">⚠</span> 査定額をご覧になる際の大切なご案内</h3><div><h4>区画整理地内の物件は、必ず個別査定をご相談ください</h4><p>区画整理事業の進行状況によって、価格が大幅に変動します。区画整理地内の場合は、この概算だけで判断せず、<strong>必ず個別査定を受けることをおすすめします。</strong></p><p class="caution-note">この簡易査定では、区画整理地内かどうかは判定していません。</p></div><div><h4>${zone==='control'?'市街化調整区域の価格について':'市街化調整区域を選択していない方もご確認ください'}</h4><p>${zoneNote}</p></div></aside>`;
+}
 function render(result){
   if(result.status==='consultation'){output.innerHTML='<div class="insufficient"><p class="eyebrow">土地＋建物 ／ 事業用</p><h3>事業用物件は、<br>個別にご相談ください。</h3><p>店舗・事務所・工場・倉庫などは、用途・建物の仕様・収益性によって評価が大きく異なるため、簡易査定を行っていません。</p><p>所在地や現在のご利用状況をお伺いして、売却のご相談を承ります。</p><a class="primary" href="https://lin.ee/hH9SPoe" target="_blank" rel="noopener noreferrer">LINEで事業用物件を相談する</a><a class="form-action" href="https://www.beingfudousan.com/satei/" target="_blank" rel="noopener noreferrer">お問い合わせフォームで相談する ↗</a><p class="business-phone"><a class="phone" href="tel:0293544000">☎ 029-354-4000</a></p></div>';return;}
   const i=result.input;
@@ -22,13 +30,12 @@ function render(result){
   const b=result.building,count=result.cases.length;
   output.innerHTML=`<p class="result-summary">${summary}</p>
     <div class="price-box"><p class="price-label">${i.kind==='house'?'土地＋建物の':'土地の'}売却価格の目安</p><div class="price-value"><span>${fmt.format(result.low)}<small>万円</small></span><small>〜</small><span>${fmt.format(result.high)}<small>万円</small></span></div><p class="median">${i.kind==='house'?'土地と建物を合計した':'土地の'}基準価格：<strong>${man(result.median)}万円</strong></p></div>
+    ${propertyWarnings(i.zone)}
     <div class="result-actions"><a class="primary" href="https://lin.ee/hH9SPoe" target="_blank" rel="noopener noreferrer">詳しい査定・売却を相談する<span>LINEで無料相談</span></a><a class="phone-action" href="tel:0293544000">電話で相談<span>029-354-4000</span></a><a class="form-action" href="https://www.beingfudousan.com/satei/" target="_blank" rel="noopener noreferrer">お問い合わせフォームで相談する ↗</a></div>
     <div class="breakdown"><div><span>土地の査定額</span><strong>${man(result.landValue)}<small>万円</small></strong></div>${i.kind==='house'?`<span class="plus">＋</span><div><span>建物の査定額</span><strong>${man(b.value)}<small>万円</small></strong></div>`:''}</div>
     <div class="calculation-note"><p><strong>土地</strong>　${result.basis==='comparables'?`${count}件の土地事例の単価${count===1?'':'中央値'}`:'公示地価の単価'} 約${fmt.format(Math.round(result.landUnit))}円／㎡ × ${fmt.format(i.landArea)}㎡</p>${i.kind==='house'?`<p><strong>建物</strong>　${esc(b.label)}・再調達単価 ${man(b.unitCost)}万円／㎡ × ${fmt.format(i.buildingArea)}㎡ × 残価率 ${fmt.format(b.remainingRate*100)}％</p><p class="small">新しく建てる場合の再調達価格：${man(b.replacement)}万円。築${i.age}年・耐用年数${b.usefulLife}年で減価しています。</p>`:''}</div>
     ${i.kind==='house'&&b.remainingRate===0?'<p class="result-warning">標準の減価計算では建物評価が０円となります。実際の建物の価値がないという意味ではありません。修繕・リフォーム・利用状況を確認すると評価が変わる場合があります。</p>':''}
     ${result.confidence==='low'?`<p class="result-warning"><strong>参考情報が少ないため、価格の確かさは低めです。</strong><br>${count?`土地事例${count}件で試算しています。`:'近い条件の土地事例がないため、公示地価から試算しています。'} 実際の売却価格は表示範囲を外れる場合があります。</p>`:''}
-    ${i.zone==='unknown'?'<p class="result-warning">区域が不明のため、市街化区域・調整区域を限定せず比較しています。区域を確認すると価格が変わる場合があります。</p>':''}
-    ${i.zone==='control'?'<p class="result-warning">市街化調整区域では、建築・再建築の可否や許可条件で価格が大きく変わります。この試算は建築可能であることを確認したものではありません。</p>':''}
     <h3>${count?`土地の査定に使った${count}事例`:'近い条件の土地事例は見つかりませんでした'}</h3><p class="small">${result.expanded?'直近３年で不足するため、最長５年の事例まで確認しています。':'直近の公開データから３年以内の事例です。'} 同じ町域・隣接する町域を優先しています。</p>
     <ol class="case-list">${result.cases.map((r,index)=>`<li class="case"><div class="case-head"><span class="case-title">${index+1}. ${esc(r.town)}</span><span class="case-price">${man(r.price)}<small>万円</small></span></div><p class="case-meta">土地 ${fmt.format(r.landArea)}㎡（${fmt.format(r.landArea/TSUBO)}坪） ／ ${man(r.unitPrice)}万円／㎡<br>${r.year}年第${r.quarter}四半期 ／ ${esc(r.source)}</p><p class="case-meta">${r.same?'同じ町域':`${r.adjacent?'隣接する町域':'近隣の町域'}（代表点間 約${r.km.toFixed(1)}km）`}${r.zoning?` ／ ${esc(r.zoning)}`:''}</p><p class="case-adjusted"><span>入力した土地面積での参考価格</span><strong>${man(Math.round(r.adjusted/10000)*10000)}万円</strong></p></li>`).join('')}</ol>
     ${publicHtml(result)}
@@ -41,10 +48,11 @@ async function calculate(input){
   if(result.status==='consultation'){render(result);return result;}
   output.innerHTML='<div class="loading-result" role="status"><span class="loading-spinner" aria-hidden="true"></span><h3>査定結果を準備しています</h3><p>もう少しで価格の目安を表示します。</p></div>';
   $('#result').setAttribute('aria-busy','true');$('.submit').disabled=true;$('.submit').textContent='査定結果を準備しています…';
-  if(matchMedia('(max-width:720px)').matches)$('#result').scrollIntoView({behavior:matchMedia('(prefers-reduced-motion:reduce)').matches?'instant':'smooth',block:'start'});
+  $('#result').scrollIntoView({behavior:matchMedia('(prefers-reduced-motion:reduce)').matches?'instant':'smooth',block:'start'});
   const completed=await new Promise(resolve=>{pendingResolve=resolve;pendingTimer=setTimeout(()=>{pendingTimer=null;pendingResolve=null;resolve(true);},5000);});
   if(!completed)return null;
-  $('#result').removeAttribute('aria-busy');$('.submit').disabled=false;$('.submit').innerHTML=submitLabel;render(result);return result;
+  $('#result').removeAttribute('aria-busy');$('.submit').disabled=false;$('.submit').innerHTML=submitLabel;render(result);
+  (output.querySelector('.price-box')??$('#result')).scrollIntoView({behavior:matchMedia('(prefers-reduced-motion:reduce)').matches?'instant':'smooth',block:'start'});return result;
 }
 form.addEventListener('submit',async event=>{event.preventDefault();$('#form-error').hidden=true;try{await calculate(readInput());}catch(error){cancelCalculation();$('#form-error').textContent=error.message;$('#form-error').hidden=false;}});
 form.addEventListener('input',clearResult);form.addEventListener('change',()=>{clearResult();toggleBuilding();});

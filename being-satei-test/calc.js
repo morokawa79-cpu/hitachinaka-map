@@ -46,7 +46,7 @@ export function buildingValue(input,structures){
   const s=structures[input.structure];
   const remainingRate=Math.min(1,Math.max(0,1-input.age/s.usefulLife));
   // Studio stores ten-thousand yen; round the evaluated component to the same unit.
-  return {value:Math.round(s.unitCost*input.buildingArea*remainingRate)*10000,replacement:s.unitCost*10000*input.buildingArea,remainingRate,unitCost:s.unitCost*10000,usefulLife:s.usefulLife,label:s.label};
+  return {value:Math.round(s.unitCost*input.buildingArea*remainingRate)*10000,replacement:s.unitCost*10000*input.buildingArea,remainingRate,unitCost:s.unitCost*10000,usefulLife:s.usefulLife,label:s.label,assumption:s.assumption??null};
 }
 export function assess(input,market,towns,structures,now=new Date()){
   if(input?.kind==='house'&&input.use==='business')return {status:'consultation',reason:'事業用物件はかんたん査定の対象外です。用途や収益性、建物の仕様を伺って個別に査定します。',input};

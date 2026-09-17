@@ -6,6 +6,14 @@ const esc=v=>String(v??'').replace(/[&<>"']/g,s=>({'&':'&amp;','<':'&lt;','>':'&
 let market,towns=[],structures={};
 let pendingTimer=null,pendingResolve=null;
 let wizardStage=1,showingResult=false;
+const desktopLayout=matchMedia('(min-width:960px)');
+function updateResultVisibility(){
+  $('.form-panel').hidden=showingResult&&!desktopLayout.matches;
+  $('#result').hidden=!showingResult&&!desktopLayout.matches;
+  $('#result-heading').textContent=showingResult?'査定結果':'参考価格がここに表示されます';
+  $('#edit-input').hidden=!showingResult;
+}
+desktopLayout.addEventListener('change',updateResultVisibility);
 const submitLabel=$('.submit').innerHTML;
 function cancelCalculation(){if(pendingTimer!==null)clearTimeout(pendingTimer);pendingTimer=null;if(pendingResolve)pendingResolve(false);pendingResolve=null;$('#result').removeAttribute('aria-busy');$('.submit').innerHTML=submitLabel;updateNextStep();}
 const man=yen=>fmt.format(yen/10000);
@@ -49,10 +57,10 @@ function updateNextStep(){
   $('#next-step-note').textContent=wizardStage===1||wizardStage===2&&house?'「戻る」で入力内容を変更できます。':'査定結果まで自動で移動します。';
   $('#wizard-back').hidden=wizardStage===1;updateWizardProgress();
 }
-function clearResult(){cancelCalculation();output.innerHTML=initial;$('#form-error').hidden=true;}
+function clearResult(){showingResult=false;cancelCalculation();output.innerHTML=initial;$('#form-error').hidden=true;updateResultVisibility();}
 function toggleBuilding(){
   const selected=['land','house'].includes(kind()),house=kind()==='house',business=house&&form.elements.use.value==='business';
-  $('.form-panel').hidden=showingResult;$('#result').hidden=!showingResult;
+  updateResultVisibility();
   $('#kind-step').hidden=wizardStage!==1;$('#use-field').hidden=!house;$('#business-notice').hidden=!business;
   $('#property-fields').hidden=wizardStage===1||!selected||business;$('#land-fields').hidden=wizardStage!==2;
   $('#building-step').hidden=wizardStage!==3||!house;$('#building-fields').hidden=!house;$('#structure-field').hidden=!house;
@@ -100,7 +108,7 @@ function render(result){
 }
 async function calculate(input){
   if(!market)throw Error('データを読み込めませんでした。ページを再読み込みしてください。');
-  const result=assess(input,market,towns,structures);cancelCalculation();showingResult=true;$('.form-panel').hidden=true;$('#result').hidden=false;updateWizardProgress();
+  const result=assess(input,market,towns,structures);cancelCalculation();showingResult=true;updateResultVisibility();updateWizardProgress();
   if(result.status==='consultation'){render(result);$('#result').scrollIntoView({behavior:'smooth',block:'start'});return result;}
   output.innerHTML='<div class="loading-result" role="status"><span class="loading-spinner" aria-hidden="true"></span><h3>査定結果を準備しています</h3><p>もう少しで価格の目安を表示します。</p></div>';
   $('#result').setAttribute('aria-busy','true');$('.submit').disabled=true;$('.submit').textContent='査定結果を準備しています…';

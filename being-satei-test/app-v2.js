@@ -32,10 +32,10 @@ function stageState(){
   if(wizardStage===1)return {valid:['land','house'].includes(kind()),message:'「土地のみ」か「土地＋建物」を選んでください。',business};
   if(wizardStage===2){
     if(!resolveAddress($('#address').value,towns))missing.push('町名');
-    const area=converted('land');if(!Number.isFinite(area)||area<30||area>2000)missing.push('土地面積');
+    const area=converted('land');if(!Number.isFinite(area)||area<30||area>2000)missing.push('土地の広さ');
   }else{
     const area=converted('building'),age=$('#age').value;
-    if(!Number.isFinite(area)||area<20||area>500)missing.push('建物面積');
+    if(!Number.isFinite(area)||area<20||area>500)missing.push('建物の広さ');
     if(age===''||!Number.isInteger(Number(age))||Number(age)<0||Number(age)>100)missing.push('築年数');
   }
   let valid=false,message='';try{const i=readInput();validateInput(wizardStage===2?{...i,kind:'land'}:i,towns,structures);valid=true;}catch(e){message=e.message;}
@@ -51,9 +51,9 @@ function updateWizardProgress(){
 function updateNextStep(){
   const panel=$('#next-step'),progress=$('#input-progress'),button=$('.submit'),state=stageState(),house=kind()==='house';
   panel.hidden=false;button.hidden=false;button.disabled=!state.valid;panel.classList.toggle('is-ready',state.valid);
-  const next=wizardStage===1&&!state.business?'次へ：土地の情報を入力':wizardStage===2&&house?'次へ：建物の情報を入力':state.business?'個別相談の案内へ':'査定結果を見る';
+  const next=wizardStage===1&&!state.business?'次へ：土地の入力':wizardStage===2&&house?'次へ：建物の入力':state.business?'個別相談の案内へ':'査定結果を見る';
   button.innerHTML=`${next} <span aria-hidden="true">→</span>`;
-  progress.innerHTML=state.valid?`<strong>✓ ${wizardStage===1?'選択できました':'入力できました'}</strong>${state.business?'事業用物件は個別にご相談ください。':wizardStage===1||wizardStage===2&&house?'下の「次へ」を押してください。':'下のボタンで、価格の目安を確認できます。'}`:esc(state.message);
+  progress.innerHTML=state.valid?`<strong>✓ ${wizardStage===1?'選択OK！':'入力OK！'}</strong>${state.business?'事業用物件は個別にご相談ください。':wizardStage===1||wizardStage===2&&house?'下の「次へ」を押してください。':'下の「査定結果を見る」を押してください。'}`:esc(state.message);
   $('#next-step-note').textContent=wizardStage===1||wizardStage===2&&house?'「戻る」で入力内容を変更できます。':'査定結果まで自動で移動します。';
   $('#wizard-back').hidden=wizardStage===1;updateWizardProgress();
 }
@@ -66,8 +66,8 @@ function toggleBuilding(){
   $('#building-step').hidden=wizardStage!==3||!house;$('#building-fields').hidden=!house;$('#structure-field').hidden=!house;
   for(const control of $('#property-fields').querySelectorAll('input,select'))control.disabled=!selected||business;
   for(const id of ['building-area','building-unit','age','structure'])$(`#${id}`).disabled=!house||business;
-  const headings=['何を査定しますか？','土地の場所・面積を教えてください','建物について教えてください'];
-  const descriptions=['下のどちらかを選んで「次へ」を押してください。','町名と土地面積を入力してください。区域は「不明」でも進めます。','建物の広さ・築年数・構造を入力すると、査定できます。'];
+  const headings=['土地ですか？ 建物もありますか？','土地の場所と広さを入力','建物の情報を入力'];
+  const descriptions=['色のついたボックスを選び、下の「次へ」を押してください。','町名と広さを入れたら、下のボタンを押してください。','広さ・築年数・構造を入れたら、下のボタンで査定できます。'];
   $('#form-heading').innerHTML=`<span class="step">STEP ${wizardStage}</span> ${headings[wizardStage-1]}`;
   $('#wizard-description').textContent=descriptions[wizardStage-1];updateNextStep();
 }

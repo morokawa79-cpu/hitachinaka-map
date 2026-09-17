@@ -23,3 +23,17 @@
 /* PC keeps the guided form and reference-price area side by side. */
 .result-reassurance{display:inline-block;background:#e8f7f5;padding:8px 15px;color:#006d68;font-weight:700;border-radius:3px}
 @media(min-width:960px){.assessment-layout{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.15fr);max-width:none;gap:22px;align-items:start}.wizard-progress{grid-column:1/-1;margin-bottom:0}.form-panel,.result-panel{padding:26px 24px;min-width:0}.result-panel{min-height:420px}.result-panel>h2{font-size:21px;color:#007b7a}.form-panel #form-heading{font-size:21px}.type-switch label>span{font-size:20px}.next-step .submit{font-size:17px}.empty-result{padding:35px 0}.result-panel .empty-result h3{font-size:22px}.result-panel .empty-result p{font-size:15px}}
+/* Make editable controls and selection state easy to spot. */
+#assessment-form input[type="text"],#assessment-form input[type="number"],#assessment-form select{background:#edf9f7;border:2px solid #76aaa5;color:#263238;min-height:52px}
+#assessment-form input::placeholder{color:#607874;opacity:1}
+#assessment-form input[type="text"]:hover,#assessment-form input[type="number"]:hover,#assessment-form select:hover{border-color:#007b7a}
+#assessment-form input[type="text"]:focus,#assessment-form input[type="number"]:focus,#assessment-form select:focus{background:#fff9e9;border-color:#007b7a;outline:3px solid #b9e5e1;outline-offset:2px}
+#assessment-form .field:focus-within>label{color:#006d68;font-weight:700}
+#assessment-form .type-switch label>span{position:relative;background:#edf9f7;border:2px solid #76aaa5;padding:21px 9px;color:#263238}
+#assessment-form .type-switch label:hover>span{border-color:#007b7a;background:#def3ef}
+#assessment-form .type-switch input:checked+span{background:#007b7a;border-color:#007b7a;color:#fff;font-weight:700;box-shadow:0 2px 5px #007b7a24}
+#assessment-form .type-switch input:checked+span:after{content:'✓';position:absolute;top:1px;right:7px;font-size:15px;font-weight:700}
+#assessment-form .type-switch input:focus-visible+span{outline:3px solid #006969;outline-offset:4px}
+@media(max-width:720px){#assessment-form .type-switch label>span{padding:19px 3px}}
+
+#assessment-form .field:focus-within>label:after{content:"入力中";display:inline-block;margin-left:8px;padding:1px 6px;background:#007b7a;color:white;border-radius:3px;font-size:11px;vertical-align:middle}.wizard-description{color:#263238;font-weight:500}

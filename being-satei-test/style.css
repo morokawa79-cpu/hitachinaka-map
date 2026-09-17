@@ -8,3 +8,5 @@
 .price-box{scroll-margin-top:20px}
 .property-caution{padding:14px 16px}.property-caution p+p{border-top:1px solid #edc59d;margin-top:10px;padding-top:10px}.property-caution strong{text-decoration:none}
 .estimate-units{border-top:1px solid #c2e4e4;margin-top:12px;padding-top:8px;color:var(--brand-dark)}.estimate-units p{font-size:12px;line-height:1.8;margin:4px 0}.breakdown-units{font-size:12px;line-height:1.8;margin:8px 0 0;color:var(--brand-dark)}.breakdown .breakdown-units small{display:block;font-size:11px;color:var(--muted)}.breakdown>div{min-width:0}
+
+.property-caution .caution-consult{display:table;margin-top:10px;padding:8px 14px;background:#fff;border:1px solid #c56313;border-radius:4px;color:#973d09;font-size:14px;font-weight:700;text-decoration:none}.property-caution .caution-consult:hover{background:#ffe7ce}.property-caution .caution-consult:focus-visible{outline:3px solid #973d09;outline-offset:3px}

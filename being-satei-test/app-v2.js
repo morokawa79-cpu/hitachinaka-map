@@ -1,4 +1,4 @@
-import {propertyWarnings} from './readjustment.js?v=80310da1198b';
+import {propertyWarnings} from './readjustment.js?v=46fc5f6e8747';
 import {assess,TSUBO,resolveAddress,ZONE_LABELS} from './calc.js?v=51a01e0e1e31';
 const $=s=>document.querySelector(s),form=$('#assessment-form'),output=$('#result-content'),notice=$('#data-notice');
 const initial=output.innerHTML,fmt=new Intl.NumberFormat('ja-JP',{maximumFractionDigits:1});

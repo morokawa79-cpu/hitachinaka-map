@@ -36,7 +36,7 @@ export function propertyWarnings(zone,town){
   const zoneNote=zone==='control'
     ?'<strong>市街化調整区域</strong><br>建築・再建築の条件で価格が変わります。個別査定をご相談ください。'
     :zone==='unknown'
-      ?'<strong>区域が不明な方へ</strong><br>調整区域かどうかで価格が変わります。区域の確認と個別査定をご相談ください。'
+      ?'<strong>市街化区域・調整区域が不明な方へ</strong><br>調整区域かどうかで価格が変わります。区域の確認と個別査定をご相談ください。'
       :'';
   if(!readjustment&&!zoneNote)return '';
   return `<aside class="property-caution" aria-label="査定額の注意事項">${readjustment}${zoneNote?`<p data-warning="zone">${zoneNote}</p>`:''}</aside>`;

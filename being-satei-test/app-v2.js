@@ -16,11 +16,11 @@ function conversion(field){const n=Number($(`#${field}-area`).value);$(`#${field
 function publicHtml(result){const p=result.publicPoint;return `<div class="reference"><h3>公示地価から見る土地の参考値</h3>${p?`<p><strong>${esc(p.label)} ／ ${p.year}年</strong><br>${esc(p.address)}</p><p>１㎡あたり <strong>${fmt.format(p.price)}円</strong>（約${man(p.price*TSUBO)}万円／坪）<br>入力した土地面積に当てはめると <strong>約${man(p.price*result.input.landArea)}万円</strong></p><p class="small">${esc(p.areaDivision||p.zoning)} ／ 町域の代表点から約${p.distance.toFixed(1)}km。番地の位置・土地条件は一致しません。建物の価格は含みません。</p>`:'<p>近くに区域条件の合う公示地価が見つかりませんでした。公示地価による照合は行っていません。</p>'}</div>`;}
 function propertyWarnings(zone){
   const zoneNote=zone==='control'
-    ?'市街化調整区域では、建築・再建築の可否や許可条件によって価格が大きく変わります。この概算では建築の可否を確認していません。必ず個別査定をご相談ください。'
+    ?'<strong>市街化調整区域</strong><br>建築・再建築の条件で価格が変わります。個別査定をご相談ください。'
     :zone==='unknown'
-      ?'区域が不明のため、市街化区域・調整区域を限定せず比較しています。市街化調整区域に該当する場合は、建築・再建築の条件によって価格が大きく変わります。区域の確認と個別査定をおすすめします。'
-      :'市街化区域を選んだ場合も、実際の区域や建築条件の確認が必要です。市街化調整区域に該当する場合は、表示した査定額と大きく異なることがあります。区域に自信がない方は、個別査定をご相談ください。';
-  return `<aside class="property-caution" aria-labelledby="property-caution-title"><h3 id="property-caution-title"><span aria-hidden="true">⚠</span> 査定額をご覧になる際の大切なご案内</h3><div><h4>区画整理地内の物件は、必ず個別査定をご相談ください</h4><p>区画整理事業の進行状況によって、価格が大幅に変動します。区画整理地内の場合は、この概算だけで判断せず、<strong>必ず個別査定を受けることをおすすめします。</strong></p><p class="caution-note">この簡易査定では、区画整理地内かどうかは判定していません。</p></div><div><h4>${zone==='control'?'市街化調整区域の価格について':'市街化調整区域を選択していない方もご確認ください'}</h4><p>${zoneNote}</p></div></aside>`;
+      ?'<strong>区域が不明な方へ</strong><br>調整区域かどうかで価格が変わります。区域の確認と個別査定をご相談ください。'
+      :'';
+  return `<aside class="property-caution" aria-label="査定額の注意事項"><p><strong><span aria-hidden="true">⚠</span> 区画整理地内の場合</strong><br>事業の進行で価格が大きく変わります。必ず個別査定をご相談ください。</p>${zoneNote?`<p>${zoneNote}</p>`:''}</aside>`;
 }
 function render(result){
   if(result.status==='consultation'){output.innerHTML='<div class="insufficient"><p class="eyebrow">土地＋建物 ／ 事業用</p><h3>事業用物件は、<br>個別にご相談ください。</h3><p>店舗・事務所・工場・倉庫などは、用途・建物の仕様・収益性によって評価が大きく異なるため、簡易査定を行っていません。</p><p>所在地や現在のご利用状況をお伺いして、売却のご相談を承ります。</p><a class="primary" href="https://lin.ee/hH9SPoe" target="_blank" rel="noopener noreferrer">LINEで事業用物件を相談する</a><a class="form-action" href="https://www.beingfudousan.com/satei/" target="_blank" rel="noopener noreferrer">お問い合わせフォームで相談する ↗</a><p class="business-phone"><a class="phone" href="tel:0293544000">☎ 029-354-4000</a></p></div>';return;}

@@ -51,7 +51,8 @@ export function assess(input,market,towns,structures,now=new Date()){
   const all=dedupe(market.records??[]).filter(r=>r.kind==='land'&&r.city==='08221'&&Number.isFinite(r.price)&&r.price>0&&Number.isFinite(r.landArea)&&r.landArea>0&&Number.isInteger(r.year)&&Number.isInteger(r.quarter)&&r.quarter>=1&&r.quarter<=4);
   const eligible=all.filter(r=>{const elapsed=nowQ-(r.year*4+r.quarter-1);return elapsed>=0&&elapsed<20&&(input.zone==='unknown'||classifyZone(r.zoning)===input.zone);});
   const latestQ=Math.max(-Infinity,...eligible.map(r=>r.year*4+r.quarter-1));
-  const publicPoint=(market.publicPoints??[]).filter(p=>p.year>=now.getFullYear()-1&&p.year<=now.getFullYear()&&Number.isFinite(p.price)&&p.price>0&&(input.zone==='unknown'||classifyZone(p.areaDivision||p.zoning)===input.zone)).map(p=>({...p,distance:distance(target,p)})).filter(p=>p.distance<=3).sort((a,b)=>a.distance-b.distance)[0]??null;
+  const nearbyPublicPoints=(market.publicPoints??[]).filter(p=>p.year>=now.getFullYear()-1&&p.year<=now.getFullYear()&&Number.isFinite(p.price)&&p.price>0&&(input.zone==='unknown'||classifyZone(p.areaDivision||p.zoning)===input.zone)).map(p=>({...p,distance:distance(target,p)})).filter(p=>p.distance<=3).sort((a,b)=>a.distance-b.distance).slice(0,5);
+  const publicPoint=nearbyPublicPoints[0]??null;
   const candidates=trimOutliers(eligible.flatMap(r=>{
     const place=neighborhood(r,target,towns),ratio=input.landArea/r.landArea;
     if(!place||ratio<.67||ratio>1.5)return [];
@@ -60,7 +61,7 @@ export function assess(input,market,towns,structures,now=new Date()){
   const recent=candidates.filter(r=>latestQ-(r.year*4+r.quarter-1)<12),expanded=recent.length<5;
   const chosen=(expanded?candidates:recent).sort(rank).slice(0,5),basis=chosen.length?'comparables':'public';
   const landUnit=chosen.length?median(chosen.map(r=>r.unitPrice)):publicPoint?.price;
-  if(!landUnit)return {status:'insufficient',reason:'近隣・隣接地域の土地事例と公示地価がどちらも見つからず、根拠のある金額を計算できませんでした。',input,publicPoint,mode:market.mode};
+  if(!landUnit)return {status:'insufficient',reason:'近隣・隣接地域の土地事例と公示地価がどちらも見つからず、根拠のある金額を計算できませんでした。',input,publicPoint,nearbyPublicPoints,mode:market.mode};
   const landValue=Math.round(landUnit*input.landArea/10000)*10000,building=buildingValue(input,structures),center=landValue+building.value;
-  return {status:'ok',input,mode:market.mode,basis,confidence:chosen.length===5?'standard':'low',landValue,landUnit,building,median:center,low:Math.floor(center*.95/10000),high:Math.ceil(center*1.15/10000),cases:chosen,expanded,publicPoint,divergence:publicPoint?landUnit/publicPoint.price-1:null,spread:chosen.length?(Math.max(...chosen.map(r=>r.adjusted))-Math.min(...chosen.map(r=>r.adjusted)))/landValue:null,sourceCounts:{survey:chosen.filter(r=>r.source==='不動産取引価格情報').length,contract:chosen.filter(r=>r.source==='成約価格情報').length}};
+  return {status:'ok',input,mode:market.mode,basis,confidence:chosen.length===5?'standard':'low',landValue,landUnit,building,median:center,low:Math.floor(center*.95/10000),high:Math.ceil(center*1.15/10000),cases:chosen,expanded,publicPoint,nearbyPublicPoints,divergence:publicPoint?landUnit/publicPoint.price-1:null,spread:chosen.length?(Math.max(...chosen.map(r=>r.adjusted))-Math.min(...chosen.map(r=>r.adjusted)))/landValue:null,sourceCounts:{survey:chosen.filter(r=>r.source==='不動産取引価格情報').length,contract:chosen.filter(r=>r.source==='成約価格情報').length}};
 }

@@ -1,5 +1,8 @@
 // Land comparables + depreciated replacement cost, matching Satei Studio defaults.
 export const TSUBO=400/121;
+export function areaInSqm(value,unit='sqm'){return value===''?NaN:Math.round(Number(value)*(unit==='tsubo'?TSUBO:1)*1e8)/1e8;}
+export function switchAreaUnit(value,from,to){return value===''?'':String(Number((Number(value)*(from==='tsubo'?TSUBO:1)/(to==='tsubo'?TSUBO:1)).toFixed(8)));}
+export function displayAmounts(result){const up=yen=>Math.ceil(yen/100000)*100000,land=up(result.landValue),building=up(result.building.value),total=land+building;return {land,building,total,low:up(result.low*10000),high:Math.max(up(result.high*10000),total)};}
 export const canonicalTown=s=>String(s??'').normalize('NFKC').replace(/^茨城県/,'').replace(/^ひたちなか市/,'').replace(/^大字/,'').replace(/[\s　]/g,'').replace(/[ヶヵ]/g,'ケ');
 export function median(values){const v=values.filter(Number.isFinite).sort((a,b)=>a-b);if(!v.length)return null;const m=Math.floor(v.length/2);return v.length%2?v[m]:(v[m-1]+v[m])/2;}
 export function distance(a,b){if(!a||!b)return Infinity;const rad=Math.PI/180,lat=(a.lat-b.lat)*rad,lng=(a.lng-b.lng)*rad;return 6371*2*Math.asin(Math.sqrt(Math.sin(lat/2)**2+Math.cos(a.lat*rad)*Math.cos(b.lat*rad)*Math.sin(lng/2)**2));}
@@ -46,7 +49,7 @@ export function buildingValue(input,structures){
   return {value:Math.round(s.unitCost*input.buildingArea*remainingRate)*10000,replacement:s.unitCost*10000*input.buildingArea,remainingRate,unitCost:s.unitCost*10000,usefulLife:s.usefulLife,label:s.label};
 }
 export function assess(input,market,towns,structures,now=new Date()){
-  if(input?.kind==='house'&&input.use==='business')return {status:'consultation',reason:'事業用物件は簡易査定の対象外です。用途や収益性、建物の仕様を伺って個別に査定します。',input};
+  if(input?.kind==='house'&&input.use==='business')return {status:'consultation',reason:'事業用物件はかんたん査定の対象外です。用途や収益性、建物の仕様を伺って個別に査定します。',input};
   input=validateInput(input,towns,structures);const target=findTown(input.town,towns),nowQ=now.getFullYear()*4+Math.floor(now.getMonth()/3);
   const all=dedupe(market.records??[]).filter(r=>r.kind==='land'&&r.city==='08221'&&Number.isFinite(r.price)&&r.price>0&&Number.isFinite(r.landArea)&&r.landArea>0&&Number.isInteger(r.year)&&Number.isInteger(r.quarter)&&r.quarter>=1&&r.quarter<=4);
   const eligible=all.filter(r=>{const elapsed=nowQ-(r.year*4+r.quarter-1);return elapsed>=0&&elapsed<20&&(input.zone==='unknown'||classifyZone(r.zoning)===input.zone);});
@@ -58,7 +61,7 @@ export function assess(input,market,towns,structures,now=new Date()){
     if(!place||ratio<.67||ratio>1.5)return [];
     return [{...r,...place,unitPrice:r.price/r.landArea,adjusted:r.price/r.landArea*input.landArea,score:Math.abs(Math.log(ratio))*3+place.km*.2+(latestQ-(r.year*4+r.quarter-1))*.06}];
   }));
-  const recent=candidates.filter(r=>latestQ-(r.year*4+r.quarter-1)<12),expanded=recent.length<5;
+  const recent=candidates.filter(r=>nowQ-(r.year*4+r.quarter-1)<12),expanded=recent.length<5;
   const chosen=(expanded?candidates:recent).sort(rank).slice(0,5),basis=chosen.length?'comparables':'public';
   const landUnit=chosen.length?median(chosen.map(r=>r.unitPrice)):publicPoint?.price;
   if(!landUnit)return {status:'insufficient',reason:'近隣・隣接地域の土地事例と公示地価がどちらも見つからず、根拠のある金額を計算できませんでした。',input,publicPoint,nearbyPublicPoints,mode:market.mode};

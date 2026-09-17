@@ -38,7 +38,7 @@ function render(result){
     ${propertyWarnings(i.zone)}
     <div class="result-actions"><a class="primary" href="https://lin.ee/hH9SPoe" target="_blank" rel="noopener noreferrer">詳しい査定・売却を相談する<span>LINEで無料相談</span></a><a class="phone-action" href="tel:0293544000">電話で相談<span>029-354-4000</span></a><a class="form-action" href="https://www.beingfudousan.com/satei/" target="_blank" rel="noopener noreferrer">お問い合わせフォームで相談する ↗</a></div>
     ${i.kind==='house'?`<div class="breakdown"><div><span>土地の査定額</span><strong>${man(result.landValue)}<small>万円</small></strong></div><span class="plus">＋</span><div><span>建物の査定額</span><strong>${man(b.value)}<small>万円</small></strong></div></div>`:''}
-    <div class="calculation-note"><p><strong>土地</strong>　${result.basis==='comparables'?`${count}件の土地事例の単価${count===1?'':'中央値'}`:'公示地価の単価'} 約${fmt.format(Math.round(result.landUnit))}円／㎡ × ${fmt.format(i.landArea)}㎡</p>${i.kind==='house'?`<p><strong>建物</strong>　${esc(b.label)}・再調達単価 ${man(b.unitCost)}万円／㎡ × ${fmt.format(i.buildingArea)}㎡ × 残価率 ${fmt.format(b.remainingRate*100)}％</p><p class="small">新しく建てる場合の再調達価格：${man(b.replacement)}万円。築${i.age}年・耐用年数${b.usefulLife}年で減価しています。</p>`:''}</div>
+    <div class="calculation-note"><p><strong>土地</strong>　${result.basis==='comparables'?`${count}件の土地事例の単価${count===1?'':'中央値'}`:'公示地価の単価'} 約${fmt.format(Math.round(result.landUnit))}円／㎡ × ${fmt.format(i.landArea)}㎡</p>${i.kind==='house'?`<p><strong>建物</strong>　${esc(b.label)}・参考単価 ${man(b.unitCost)}万円／㎡ × ${fmt.format(i.buildingArea)}㎡ × 残価率 ${fmt.format(b.remainingRate*100)}％</p><p class="small">築年数で減価する前の参考額：${man(b.replacement)}万円。築${i.age}年・耐用年数${b.usefulLife}年で減価しています。</p><p class="small">建物は参考単価と築年数から概算。仕様・状態により変わります。</p>`:''}</div>
     ${i.kind==='house'&&b.remainingRate===0?'<p class="result-warning">標準の減価計算では建物評価が０円となります。実際の建物の価値がないという意味ではありません。修繕・リフォーム・利用状況を確認すると評価が変わる場合があります。</p>':''}
     ${result.confidence==='low'?`<p class="result-warning"><strong>参考情報が少ないため、価格の確かさは低めです。</strong><br>${count?`土地事例${count}件で試算しています。`:'近い条件の土地事例がないため、公示地価から試算しています。'} 実際の売却価格は表示範囲を外れる場合があります。</p>`:''}
     <h3>${count?`土地の査定に使った${count}事例`:'近い条件の土地事例は見つかりませんでした'}</h3><p class="small">${result.expanded?'直近３年で不足するため、最長５年の事例まで確認しています。':'直近の公開データから３年以内の事例です。'} 同じ町域・隣接する町域を優先しています。</p>
@@ -46,7 +46,7 @@ function render(result){
     ${publicHtml(result)}
     ${result.divergence!==null&&Math.abs(result.divergence)>.5?'<div class="result-warning reference-consult"><strong>公示地価との差が大きいため、個別の確認をおすすめします。</strong><p>用途地域・道路・敷地条件を確認し、より詳しい査定をご案内します。</p><a class="form-action" href="https://www.beingfudousan.com/satei/" target="_blank" rel="noopener noreferrer">詳しくはお問い合わせください ↗</a></div>':''}
     ${nearbyPublicHtml(result)}
-    <details class="method"><summary>選び方・計算方法について</summary><p>ひたちなか市内の同じ町名を優先し、隣接する町・大字まで広げます。それ以外は町域代表点間３km以内。番地の隣の敷地を特定するものではありません。選択した区域が分かる場合は、異なる区域・区域不明の事例を除外します。</p><p>土地面積比約0.67〜1.5倍、原則３年以内（不足時は５年以内）の土地事例を最大５件選び、㎡単価の中央値×入力面積で土地を評価します。１件でも計算し、０件なら同じ区域条件の近くの公示地価を使います。重複候補・特殊な取引・極端な単価を除きます。</p><p>建物は査定書工房の標準設定に合わせ、構造別の再調達単価×延床面積×残価率で計算します。残価率は「１−築年数÷耐用年数」（０〜100％）です。建築月がないため年単位で計算し、土地・建物はそれぞれ万円単位で丸めます。修繕による残価補正や個別調整は未入力です。</p><p>公示地価を土地事例の１件として中央値へ混ぜることはありません。道路・形状・建築条件・修繕状態や市況変動の個別補正は未対応です。表示幅は統計的な信頼区間や売却保証ではありません。</p></details>`;
+    <details class="method"><summary>選び方・計算方法について</summary><p>ひたちなか市内の同じ町名を優先し、隣接する町・大字まで広げます。それ以外は町域代表点間３km以内。番地の隣の敷地を特定するものではありません。選択した区域が分かる場合は、異なる区域・区域不明の事例を除外します。</p><p>土地面積比約0.67〜1.5倍、原則３年以内（不足時は５年以内）の土地事例を最大５件選び、㎡単価の中央値×入力面積で土地を評価します。１件でも計算し、０件なら同じ区域条件の近くの公示地価を使います。重複候補・特殊な取引・極端な単価を除きます。</p><p>建物は構造別の参考単価×延床面積×残価率で概算します。木造は国税庁の令和8年分・茨城県の工事費用表（23.2万円／㎡、約76.7万円／坪）を参考に採用。税務上の損失額計算向けの参考値で、実際の建築見積・売却価格とは異なります。<a href="https://www.nta.go.jp/taxes/shiraberu/saigai/h30/0018008-045/07.htm" target="_blank" rel="noopener noreferrer">出典（2026年9月17日確認）↗</a>。木造以外の単価と減価年数は査定書工房の標準設定です。減価は国税庁の評価式ではなく、独自の簡易式「１−築年数÷耐用年数」（０〜100％）です。木造22年は計算用の設定で、建物の寿命を意味しません。建築月がないため年単位で計算し、土地・建物はそれぞれ万円単位で丸めます。修繕による残価補正や個別調整は未入力です。</p><p>公示地価を土地事例の１件として中央値へ混ぜることはありません。道路・形状・建築条件・修繕状態や市況変動の個別補正は未対応です。表示幅は統計的な信頼区間や売却保証ではありません。</p></details>`;
 }
 async function calculate(input){
   if(!market)throw Error('データを読み込めませんでした。ページを再読み込みしてください。');
@@ -66,7 +66,7 @@ $('#address').addEventListener('input',()=>{const found=resolveAddress($('#addre
 for(const field of ['land','building']){$(`#${field}-area`).addEventListener('input',()=>conversion(field));$(`#${field}-unit`).addEventListener('change',()=>conversion(field));}
 async function init(){
   try{
-    const responses=await Promise.all(['./data/towns.json','./data/market.json','./data/structures.json'].map(url=>fetch(new URL(url,import.meta.url))));if(responses.some(r=>!r.ok))throw Error();
+    const responses=await Promise.all(['./data/towns.json','./data/market.json','./data/structures.json?v=1989594451a1'].map(url=>fetch(new URL(url,import.meta.url))));if(responses.some(r=>!r.ok))throw Error();
     const [g,m,s]=await Promise.all(responses.map(r=>r.json()));towns=g.towns;market=m;structures=s;
     for(const town of towns){const opt=document.createElement('option');opt.value=town.name;$('#town-list').append(opt);}
     $('#structure').replaceChildren();for(const [value,item]of Object.entries(structures)){const opt=document.createElement('option');opt.value=value;opt.textContent=item.label;$('#structure').append(opt);}

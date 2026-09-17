@@ -1,5 +1,5 @@
 {
-  "wood":             { "label": "木造",                     "unitCost": 18, "usefulLife": 22 },
+  "wood":             { "label": "木造", "unitCost": 23.2, "usefulLife": 22, "sourceYear": 2026, "sourceTitle": "国税庁・地域別・構造別の工事費用表（令和8年分用）茨城県", "sourceUrl": "https://www.nta.go.jp/taxes/shiraberu/saigai/h30/0018008-045/07.htm", "verifiedAt": "2026-09-17" },
   "light_steel_thin": { "label": "軽量鉄骨（3mm以下）",      "unitCost": 20, "usefulLife": 19 },
   "light_steel_thick":{ "label": "軽量鉄骨（3〜4mm）",       "unitCost": 20, "usefulLife": 27 },
   "heavy_steel":      { "label": "重量鉄骨",                 "unitCost": 22, "usefulLife": 34 },

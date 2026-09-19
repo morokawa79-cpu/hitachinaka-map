@@ -37,3 +37,20 @@
 @media(max-width:720px){#assessment-form .type-switch label>span{padding:19px 3px}}
 
 #assessment-form .field:focus-within>label:after{content:"入力中";display:inline-block;margin-left:8px;padding:1px 6px;background:#007b7a;color:white;border-radius:3px;font-size:11px;vertical-align:middle}.wizard-description{color:#263238;font-weight:500}
+
+/* Compact layout used inside an Ielove blog iframe. */
+.embed-intro{display:none}
+.embed-mode body{background:#fff}
+.embed-mode .site-header,.embed-mode .breadcrumb,.embed-mode .page-heading,.embed-mode .consultation,.embed-mode .faq,.embed-mode .source-note,.embed-mode .brand-footer{display:none}
+.embed-mode .main{max-width:none;padding:0 14px 24px}
+.embed-mode .embed-intro{display:block;text-align:center;padding:20px 12px 17px;margin:0 auto 16px;border-bottom:3px solid #00acab;background:#f3fbfa}
+.embed-mode .embed-intro>span{display:inline-block;color:#007b7a;font-size:13px;font-weight:700;letter-spacing:.08em}
+.embed-mode .embed-intro h1{font-size:28px;line-height:1.5;margin:3px 0 6px}
+.embed-mode .embed-intro p{font-size:14px;margin:0;color:#435356}
+.embed-mode .embed-intro ul{display:flex;justify-content:center;gap:10px;list-style:none;padding:0;margin:12px 0 0;font-size:12px;font-weight:700;color:#006d68}
+.embed-mode .embed-intro li{padding:4px 9px;background:#fff;border:1px solid #8dcac2;border-radius:3px}
+.embed-mode #data-notice{margin:0 auto 14px;max-width:1050px;padding:8px 12px;text-align:center;border-left:0;border-bottom:1px solid #9bd9d8}
+.embed-mode .assessment-layout{max-width:1050px}
+.embed-mode .form-panel,.embed-mode .result-panel{box-shadow:none}
+.embed-mode .result-panel .method{font-size:12px}
+@media(max-width:720px){.embed-mode .main{padding-inline:6px}.embed-mode .embed-intro{padding:16px 8px 14px}.embed-mode .embed-intro h1{font-size:24px}.embed-mode .embed-intro p{font-size:13px}.embed-mode .embed-intro ul{gap:5px;flex-wrap:wrap}.embed-mode .embed-intro li{padding:3px 6px}.embed-mode #data-notice{font-size:11px}.embed-mode .form-panel,.embed-mode .result-panel{border-inline:0}}

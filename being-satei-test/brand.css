@@ -52,6 +52,7 @@
 .embed-mode #data-notice{margin:0 auto 14px;max-width:1050px;padding:8px 12px;text-align:center;border-left:0;border-bottom:1px solid #9bd9d8}
 .embed-mode .assessment-layout{max-width:1050px}
 .embed-mode .form-panel,.embed-mode .result-panel{box-shadow:none}
+.embed-mode #result,.embed-mode .price-box{scroll-margin-top:390px}
 .result-panel.result-arrived{animation:result-arrived 1.1s ease both}
 @keyframes result-arrived{0%{box-shadow:0 0 0 5px #00aaa83d;background:#eaf9f7}55%{box-shadow:0 0 0 9px #00aaa81f;background:#f6fcfb}100%{box-shadow:none;background:#fff}}
 @media(prefers-reduced-motion:reduce){.result-panel.result-arrived{animation:none;outline:4px solid #8bd4cf;outline-offset:3px}}

@@ -52,5 +52,8 @@
 .embed-mode #data-notice{margin:0 auto 14px;max-width:1050px;padding:8px 12px;text-align:center;border-left:0;border-bottom:1px solid #9bd9d8}
 .embed-mode .assessment-layout{max-width:1050px}
 .embed-mode .form-panel,.embed-mode .result-panel{box-shadow:none}
+.result-panel.result-arrived{animation:result-arrived 1.1s ease both}
+@keyframes result-arrived{0%{box-shadow:0 0 0 5px #00aaa83d;background:#eaf9f7}55%{box-shadow:0 0 0 9px #00aaa81f;background:#f6fcfb}100%{box-shadow:none;background:#fff}}
+@media(prefers-reduced-motion:reduce){.result-panel.result-arrived{animation:none;outline:4px solid #8bd4cf;outline-offset:3px}}
 .embed-mode .result-panel .method{font-size:12px}
 @media(max-width:720px){.embed-mode .main{padding-inline:6px}.embed-mode .embed-intro{padding:16px 8px 14px}.embed-mode .embed-intro h1{font-size:24px}.embed-mode .embed-intro p{font-size:13px}.embed-mode .embed-intro ul{gap:5px;flex-wrap:wrap}.embed-mode .embed-intro li{padding:3px 6px}.embed-mode #data-notice{font-size:11px}.embed-mode .form-panel,.embed-mode .result-panel{border-inline:0}}

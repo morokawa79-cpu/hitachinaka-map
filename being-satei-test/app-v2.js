@@ -30,31 +30,30 @@ function stageState(){
   const house=kind()==='house',business=house&&form.elements.use.value==='business',missing=[];
   if(!market)return {valid:false,message:'査定データを読み込んでいます。'};
   if(wizardStage===1)return {valid:['land','house'].includes(kind()),message:'「土地のみ」か「土地＋建物」を選んでください。',business};
-  if(wizardStage===2){
-    if(!resolveAddress($('#address').value,towns))missing.push('町名');
-    const area=converted('land');if(!Number.isFinite(area)||area<30||area>2000)missing.push('土地の広さ');
-  }else{
+  if(!resolveAddress($('#address').value,towns))missing.push('町名');
+  const landArea=converted('land');if(!Number.isFinite(landArea)||landArea<30||landArea>2000)missing.push('土地の広さ');
+  if(house){
     const area=converted('building'),age=$('#age').value;
     if(!Number.isFinite(area)||area<20||area>500)missing.push('建物の広さ');
     if(age===''||!Number.isInteger(Number(age))||Number(age)<0||Number(age)>100)missing.push('築年数');
   }
-  let valid=false,message='';try{const i=readInput();validateInput(wizardStage===2?{...i,kind:'land'}:i,towns,structures);valid=true;}catch(e){message=e.message;}
-  const empty=wizardStage===2?(!$('#address').value||!$('#land-area').value):(!$('#building-area').value||$('#age').value==='');
+  let valid=false,message='';try{validateInput(readInput(),towns,structures);valid=true;}catch(e){message=e.message;}
+  const empty=!$('#address').value||!$('#land-area').value||(house&&(!$('#building-area').value||$('#age').value===''));
   return {valid,message:empty&&missing.length?`あと${missing.length}項目：${missing.join('・')}を入力してください。`:message,business};
 }
 function updateWizardProgress(){
   const house=kind()==='house',business=house&&form.elements.use.value==='business';
-  const labels=business?['物件の種類','個別のご相談']:house?['物件の種類','土地の情報','建物の情報','査定結果']:['物件の種類','土地の情報','査定結果'];
+  const labels=business?['物件の種類','個別のご相談']:['物件の種類',house?'土地・建物の情報':'土地の情報','査定結果'];
   const active=showingResult?labels.length:wizardStage;
   $('#wizard-progress').innerHTML=labels.map((label,index)=>`<li class="${index+1===active?'current':index+1<active?'done':''}"${index+1===active?' aria-current="step"':''}><span>${index+1<active?'✓':index+1}</span>${label}</li>`).join('');
 }
 function updateNextStep(){
-  const panel=$('#next-step'),progress=$('#input-progress'),button=$('.submit'),state=stageState(),house=kind()==='house';
+  const panel=$('#next-step'),progress=$('#input-progress'),button=$('.submit'),state=stageState(),house=kind()==='house',selected=['land','house'].includes(kind());
   panel.hidden=false;button.hidden=false;button.disabled=!state.valid;panel.classList.toggle('is-ready',state.valid);
-  const next=wizardStage===1&&!state.business?'次へ：土地の入力':wizardStage===2&&house?'次へ：建物の入力':state.business?'個別相談の案内へ':'査定結果を見る';
+  const next=wizardStage===1&&!state.business?(!selected?'選択して次へ':house?'次へ：土地・建物を入力':'次へ：土地を入力'):state.business?'個別相談の案内へ':'査定結果を見る';
   button.innerHTML=`${next} <span aria-hidden="true">→</span>`;
-  progress.innerHTML=state.valid?`<strong>✓ ${wizardStage===1?'選択OK！':'入力OK！'}</strong>${state.business?'事業用物件は個別にご相談ください。':wizardStage===1||wizardStage===2&&house?'下の「次へ」を押してください。':'下の「査定結果を見る」を押してください。'}`:esc(state.message);
-  $('#next-step-note').textContent=wizardStage===1||wizardStage===2&&house?'「戻る」で入力内容を変更できます。':'査定結果まで自動で移動します。';
+  progress.innerHTML=state.valid?`<strong>✓ ${wizardStage===1?'選択OK！':'入力OK！'}</strong>${state.business?'事業用物件は個別にご相談ください。':wizardStage===1?'下の「次へ」を押してください。':'下の「査定結果を見る」を押してください。'}`:esc(state.message);
+  $('#next-step-note').textContent=wizardStage===1?(!selected?'上の「土地のみ」「土地＋建物」から選んでください。':house?'次の画面で土地と建物をまとめて入力します。':'次の画面で土地の情報を入力します。'):'押すと査定結果まで自動で移動します。';
   $('#wizard-back').hidden=wizardStage===1;updateWizardProgress();
 }
 function clearResult(){showingResult=false;cancelCalculation();output.innerHTML=initial;$('#form-error').hidden=true;updateResultVisibility();}
@@ -63,13 +62,13 @@ function toggleBuilding(){
   updateResultVisibility();
   $('#kind-step').hidden=wizardStage!==1;$('#use-field').hidden=!house;$('#business-notice').hidden=!business;
   $('#property-fields').hidden=wizardStage===1||!selected||business;$('#land-fields').hidden=wizardStage!==2;
-  $('#building-step').hidden=wizardStage!==3||!house;$('#building-fields').hidden=!house;$('#structure-field').hidden=!house;
+  $('#building-step').hidden=wizardStage!==2||!house;$('#building-fields').hidden=!house;$('#structure-field').hidden=!house;
   for(const control of $('#property-fields').querySelectorAll('input,select'))control.disabled=!selected||business;
   for(const id of ['building-area','building-unit','age','structure'])$(`#${id}`).disabled=!house||business;
-  const headings=['土地ですか？ 建物もありますか？','土地の場所と広さを入力','建物の情報を入力'];
-  const descriptions=['色のついたボックスを選び、下の「次へ」を押してください。','町名と広さを入れたら、下のボタンを押してください。','広さ・築年数・構造を入れたら、下のボタンで査定できます。'];
-  $('#form-heading').innerHTML=`<span class="step">STEP ${wizardStage}</span> ${headings[wizardStage-1]}`;
-  $('#wizard-description').textContent=descriptions[wizardStage-1];updateNextStep();
+  const heading=wizardStage===1?'土地ですか？ 建物もありますか？':house?'土地と建物の情報をまとめて入力':'土地の場所と広さを入力';
+  const description=wizardStage===1?'色のついたボックスを選び、下の「次へ」を押してください。':house?'土地の場所・広さと、建物の広さ・築年数・構造を入力してください。':'町名と広さを入れたら、下のボタンを押してください。';
+  $('#form-heading').innerHTML=`<span class="step">STEP ${wizardStage}</span> ${heading}`;
+  $('#wizard-description').textContent=description;updateNextStep();
 }
 function goToStage(stage){
   clearResult();showingResult=false;wizardStage=stage;toggleBuilding();
@@ -109,25 +108,29 @@ function render(result){
 async function calculate(input){
   if(!market)throw Error('データを読み込めませんでした。ページを再読み込みしてください。');
   const result=assess(input,market,towns,structures);cancelCalculation();showingResult=true;updateResultVisibility();updateWizardProgress();
-  if(result.status==='consultation'){render(result);$('#result').scrollIntoView({behavior:'smooth',block:'start'});return result;}
+  if(result.status==='consultation'){render(result);focusResult();return result;}
   output.innerHTML='<div class="loading-result" role="status"><span class="loading-spinner" aria-hidden="true"></span><h3>査定結果を準備しています</h3><p>もう少しで価格の目安を表示します。</p></div>';
   $('#result').setAttribute('aria-busy','true');$('.submit').disabled=true;$('.submit').textContent='査定結果を準備しています…';
-  $('#result').scrollIntoView({behavior:matchMedia('(prefers-reduced-motion:reduce)').matches?'instant':'smooth',block:'start'});
+  focusResult();
   const completed=await new Promise(resolve=>{pendingResolve=resolve;pendingTimer=setTimeout(()=>{pendingTimer=null;pendingResolve=null;resolve(true);},4000);});
   if(!completed)return null;
   $('#result').removeAttribute('aria-busy');$('.submit').disabled=false;$('.submit').innerHTML=submitLabel;render(result);
-  (output.querySelector('.price-box')??$('#result')).scrollIntoView({behavior:matchMedia('(prefers-reduced-motion:reduce)').matches?'instant':'smooth',block:'start'});return result;
+  focusResult(output.querySelector('.price-box')??$('#result'));return result;
+}
+function focusResult(target=$('#result')){
+  const panel=$('#result');panel.classList.remove('result-arrived');void panel.offsetWidth;panel.classList.add('result-arrived');
+  target.scrollIntoView({behavior:matchMedia('(prefers-reduced-motion:reduce)').matches?'instant':'smooth',block:'start'});
+  setTimeout(()=>panel.classList.remove('result-arrived'),1200);
 }
 form.addEventListener('submit',async event=>{
   event.preventDefault();$('#form-error').hidden=true;const state=stageState();
   if(!state.valid){updateNextStep();return;}
   if(wizardStage===1&&!state.business){goToStage(2);return;}
-  if(wizardStage===2&&kind()==='house'){goToStage(3);return;}
   try{await calculate(readInput());}catch(error){cancelCalculation();showingResult=false;toggleBuilding();$('#form-error').textContent=error.message;$('#form-error').hidden=false;}
 });
 form.addEventListener('input',clearResult);form.addEventListener('change',()=>{clearResult();toggleBuilding();});
 $('#address').addEventListener('input',()=>{const found=resolveAddress($('#address').value,towns);$('#town').value=found?.name??'';$('#address-match').textContent=found?`「ひたちなか市${found.name}」として査定します。`:'';});
-function syncAreaUnit(field,convert=false){const unit=$(`#${field}-unit`),area=$(`#${field}-area`);if(convert)area.value=switchAreaUnit(area.value,unit.dataset.previous??'sqm',unit.value);unit.dataset.previous=unit.value;const factor=unit.value==='tsubo'?TSUBO:1;area.min=(field==='land'?30:20)/factor;area.max=(field==='land'?2000:500)/factor;area.placeholder=unit.value==='sqm'?(field==='land'?'例：200':'例：100'):(field==='land'?'例：60.5':'例：30.25');conversion(field);}
+function syncAreaUnit(field,convert=false){const unit=$(`#${field}-unit`),area=$(`#${field}-area`);if(convert)area.value=switchAreaUnit(area.value,unit.dataset.previous??'sqm',unit.value);unit.dataset.previous=unit.value;const factor=unit.value==='tsubo'?TSUBO:1;area.min=(field==='land'?30:20)/factor;area.max=(field==='land'?2000:500)/factor;area.placeholder=field==='land'?'土地面積を入力':'延床面積を入力';conversion(field);}
 for(const field of ['land','building']){$(`#${field}-area`).addEventListener('input',()=>conversion(field));$(`#${field}-unit`).addEventListener('change',()=>syncAreaUnit(field,true));syncAreaUnit(field);}
 async function init(){
   try{

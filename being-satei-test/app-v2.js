@@ -119,19 +119,13 @@ async function calculate(input){
 }
 function focusResult(target=$('#result')){
   const panel=$('#result');panel.classList.remove('result-arrived');void panel.offsetWidth;panel.classList.add('result-arrived');
-  focusParentEmbed();
   target.scrollIntoView({behavior:matchMedia('(prefers-reduced-motion:reduce)').matches?'instant':'smooth',block:'start'});
   setTimeout(()=>panel.classList.remove('result-arrived'),1200);
-}
-function focusParentEmbed(){
-  if(!document.body.classList.contains('embed-mode')||!document.referrer.startsWith('https://www.beingfudousan.com/'))return;
-  try{const parentUrl=new URL(document.referrer);parentUrl.hash='being-satei-embed';window.top.location.href=parentUrl.href;}catch{}
 }
 form.addEventListener('submit',async event=>{
   event.preventDefault();$('#form-error').hidden=true;const state=stageState();
   if(!state.valid){updateNextStep();return;}
   if(wizardStage===1&&!state.business){goToStage(2);return;}
-  focusParentEmbed();
   try{await calculate(readInput());}catch(error){cancelCalculation();showingResult=false;toggleBuilding();$('#form-error').textContent=error.message;$('#form-error').hidden=false;}
 });
 form.addEventListener('input',clearResult);form.addEventListener('change',()=>{clearResult();toggleBuilding();});

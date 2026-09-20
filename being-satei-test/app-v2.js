@@ -120,7 +120,8 @@ async function calculate(input){
 function focusResult(target=$('#result')){
   const panel=$('#result');panel.classList.remove('result-arrived');void panel.offsetWidth;panel.classList.add('result-arrived');
   const embedded=window.parent!==window&&document.documentElement.classList.contains('embed-mode');
-  target.scrollIntoView({behavior:embedded||matchMedia('(prefers-reduced-motion:reduce)').matches?'instant':'smooth',block:'start'});
+  if(embedded)window.scrollTo({top:Math.max(0,window.scrollY+target.getBoundingClientRect().top-390),behavior:'instant'});
+  else target.scrollIntoView({behavior:matchMedia('(prefers-reduced-motion:reduce)').matches?'instant':'smooth',block:'start'});
   if(embedded)requestAnimationFrame(()=>window.parent.postMessage({type:'being-satei:result',top:target.getBoundingClientRect().top},'https://www.beingfudousan.com'));
   setTimeout(()=>panel.classList.remove('result-arrived'),1200);
 }

@@ -72,7 +72,7 @@ function toggleBuilding(){
 }
 function goToStage(stage){
   clearResult();showingResult=false;wizardStage=stage;toggleBuilding();
-  $('.assessment-layout').scrollIntoView({behavior:matchMedia('(prefers-reduced-motion:reduce)').matches?'instant':'smooth',block:'start'});
+  scrollToPanel($('.form-panel'));
   $('#form-heading').focus({preventScroll:true});
 }
 $('#wizard-back').addEventListener('click',()=>goToStage(Math.max(1,wizardStage-1)));
@@ -119,11 +119,14 @@ async function calculate(input){
 }
 function focusResult(target=$('#result')){
   const panel=$('#result');panel.classList.remove('result-arrived');void panel.offsetWidth;panel.classList.add('result-arrived');
+  scrollToPanel(target);
+  setTimeout(()=>panel.classList.remove('result-arrived'),1200);
+}
+function scrollToPanel(target){
   const embedded=window.parent!==window&&document.documentElement.classList.contains('embed-mode');
   if(embedded)window.scrollTo({top:Math.max(0,window.scrollY+target.getBoundingClientRect().top-390),behavior:'instant'});
   else target.scrollIntoView({behavior:matchMedia('(prefers-reduced-motion:reduce)').matches?'instant':'smooth',block:'start'});
   if(embedded)requestAnimationFrame(()=>window.parent.postMessage({type:'being-satei:result',top:target.getBoundingClientRect().top},'https://www.beingfudousan.com'));
-  setTimeout(()=>panel.classList.remove('result-arrived'),1200);
 }
 form.addEventListener('submit',async event=>{
   event.preventDefault();$('#form-error').hidden=true;const state=stageState();
@@ -132,6 +135,16 @@ form.addEventListener('submit',async event=>{
   try{await calculate(readInput());}catch(error){cancelCalculation();showingResult=false;toggleBuilding();$('#form-error').textContent=error.message;$('#form-error').hidden=false;}
 });
 form.addEventListener('input',clearResult);form.addEventListener('change',()=>{clearResult();toggleBuilding();});
+const ageYearNote=document.createElement('p');ageYearNote.className='field-note';ageYearNote.id='age-year-note';ageYearNote.setAttribute('aria-live','polite');$('#age').setAttribute('aria-describedby','age-year-note');$('#age').closest('.field').append(ageYearNote);
+function updateAgeYear(){
+  const raw=$('#age').value,age=Number(raw);
+  if(raw===''||!Number.isInteger(age)||age<0||age>100){ageYearNote.textContent='';return;}
+  const year=Number(new Intl.DateTimeFormat('en',{year:'numeric',timeZone:'Asia/Tokyo'}).format(new Date()))-age;
+  const formatter=new Intl.DateTimeFormat('ja-JP-u-ca-japanese',{era:'long',year:'numeric',timeZone:'Asia/Tokyo'});
+  const eras=[...new Set([formatter.format(new Date(Date.UTC(year,0,1))),formatter.format(new Date(Date.UTC(year,11,31)))])];
+  ageYearNote.textContent=`建築年の目安：${year}年（${eras.join('／')}）ごろ`;
+}
+$('#age').addEventListener('input',updateAgeYear);
 $('#address').addEventListener('input',()=>{const found=resolveAddress($('#address').value,towns);$('#town').value=found?.name??'';$('#address-match').textContent=found?`「ひたちなか市${found.name}」として査定します。`:'';});
 function syncAreaUnit(field,convert=false){const unit=$(`#${field}-unit`),area=$(`#${field}-area`);if(convert)area.value=switchAreaUnit(area.value,unit.dataset.previous??'sqm',unit.value);unit.dataset.previous=unit.value;const factor=unit.value==='tsubo'?TSUBO:1;area.min=(field==='land'?30:20)/factor;area.max=(field==='land'?2000:500)/factor;area.placeholder=field==='land'?'土地面積を入力':'延床面積を入力';conversion(field);}
 for(const field of ['land','building']){$(`#${field}-area`).addEventListener('input',()=>conversion(field));$(`#${field}-unit`).addEventListener('change',()=>syncAreaUnit(field,true));syncAreaUnit(field);}

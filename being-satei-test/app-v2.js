@@ -131,6 +131,7 @@ form.addEventListener('submit',async event=>{
   event.preventDefault();$('#form-error').hidden=true;const state=stageState();
   if(!state.valid){updateNextStep();return;}
   if(wizardStage===1&&!state.business){goToStage(2);return;}
+  focusParentEmbed();
   try{await calculate(readInput());}catch(error){cancelCalculation();showingResult=false;toggleBuilding();$('#form-error').textContent=error.message;$('#form-error').hidden=false;}
 });
 form.addEventListener('input',clearResult);form.addEventListener('change',()=>{clearResult();toggleBuilding();});

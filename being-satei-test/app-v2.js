@@ -115,11 +115,13 @@ async function calculate(input){
   const completed=await new Promise(resolve=>{pendingResolve=resolve;pendingTimer=setTimeout(()=>{pendingTimer=null;pendingResolve=null;resolve(true);},4000);});
   if(!completed)return null;
   $('#result').removeAttribute('aria-busy');$('.submit').disabled=false;$('.submit').innerHTML=submitLabel;render(result);
-  focusResult(output.querySelector('.price-box')??$('#result'));return result;
+  focusResult();return result;
 }
 function focusResult(target=$('#result')){
   const panel=$('#result');panel.classList.remove('result-arrived');void panel.offsetWidth;panel.classList.add('result-arrived');
-  target.scrollIntoView({behavior:matchMedia('(prefers-reduced-motion:reduce)').matches?'instant':'smooth',block:'start'});
+  const embedded=window.parent!==window&&document.documentElement.classList.contains('embed-mode');
+  target.scrollIntoView({behavior:embedded||matchMedia('(prefers-reduced-motion:reduce)').matches?'instant':'smooth',block:'start'});
+  if(embedded)requestAnimationFrame(()=>window.parent.postMessage({type:'being-satei:result',top:target.getBoundingClientRect().top},'https://www.beingfudousan.com'));
   setTimeout(()=>panel.classList.remove('result-arrived'),1200);
 }
 form.addEventListener('submit',async event=>{

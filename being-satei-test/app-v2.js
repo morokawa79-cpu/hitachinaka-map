@@ -17,6 +17,10 @@ desktopLayout.addEventListener('change',updateResultVisibility);
 const submitLabel=$('.submit').innerHTML;
 function cancelCalculation(){if(pendingTimer!==null)clearTimeout(pendingTimer);pendingTimer=null;if(pendingResolve)pendingResolve(false);pendingResolve=null;$('#result').removeAttribute('aria-busy');$('.submit').innerHTML=submitLabel;updateNextStep();}
 const man=yen=>fmt.format(yen/10000);
+const track=(name,params)=>window.beingTrack?.(name,params);
+// 反響は電話が中心のため、電話を一番上・一番大きく表示する。
+const LINE_URL='https://lin.ee/hH9SPoe',FORM_URL='https://www.beingfudousan.com/satei/';
+const contactActions=(lead='')=>`<div class="result-actions">${lead}<a class="phone-action tel-primary" href="tel:0293544000"><strong>☎ 電話で相談する</strong><span class="tel-number">029-354-4000</span><span>9:00〜18:00（水曜・GW・お盆・年末年始を除く）<br>「かんたん査定を見た」とお伝えください</span></a><a class="form-action" href="${FORM_URL}" target="_blank" rel="noopener noreferrer">フォームで査定を依頼（無料）↗</a><a class="form-action line-action" href="${LINE_URL}" target="_blank" rel="noopener noreferrer">LINEで相談する ↗</a><p class="contact-reassurance">ご相談・査定は無料です。売却を決めていなくても大丈夫です。</p></div>`;
 const unitPrices=yenPerSqm=>`約${fmt.format(Math.round(yenPerSqm))}円／㎡ ・ 約${man(yenPerSqm*TSUBO)}万円／坪`;
 function estimateUnits(result){
   if(result.input.kind==='house')return '';
@@ -84,16 +88,16 @@ function publicHtml(result){
   return `<div class="reference"><h3>近隣の公示地価${points.length?`（${points.length}地点）`:''}</h3>${points.length?`<ol class="public-point-list">${points.map(p=>`<li><p><strong>${esc(p.label)} ／ ${p.year}年1月1日時点</strong><br>${esc(p.address)}</p><p class="public-point-price"><strong>${fmt.format(p.price)}円／㎡</strong> ・ 約${man(p.price*TSUBO)}万円／坪<br>入力面積での参考額：<strong>約${man(p.price*result.input.landArea)}万円</strong></p><p class="small">${esc(p.areaDivision||p.zoning)} ／ 町域の代表点から約${p.distance.toFixed(1)}km</p></li>`).join('')}</ol><p class="small">近い順に最大3地点。入力物件とは位置・土地条件が異なります。建物の価格は含みません。</p>`:'<p>近くに区域条件の合う公示地価が見つかりませんでした。公示地価による照合は行っていません。</p>'}</div>`;
 }
 function render(result){
-  if(result.status==='consultation'){output.innerHTML='<div class="insufficient"><p class="eyebrow">土地＋建物 ／ 事業用</p><h3>事業用物件は、<br>個別にご相談ください。</h3><p>店舗・事務所・工場・倉庫などは、用途・建物の仕様・収益性によって評価が大きく異なるため、かんたん査定を行っていません。</p><p>所在地や現在のご利用状況をお伺いして、売却のご相談を承ります。</p><a class="primary" href="https://lin.ee/hH9SPoe" target="_blank" rel="noopener noreferrer">LINEで事業用物件を相談する</a><a class="form-action" href="https://www.beingfudousan.com/satei/" target="_blank" rel="noopener noreferrer">お問い合わせフォームで相談する ↗</a><p class="business-phone"><a class="phone" href="tel:0293544000">☎ 029-354-4000</a></p></div>';return;}
+  if(result.status==='consultation'){output.innerHTML='<div class="insufficient"><p class="eyebrow">土地＋建物 ／ 事業用</p><h3>事業用物件は、<br>個別にご相談ください。</h3><p>店舗・事務所・工場・倉庫などは、用途・建物の仕様・収益性によって評価が大きく異なるため、かんたん査定を行っていません。</p><p>所在地や現在のご利用状況をお伺いして、売却のご相談を承ります。</p>'+contactActions()+'</div>';return;}
   const i=result.input;
   const summary=`ひたちなか市${esc(i.town)} ／ 区域：${ZONE_LABELS[i.zone]}<br>土地 ${fmt.format(i.landArea)}㎡（${fmt.format(i.landArea/TSUBO)}坪）${i.kind==='house'?`<br>建物 ${fmt.format(i.buildingArea)}㎡（${fmt.format(i.buildingArea/TSUBO)}坪）・築${i.age}年`:''}`;
-  if(result.status!=='ok'){output.innerHTML=`<div class="insufficient"><p class="result-summary">${summary}</p><h3>詳しい確認が必要な物件です</h3><p>${esc(result.reason)}</p><a class="primary" href="https://lin.ee/hH9SPoe" target="_blank" rel="noopener noreferrer">ビーイングに相談する</a></div>${publicHtml(result)}`;return;}
+  if(result.status!=='ok'){output.innerHTML=`<div class="insufficient"><p class="result-summary">${summary}</p><h3>詳しい確認が必要な物件です</h3><p>${esc(result.reason)}</p>${contactActions()}</div>${publicHtml(result)}`;return;}
   const b=result.building,count=result.cases.length;
   const amounts=displayAmounts(result),displayedLand=amounts.land,displayedBuilding=amounts.building,displayedTotal=amounts.total;
   output.innerHTML=`<p class="result-summary">${summary}</p>
     <div class="price-box"><p class="price-label">${i.kind==='house'?'土地＋建物の':'土地の'}売却価格の目安</p><div class="price-value"><span>${man(amounts.low)}<small>万円</small></span><small>〜</small><span>${man(amounts.high)}<small>万円</small></span></div><p class="median">${i.kind==='house'?'土地と建物を合計した基準価格':'査定額'}：<strong>${man(displayedTotal)}万円</strong></p>${estimateUnits(result)}<p class="price-disclaimer">概算の参考値です。売却価格を保証するものではありません。</p></div>
     ${propertyWarnings(i.zone,i.town)}
-    <div class="result-actions"><a class="primary" href="https://lin.ee/hH9SPoe" target="_blank" rel="noopener noreferrer">売却についてLINEで相談する<span>売却前のご相談も無料</span></a><a class="phone-action" href="tel:0293544000">電話で相談<span>029-354-4000</span></a><a class="form-action" href="https://www.beingfudousan.com/satei/" target="_blank" rel="noopener noreferrer">お問い合わせフォームで相談する ↗</a></div>
+    ${contactActions('<p class="contact-lead">実際の価格は、道路・敷地・建物の状態で変わります。<br>詳しい査定はビーイングへ。</p>')}
     ${i.kind==='house'?`<div class="breakdown"><div><span>土地の査定額</span><strong>${man(displayedLand)}<small>万円</small></strong><p class="breakdown-units">${unitPrices(displayedLand/i.landArea)}<small>土地面積で換算</small></p></div><span class="plus">＋</span><div><span>建物の査定額</span><strong>${man(displayedBuilding)}<small>万円</small></strong><p class="breakdown-units">${unitPrices(displayedBuilding/i.buildingArea)}<small>延床面積で換算・減価後</small></p></div></div>`:''}
     <div class="calculation-note"><p><strong>土地</strong>　${result.basis==='comparables'?`${count}件の土地事例の単価${count===1?'':'中央値'}`:'公示地価の単価'} ${unitPrices(result.landUnit)}<br>㎡単価 × ${fmt.format(i.landArea)}㎡で計算</p>${i.kind==='house'?`<p><strong>建物</strong>　${esc(b.label)}・再建築費用の参考単価（減価前）<br>${unitPrices(b.unitCost)}<br>㎡単価 × ${fmt.format(i.buildingArea)}㎡ × 残価率 ${fmt.format(b.remainingRate*100)}％</p><p class="small">国税庁・令和8年分の工事費用表を参考。実際の建築見積とは異なります。</p><p class="small">築年数で減価する前の参考額：${man(b.replacement)}万円。築${i.age}年・計算上の減価年数${b.usefulLife}年で概算しています。</p><p class="small">建物は参考単価と築年数から概算。クリーニング済みで、すぐ住める状態を前提としています。</p>${b.assumption?`<p class="small">${esc(b.assumption)}</p>`:''}`:''}</div>
     ${i.kind==='house'&&b.remainingRate===0?'<p class="result-warning">標準の減価計算では建物評価が０円となります。実際の建物の価値がないという意味ではありません。修繕・リフォーム・利用状況を確認すると評価が変わる場合があります。</p>':''}
@@ -108,13 +112,14 @@ function render(result){
 async function calculate(input){
   if(!market)throw Error('データを読み込めませんでした。ページを再読み込みしてください。');
   const result=assess(input,market,towns,structures);cancelCalculation();showingResult=true;updateResultVisibility();updateWizardProgress();
-  if(result.status==='consultation'){render(result);focusResult();return result;}
+  if(result.status==='consultation'){render(result);track('kantan_result',{property_kind:'house_business',result_status:'consultation'});focusResult();return result;}
   output.innerHTML='<div class="loading-result" role="status"><span class="loading-spinner" aria-hidden="true"></span><h3>査定結果を準備しています</h3><p>もう少しで価格の目安を表示します。</p></div>';
   $('#result').setAttribute('aria-busy','true');$('.submit').disabled=true;$('.submit').textContent='査定結果を準備しています…';
   focusResult();
   const completed=await new Promise(resolve=>{pendingResolve=resolve;pendingTimer=setTimeout(()=>{pendingTimer=null;pendingResolve=null;resolve(true);},4000);});
   if(!completed)return null;
   $('#result').removeAttribute('aria-busy');$('.submit').disabled=false;$('.submit').innerHTML=submitLabel;render(result);
+  track('kantan_result',{property_kind:input.kind,result_status:result.status});
   focusResult();return result;
 }
 function focusResult(target=$('#result')){
@@ -131,7 +136,7 @@ function scrollToPanel(target){
 form.addEventListener('submit',async event=>{
   event.preventDefault();$('#form-error').hidden=true;const state=stageState();
   if(!state.valid){updateNextStep();return;}
-  if(wizardStage===1&&!state.business){goToStage(2);return;}
+  if(wizardStage===1&&!state.business){track('kantan_start',{property_kind:kind()});goToStage(2);return;}
   try{await calculate(readInput());}catch(error){cancelCalculation();showingResult=false;toggleBuilding();$('#form-error').textContent=error.message;$('#form-error').hidden=false;}
 });
 form.addEventListener('input',clearResult);form.addEventListener('change',()=>{clearResult();toggleBuilding();});

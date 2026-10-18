@@ -1,0 +1,61 @@
+<div id="being-town-nakane" style="max-width:820px;margin:auto;color:#263238;font-size:16px;line-height:1.9;">
+<style>#being-town-nakane *{box-sizing:border-box}#being-town-nakane h2{font-size:24px;line-height:1.5;color:#263238;margin:36px 0 14px;padding:0 0 8px;border:0;border-bottom:2px solid #00acab;background:none;font-weight:700}#being-town-nakane h3{font-size:18px;color:#007b7a;margin:20px 0 6px;padding:0;border:0;background:none;font-weight:700}#being-town-nakane p{margin:0 0 14px}#being-town-nakane table{width:100%;border-collapse:collapse;margin:0 0 10px;font-size:15px}#being-town-nakane th,#being-town-nakane td{border:1px solid #dce7e7;padding:8px 10px;text-align:center}#being-town-nakane th{background:#f1f9f9;font-weight:700}#being-town-nakane .bt-key{padding:22px;background:#f1f9f9;border-radius:12px;margin:0 0 18px}#being-town-nakane .bt-key strong{font-size:30px;color:#007b7a}#being-town-nakane .bt-src{font-size:12px;color:#56676a}#being-town-nakane .bt-cta{padding:26px 20px;background:#263238;color:#fff;border-radius:12px;margin-top:30px}#being-town-nakane .bt-cta a{display:block;text-align:center;border-radius:6px;padding:12px;margin-top:10px;font-weight:700;text-decoration:none}#being-town-nakane .bt-tel{background:#00acab}#being-town-nakane .bt-tel,#being-town-nakane .bt-tel *{color:#fff !important}#being-town-nakane .bt-tel strong{display:block;font-size:28px}#being-town-nakane .bt-sub{background:#fff;color:#007b7a !important}#being-town-nakane .bt-top{display:flex;flex-wrap:wrap;align-items:center;gap:8px 14px;padding:12px 16px;margin:0 0 22px;border:2px solid #00acab;border-radius:10px;font-size:15px}#being-town-nakane .bt-top span{font-weight:700;flex:1 1 220px}#being-town-nakane .bt-top a{text-decoration:none;font-weight:700;display:inline-flex;align-items:center;justify-content:center;min-height:42px;padding:0 14px;border:2px solid #00acab;border-radius:6px;line-height:1.3}#being-town-nakane .bt-top-tel{background:#00acab;color:#fff !important;font-size:17px}#being-town-nakane .bt-top-link{color:#007b7a !important;background:#fff;font-size:15px}#being-town-nakane .bt-mid{padding:20px;margin:18px 0 6px;background:#f1f9f9;border-radius:12px}#being-town-nakane .bt-mid p{margin:0 0 10px;font-weight:700}#being-town-nakane .bt-mid div{display:grid;grid-template-columns:1fr 1fr;gap:10px}#being-town-nakane .bt-mid a{display:block;text-align:center;border-radius:6px;padding:12px 8px;font-weight:700;text-decoration:none;line-height:1.4}#being-town-nakane .bt-mid-tel{background:#00acab;color:#fff !important}#being-town-nakane .bt-mid-form{background:#fff;border:2px solid #00acab;color:#007b7a !important}@media(max-width:600px){#being-town-nakane .bt-mid div{grid-template-columns:1fr}}</style>
+
+<p>ひたちなか市中根（大字中根）で、土地及び建物の売却を考えている方へ。国土交通省が公開している取引データをもとに、中根の土地がいくらくらいで取引されているかをまとめました。ビーイングの本社も中根にあり、地域の事情を踏まえてご説明します。</p>
+
+<div class="bt-key">
+<p style="margin:0;">中根の土地の取引の中心（坪あたり）</p>
+<p style="margin:0;"><strong>約11万円</strong>／坪（約34,000円／㎡）</p>
+<p style="margin:6px 0 0;font-size:14px;">2023年1月〜2026年3月の市街化区域の土地取引43件の中央値。取引の中心となる面積は約350㎡（約106坪）です。</p>
+</div>
+<div class="bt-top"><span>中根の土地・建物を無料で査定します</span><a class="bt-top-tel" href="tel:0293544000">☎ 029-354-4000</a><a class="bt-top-link" href="https://www.beingfudousan.com/blog/entry-855000/">連絡不要のかんたん査定 ›</a></div>
+
+<h2>価格の幅：同じ中根でも大きく違います</h2>
+<p>取引を安い順に並べたとき、真ん中の半分は<strong>坪あたり約4.0万円〜15.3万円</strong>でした。同じ中根の中でも、価格は大きく分かれます。</p>
+<table>
+<tr><th>取引年</th><th>件数</th><th>㎡あたり（中央値）</th><th>坪あたり（中央値）</th></tr>
+<tr><td>2023年</td><td>12件</td><td>約30,400円</td><td>約10.1万円</td></tr>
+<tr><td>2024年</td><td>14件</td><td>約43,200円</td><td>約14.3万円</td></tr>
+<tr><td>2025年</td><td>16件</td><td>約25,900円</td><td>約8.6万円</td></tr>
+</table>
+<p class="bt-src">年ごとの件数が少ないため、年による上下は土地の条件の違いによる面が大きく、相場の上昇・下落をそのまま表すものではありません。2026年は1件のため省略しています。</p>
+<p>参考として、中根にある公示地価の地点（ひたちなか-20、第一種低層住居専用地域）は、2026年1月1日時点で<strong>33,900円／㎡（約11.2万円／坪）</strong>です。</p>
+
+<h2>中根は、プロでも相場の判断が難しい地域です</h2>
+<p>上の数字は、あくまで過去の取引をまとめた目安です。中根の土地は、次のような事情が重なるため、<strong>不動産会社のプロでも、データだけでは価格を判断しにくい地域</strong>です。</p>
+
+<h3>区画整理の区域が含まれている</h3>
+<p>中根の一部は、ひたちなか市が施行中の土地区画整理事業（<strong>東部第1地区・六ッ野地区</strong>）の区域に含まれています。区画整理の区域内の土地には、次のような特徴があります。</p>
+<p>・登記上の土地（従前地）とは別に、将来使う土地（仮換地）の場所と面積が決められていることがある<br>・工事の進み具合（仮換地が使える時期）によって、売り方や価格が大きく変わる<br>・事業の最後に、清算金の支払い・受け取りが生じることがあり、売買のときにどちらが負担するかを決めておく必要がある<br>・区域内で建物を建てるなどの場合、市の許可が必要になることがある</p>
+<p>同じ「中根」でも、区画整理の区域の内か外か、区域内なら進行状況がどの段階かによって、価格の考え方がまったく変わります。</p>
+
+<h3>市街化区域と市街化調整区域が混在している</h3>
+<p>中根には、建物が建てられる市街化区域と、原則として建物が建てられない市街化調整区域の両方があります。どちらに当たるかで、価格は大きく違います。</p>
+
+<h3>土地の広さがさまざま</h3>
+<p>取引の4件に1件以上が500㎡を超える広い土地です。1㎡あたりの単価が低くなりやすい広い土地と、住宅用に整った土地が、同じ町の中に混ざっています。</p>
+<p>そのため、<strong>「中根の相場は坪○万円」という平均値だけで売り出すと、高すぎて売れ残ったり、安く手放してしまったりするおそれがあります。</strong>正確な価格を知るには、現地の確認と、市役所での区画整理・用途地域の調査が欠かせません。</p>
+<div class="bt-mid"><p>あなたの土地の価格を、区画整理や区域の確認を含めて無料でお調べします。</p><div><a class="bt-mid-tel" href="tel:0293544000">☎ 電話で相談<br>029-354-4000</a><a class="bt-mid-form" href="https://www.beingfudousan.com/satei/">フォームで<br>無料査定を依頼</a></div></div>
+
+<h2>その他、価格が分かれる理由</h2>
+<h3>1. 前面道路の幅と接し方</h3>
+<p>道路の幅が狭い、道路に接する長さが短いといった土地は、建てられる建物が限られ、価格が下がりやすくなります。</p>
+<h3>2. 用途地域</h3>
+<p>第一種低層住居専用地域、第一種住居地域など、用途地域によって建てられる建物の種類や高さが変わります。</p>
+<h3>3. 土地の状態</h3>
+<p>古家や残置物、樹木、高低差、地目（畑など）によっても、売り方と価格が変わります。</p>
+
+<h2>中根の土地を売る前に確認したいこと</h2>
+<p>・区画整理の区域に入っているか。入っている場合は、使用収益開始が決定しているか、仮換地の場所・面積<br>・用途地域と、市街化区域・市街化調整区域のどちらか<br>・登記簿の面積と地目、境界がはっきりしているか<br>・前面道路の幅と、道路が公道か私道か<br>・相続した土地の場合、相続登記が済んでいるか</p>
+<p>ご自身で全部を調べる必要はありません。ビーイングは中根に本社があり、市役所での区画整理・用途地域の調査も含めて確認します。</p>
+
+<div class="bt-cta">
+<p style="margin:0 0 4px;font-size:20px;font-weight:700;">中根の土地は、データの平均ではなく個別の査定を</p>
+<p style="margin:0;font-size:14px;color:#eceff1;">区画整理や区域の確認を含めて、あなたの土地の価格を無料でお調べします。まず目安だけ知りたい方は、名前も電話番号も不要の「かんたん査定」もご利用ください。</p>
+<a class="bt-tel" href="tel:0293544000"><span style="font-size:14px;">お電話で相談する（無料）</span><strong>029-354-4000</strong><span style="font-size:12px;">9:00〜18:00（水曜・GW・お盆・年末年始を除く）</span></a>
+<a class="bt-sub" href="https://www.beingfudousan.com/blog/entry-855000/">連絡不要のかんたん査定で目安を見る ›</a>
+<a class="bt-sub" href="https://www.beingfudousan.com/satei/">フォームで無料査定を依頼する ›</a>
+</div>
+
+<p class="bt-src" style="margin-top:18px;">出典：国土交通省「不動産情報ライブラリ」の不動産取引価格情報（2026年9月17日取得）を、ビーイングが集計しました（大字中根・市街化区域の土地のみ・2023年第1四半期〜2026年第1四半期）。地価公示は国土交通省「令和8年地価公示」。区画整理事業の地区は、ひたちなか市「施行中の土地区画整理事業」（2026年9月17日確認）。区域の範囲や事業の進み具合は、市にご確認ください。個別の土地の価格を示すものではありません。</p>
+</div>

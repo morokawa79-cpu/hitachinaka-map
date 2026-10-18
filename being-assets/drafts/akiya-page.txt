@@ -1,0 +1,125 @@
+<div id="being-akiya-service" style="max-width:820px;margin:auto;color:#263238;font-size:16px;line-height:1.9;">
+<style>#being-akiya-service *{box-sizing:border-box}#being-akiya-service h2{font-size:26px;line-height:1.5;color:#263238;margin:0 0 16px;padding:0;border:0;background:none;font-weight:700}#being-akiya-service h3{font-size:18px;line-height:1.6;color:#007b7a;margin:0 0 6px;padding:0;border:0;background:none;font-weight:700}#being-akiya-service p{margin:0 0 14px}#being-akiya-service a{text-decoration:none}#being-akiya-service .ba-sec{padding:40px 24px}#being-akiya-service .ba-pale{background:#f1f9f9;border-radius:12px}#being-akiya-service .ba-en{display:block;color:#00acab;font-size:13px;font-weight:700;letter-spacing:.12em;margin-bottom:6px}#being-akiya-service .ba-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px}#being-akiya-service .ba-card{padding:20px;border:1px solid #dce7e7;border-radius:10px;background:#fff}#being-akiya-service .ba-card p{margin:0;font-size:15px}#being-akiya-service .ba-price{font-size:15px;margin:18px 0 4px}#being-akiya-service .ba-price strong{font-size:40px;color:#007b7a;letter-spacing:.02em}#being-akiya-service .ba-price span{font-size:18px;font-weight:700;color:#007b7a}#being-akiya-service .ba-contact{margin:22px 0 0;max-width:520px}#being-akiya-service .ba-tel{display:block;background:#00acab;color:#fff;border-radius:6px;padding:14px 16px;text-align:center;line-height:1.5}#being-akiya-service .ba-tel span{display:block;font-size:15px;font-weight:700}#being-akiya-service .ba-tel strong{display:block;font-size:32px;letter-spacing:.04em}#being-akiya-service .ba-tel small{display:block;font-size:12px}#being-akiya-service .ba-sub{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:10px}#being-akiya-service .ba-line,#being-akiya-service .ba-form{display:block;text-align:center;border-radius:6px;padding:12px 8px;font-weight:700;font-size:15px;line-height:1.5}#being-akiya-service .ba-line{background:#06c755;color:#fff}#being-akiya-service .ba-form{border:2px solid #00acab;color:#007b7a;background:#fff}#being-akiya-service .ba-note{font-size:13px;color:#56676a;margin:8px 0 0}#being-akiya-service .ba-report{display:grid;grid-template-columns:1fr 340px;gap:28px;align-items:start}#being-akiya-service .ba-report img{width:100%;height:auto;border-radius:10px;border:1px solid #dce7e7;display:block}#being-akiya-service .ba-checks{list-style:none;padding:0;margin:0 0 14px}#being-akiya-service .ba-checks li{padding:8px 0 8px 30px;position:relative;border-bottom:1px dashed #dce7e7}#being-akiya-service .ba-checks li::before{content:"✓";position:absolute;left:4px;top:7px;color:#00acab;font-weight:700}#being-akiya-service .ba-risk{padding:20px;border-left:4px solid #00acab;background:#fff;border-radius:0 10px 10px 0;margin-bottom:14px}#being-akiya-service .ba-risk p{margin:0;font-size:15px}#being-akiya-service .ba-src{font-size:12px;color:#56676a}#being-akiya-service .ba-plan{padding:24px;border:2px solid #00acab;border-radius:10px;background:#fff}#being-akiya-service .ba-extra{padding:20px;margin-top:14px;background:#f7f8f5;border-radius:10px}#being-akiya-service .ba-links a{display:block;padding:12px 16px;margin-bottom:8px;border:1px solid #dce7e7;border-radius:8px;color:#007b7a;font-weight:700;background:#fff}#being-akiya-service details{padding:16px 0;border-bottom:1px solid #dce7e7}#being-akiya-service summary{font-weight:700;cursor:pointer;color:#263238}#being-akiya-service details p{margin:10px 0 0;font-size:15px}#being-akiya-service .ba-end{background:#263238;color:#fff;border-radius:12px;text-align:center}#being-akiya-service .ba-end h2{color:#fff}#being-akiya-service .ba-end .ba-contact{margin:18px auto 0}#being-akiya-service .ba-end .ba-note{color:#cfd8dc}@media(max-width:700px){#being-akiya-service .ba-sec{padding:30px 16px}#being-akiya-service h2{font-size:22px}#being-akiya-service .ba-report{grid-template-columns:1fr}#being-akiya-service .ba-report img{max-width:360px;margin:0 auto}#being-akiya-service .ba-tel strong{font-size:28px}}</style>
+<p style="font-size:12px;color:#6c7773;text-align:right;">上の写真は住宅のイメージです（生成画像）。</p>
+
+<div class="ba-sec ba-pale">
+<span class="ba-en">ひたちなか市の空き家管理</span>
+<h2 style="font-size:30px;">離れていても、ご実家の様子が<br>LINEで届きます。</h2>
+<p>なかなか帰れないご実家、相続してこれからを考えている家。<br>ビーイングのスタッフが月1回うかがい、換気・通水と建物の確認を行って、<strong>写真付きでLINEにご報告</strong>します。</p>
+<p class="ba-price">基本プラン（月1回訪問を含む）<br><strong>7,700</strong><span>円（税込）～／月</span></p>
+<p style="font-size:14px;">1回の作業は約1時間。ご相談・お見積りは無料です。</p>
+<div class="ba-contact">
+<a class="ba-tel" href="tel:0293544000"><span>お電話で相談する（無料）</span><strong>029-354-4000</strong><small>9:00〜18:00（水曜・GW・お盆・年末年始を除く）</small></a>
+<div class="ba-sub"><a class="ba-line" href="https://lin.ee/hH9SPoe" target="_blank" rel="noopener">LINEで相談する</a><a class="ba-form" href="https://www.beingfudousan.com/contact/">フォームで相談する</a></div>
+<p class="ba-note">フォームでは「空き家管理のご相談」を選んでください。売却・賃貸が未定でも大丈夫です。</p>
+</div>
+</div>
+
+<div class="ba-sec">
+<span class="ba-en">REPORT</span>
+<h2>訪問のたびに、LINEで写真報告</h2>
+<div class="ba-report">
+<div>
+<p>報告は、ふだんお使いのLINEに届きます。スマホでいつでも、ご実家の様子を確認できます。</p>
+<ul class="ba-checks">
+<li><strong>ご家族とのLINEグループでも受け取れます。</strong>ご兄弟など、離れて暮らすご家族みんなで確認できます。</li>
+<li>「総合状況」「外観」「室内」「郵便物」「敷地」の項目ごとに、状態をお知らせします。</li>
+<li>外観・庭・各部屋・水回りなどの写真を添えてお送りします。</li>
+<li>気になる点があれば、その場で写真を見ながらご相談いただけます。</li>
+</ul>
+<p style="font-size:14px;color:#56676a;">右は実際の報告をもとにした見本です。お名前や建物が特定できる部分は伏せています。</p>
+</div>
+<img src="https://morokawa79-cpu.github.io/hitachinaka-map/being-assets/akiya-line-report-sample.jpg" width="750" height="1515" loading="lazy" alt="LINEで届く空き家管理の報告の見本。総合状況・外観・室内・郵便物・敷地の項目と、外観や室内の写真が並ぶ">
+</div>
+</div>
+
+<div class="ba-sec ba-pale">
+<h2>こんなお悩みはありませんか？</h2>
+<div class="ba-grid">
+<div class="ba-card"><h3>遠くて、見に行けない</h3><p>仕事や距離の都合で、定期的に帰省するのが難しい。</p></div>
+<div class="ba-card"><h3>家の傷みが心配</h3><p>閉め切った室内の湿気やカビ、雨漏り、庭の雑草、たまった郵便物が気になる。</p></div>
+<div class="ba-card"><h3>近所に迷惑をかけたくない</h3><p>空き家のままにして、防犯や見た目で周りに心配をかけていないか不安。</p></div>
+<div class="ba-card"><h3>今後のことは、これから</h3><p>残すか、売るか、貸すか。家族で話し合う時間がほしい。</p></div>
+</div>
+</div>
+
+<div class="ba-sec">
+<span class="ba-en">SERVICE</span>
+<h2>月1回の訪問で行うこと</h2>
+<div class="ba-grid">
+<div class="ba-card"><h3>換気・通水</h3><p>窓を開けて40〜60分ほど換気し、水道を流して室内の様子を確認します。</p></div>
+<div class="ba-card"><h3>雨漏り・戸締まりの確認</h3><p>室内に雨漏りの跡がないか、戸締まりに問題がないかを確認します。</p></div>
+<div class="ba-card"><h3>建物の外観確認</h3><p>外壁や屋根まわりを目で見て確認し、建物の4方向を写真に記録します。</p></div>
+<div class="ba-card"><h3>庭木・雑草の確認</h3><p>庭木や雑草の状態を確認します。草刈り・剪定が必要な場合はご相談します（別途料金）。</p></div>
+<div class="ba-card"><h3>郵便物の確認</h3><p>ポストにたまった郵便物を確認し、報告でお知らせします。転送は別途ご相談ください。</p></div>
+<div class="ba-card"><h3>LINEで写真報告</h3><p>訪問後、項目ごとの状態と写真をLINEでお送りします。</p></div>
+</div>
+</div>
+
+<div class="ba-sec ba-pale">
+<span class="ba-en">RISK</span>
+<h2>空き家をそのままにしておくと</h2>
+<div class="ba-risk"><h3>建物が早く傷みやすくなります</h3><p>人が住まず閉め切った家は、湿気がこもりやすく、カビや傷みが進みやすくなります。定期的な換気・通水と、早めの異常の発見が大切です。</p></div>
+<div class="ba-risk"><h3>「管理不全空家」に指定されることがあります</h3><p>2023年12月に改正空家法が施行されました。管理が行き届かない空き家は、市町村から「管理不全空家」として指導・勧告を受けることがあります。勧告を受けると、土地の固定資産税を軽くする特例（住宅用地特例）が受けられなくなります。</p></div>
+<div class="ba-risk"><h3>相続登記は義務になりました</h3><p>2024年4月から、相続で不動産を取得したことを知った日から3年以内に、相続登記をすることが義務になりました。正当な理由なく行わないと、10万円以下の過料の対象になります。</p></div>
+<p class="ba-src">出典：国土交通省「空家等対策の推進に関する特別措置法」、法務省「相続登記の申請義務化」。個別のケースは、市町村・法務局・専門家へご確認ください。</p>
+<p style="margin-top:14px;"><a href="https://www.beingfudousan.com/blog/entry-636033/" style="color:#007b7a;font-weight:700;">相続した不動産の税金・控除について詳しく見る ›</a></p>
+</div>
+
+<div class="ba-sec">
+<span class="ba-en">PLAN &amp; AREA</span>
+<h2>料金と、ご利用いただける物件</h2>
+<div class="ba-plan">
+<h3>基本プラン</h3>
+<p class="ba-price" style="margin-top:0;"><strong>7,700</strong><span>円（税込）～／月</span></p>
+<p>月1回の訪問を含みます。1回の作業は約1時間です。物件の状態やご希望をうかがい、管理内容と料金をご案内します。</p>
+<p style="margin:0;"><strong>対象：ひたちなか市内の一戸建て</strong><br>敷地内に車を1台以上とめられる物件。ひたちなか市の周辺の物件もご相談ください。</p>
+</div>
+<div class="ba-extra">
+<h3>別途料金でご相談いただけること</h3>
+<p style="margin:0;">草刈り・植木の手入れ／屋根・外壁の補修／郵便物の転送／看板の設置など。内容と費用は、スタッフが個別にご案内します。</p>
+</div>
+</div>
+
+<div class="ba-sec ba-pale">
+<span class="ba-en">NEXT STEP</span>
+<h2>管理しながら、これからを一緒に考えます</h2>
+<p>介護や相続をきっかけに、離れたご実家をどう守るか。私たち自身の経験から、同じ悩みを持つ方の力になりたいと考えています。</p>
+<p>ビーイングには、一級建築士・1級建築施工管理技士の資格を持つスタッフが在籍しています。住まいの状態だけでなく、将来の売却・賃貸・リフォームまでご相談いただけます。</p>
+<p><strong>まずは管理から。今すぐ家の将来を決める必要はありません。</strong></p>
+<div class="ba-links">
+<a href="https://www.beingfudousan.com/blog/entry-855000/">売ったらいくら？ 連絡不要のかんたん査定 ›</a>
+<a href="https://www.beingfudousan.com/blog/entry-855341/">売却したときの手残り・諸費用をかんたん確認 ›</a>
+</div>
+</div>
+
+<div class="ba-sec">
+<span class="ba-en">FLOW</span>
+<h2>ご相談から管理開始まで</h2>
+<div class="ba-grid">
+<div class="ba-card"><h3>1. まずはご相談</h3><p>電話・LINE・フォームで、空き家の場所と気になることをお知らせください。</p></div>
+<div class="ba-card"><h3>2. 状況をうかがい、ご提案</h3><p>建物の状態やご希望を確認し、管理内容・料金・契約条件をご説明します。</p></div>
+<div class="ba-card"><h3>3. 管理開始・LINEでご報告</h3><p>ご納得いただいたうえで開始。訪問のたびに写真付きでご報告します。</p></div>
+</div>
+</div>
+
+<div class="ba-sec ba-pale">
+<h2>よくあるご質問</h2>
+<details open><summary>報告はどのように届きますか？</summary><p>訪問のたびに、項目ごとの状態と写真をLINEでお送りします。ご家族とのLINEグループでも受け取れます。</p></details>
+<details open><summary>売却するか決まっていなくても頼めますか？</summary><p>はい。残すか、売るか、貸すかが未定でも、まずは管理からご相談ください。</p></details>
+<details open><summary>月額7,700円には訪問が含まれますか？</summary><p>はい。月1回の訪問を含む月額料金（税込）です。7,700円からのご案内となり、物件の状態やご希望に応じてご提案します。</p></details>
+<details open><summary>草刈りや修理もお願いできますか？</summary><p>別途料金でご相談いただけます。必要な作業とご希望をうかがい、内容と費用をご案内します。</p></details>
+<details open><summary>契約の条件はどこで確認できますか？</summary><p>初期費用・契約期間・解約などの条件は、ご相談時にスタッフからご説明します。内容にご納得いただいてから進めます。</p></details>
+</div>
+
+<div class="ba-sec ba-end" style="margin-top:24px;">
+<h2>「少し気になっている」から、<br>ご相談ください。</h2>
+<p style="color:#eceff1;">ご相談は無料です。空き家の場所と、お困りごとをお聞かせください。</p>
+<div class="ba-contact">
+<a class="ba-tel" href="tel:0293544000"><span>お電話で相談する（無料）</span><strong>029-354-4000</strong><small>9:00〜18:00（水曜・GW・お盆・年末年始を除く）</small></a>
+<div class="ba-sub"><a class="ba-line" href="https://lin.ee/hH9SPoe" target="_blank" rel="noopener">LINEで相談する</a><a class="ba-form" href="https://www.beingfudousan.com/contact/">フォームで相談する</a></div>
+<p class="ba-note">フォームでは「空き家管理のご相談」を選んでください。</p>
+</div>
+<p style="font-size:14px;margin:18px 0 0;color:#cfd8dc;">有限会社ビーイング（ひたちなか市大字中根888-1）</p>
+</div>
+</div>

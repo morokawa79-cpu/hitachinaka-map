@@ -1,0 +1,13 @@
+<div id="being-cost-cta" style="max-width:820px;margin:32px auto 0;color:#263238;font-size:16px;line-height:1.9;">
+<style>#being-cost-cta *{box-sizing:border-box}#being-cost-cta h2{font-size:24px;line-height:1.5;color:#263238;margin:0 0 14px;padding:0;border:0;background:none;font-weight:700}#being-cost-cta p{margin:0 0 14px}#being-cost-cta a{text-decoration:none}#being-cost-cta .bc-box{padding:32px 24px;background:#f1f9f9;border-radius:12px}#being-cost-cta .bc-tel{display:block;max-width:520px;background:#00acab;border-radius:6px;padding:14px 16px;text-align:center;line-height:1.5}#being-cost-cta .bc-tel,#being-cost-cta .bc-tel *{color:#fff !important}#being-cost-cta .bc-tel span{display:block;font-size:15px;font-weight:700}#being-cost-cta .bc-tel strong{display:block;font-size:32px;letter-spacing:.04em}#being-cost-cta .bc-tel small{display:block;font-size:12px}#being-cost-cta .bc-sub{display:grid;grid-template-columns:1fr 1fr;gap:10px;max-width:520px;margin-top:10px}#being-cost-cta .bc-sub a{display:block;text-align:center;border-radius:6px;padding:12px 8px;font-weight:700;font-size:15px;line-height:1.5}#being-cost-cta .bc-form{border:2px solid #00acab;color:#007b7a;background:#fff}#being-cost-cta .bc-line{background:#06c755;color:#fff}#being-cost-cta .bc-links a{display:block;padding:12px 16px;margin-top:8px;border:1px solid #dce7e7;border-radius:8px;color:#007b7a;font-weight:700;background:#fff}@media(max-width:700px){#being-cost-cta .bc-box{padding:26px 16px}#being-cost-cta h2{font-size:21px}#being-cost-cta .bc-tel strong{font-size:28px}}</style>
+<div class="bc-box">
+<h2>手残りの金額を、もっと正確に知りたい方へ</h2>
+<p>売却にかかる税金や費用は、売却価格のほか、購入したときの価格（取得費）、所有期間、相続かどうかなどで変わります。ひたちなか市の不動産売却は、ビーイングが無料で一緒に計算・ご説明します。売るかどうか決まっていなくても大丈夫です。</p>
+<a class="bc-tel" href="tel:0293544000"><span>お電話で相談する（無料）</span><strong>029-354-4000</strong><small>9:00〜18:00（水曜・GW・お盆・年末年始を除く）</small></a>
+<div class="bc-sub"><a class="bc-form" href="https://www.beingfudousan.com/satei/">フォームで査定依頼</a><a class="bc-line" href="https://lin.ee/hH9SPoe" target="_blank" rel="noopener">LINEで相談</a></div>
+<div class="bc-links">
+<a href="https://www.beingfudousan.com/blog/entry-855000/">まずは価格の目安を知りたい方：連絡不要のかんたん査定 ›</a>
+<a href="https://www.beingfudousan.com/blog/entry-635975/">すぐに売らない方：ひたちなか市の空き家管理（月額7,700円〜） ›</a>
+</div>
+</div>
+</div>

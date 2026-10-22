@@ -1,0 +1,53 @@
+<div id="being-pillar-kukaku" style="max-width:820px;margin:auto;color:#263238;font-size:16px;line-height:1.9;">
+<style>#being-pillar-kukaku *{box-sizing:border-box}#being-pillar-kukaku h2{font-size:24px;line-height:1.5;color:#263238;margin:36px 0 14px;padding:0 0 8px;border:0;border-bottom:2px solid #00acab;background:none;font-weight:700}#being-pillar-kukaku h3{font-size:18px;color:#007b7a;margin:20px 0 6px;padding:0;border:0;background:none;font-weight:700}#being-pillar-kukaku p{margin:0 0 14px}#being-pillar-kukaku table{width:100%;border-collapse:collapse;margin:0 0 10px;font-size:15px}#being-pillar-kukaku th,#being-pillar-kukaku td{border:1px solid #dce7e7;padding:8px 10px;text-align:left}#being-pillar-kukaku th{background:#f1f9f9;font-weight:700}#being-pillar-kukaku .bt-src{font-size:12px;color:#56676a}#being-pillar-kukaku .bt-top{display:flex;flex-wrap:wrap;align-items:center;gap:8px 14px;padding:12px 16px;margin:0 0 22px;border:2px solid #00acab;border-radius:10px;font-size:15px}#being-pillar-kukaku .bt-top span{font-weight:700;flex:1 1 220px}#being-pillar-kukaku .bt-top a{text-decoration:none;font-weight:700;display:inline-flex;align-items:center;justify-content:center;min-height:42px;padding:0 14px;border:2px solid #00acab;border-radius:6px;line-height:1.3}#being-pillar-kukaku .bt-top-tel{background:#00acab;color:#fff !important;font-size:17px}#being-pillar-kukaku .bt-top-link{color:#007b7a !important;background:#fff;font-size:15px}#being-pillar-kukaku .bt-mid{padding:20px;margin:18px 0 6px;background:#f1f9f9;border-radius:12px}#being-pillar-kukaku .bt-mid p{margin:0 0 10px;font-weight:700}#being-pillar-kukaku .bt-mid div{display:grid;grid-template-columns:1fr 1fr;gap:10px}#being-pillar-kukaku .bt-mid a{display:block;text-align:center;border-radius:6px;padding:12px 8px;font-weight:700;text-decoration:none;line-height:1.4}#being-pillar-kukaku .bt-mid-tel{background:#00acab;color:#fff !important}#being-pillar-kukaku .bt-mid-form{background:#fff;border:2px solid #00acab;color:#007b7a !important}#being-pillar-kukaku .bt-cta{padding:26px 20px;background:#263238;color:#fff;border-radius:12px;margin-top:30px}#being-pillar-kukaku .bt-cta a{display:block;text-align:center;border-radius:6px;padding:12px;margin-top:10px;font-weight:700;text-decoration:none}#being-pillar-kukaku .bt-tel{background:#00acab}#being-pillar-kukaku .bt-tel,#being-pillar-kukaku .bt-tel *{color:#fff !important}#being-pillar-kukaku .bt-tel strong{display:block;font-size:28px}#being-pillar-kukaku .bt-sub{background:#fff;color:#007b7a !important}@media(max-width:600px){#being-pillar-kukaku .bt-mid div{grid-template-columns:1fr}}</style>
+
+<p>ひたちなか市では、市内の7地区で土地区画整理事業が進められています。区画整理の区域内にある土地や建物は、ふつうの土地とは売り方も価格の考え方も違います。「区画整理中の土地は売れるの？」「何を確認すればいいの？」という方に向けて、基本と注意点をまとめました。</p>
+
+<div class="bt-top"><span>区画整理区域の土地・建物を無料で査定します</span><a class="bt-top-tel" href="tel:0293544000">☎ 029-354-4000</a><a class="bt-top-link" href="https://www.beingfudousan.com/satei/">フォームで査定依頼 ›</a></div>
+
+<h2>ひたちなか市で施行中の区画整理（7地区）</h2>
+<table>
+<tr><th>地区</th><th>主に含まれる町名（一部）</th></tr>
+<tr><td>六ッ野地区</td><td>高場・中根・東石川・はしかべ</td></tr>
+<tr><td>東部第1地区</td><td>中根</td></tr>
+<tr><td>東部第2地区</td><td>馬渡</td></tr>
+<tr><td>佐和駅東地区</td><td>高野・高場</td></tr>
+<tr><td>武田地区</td><td>武田</td></tr>
+<tr><td>阿字ヶ浦地区</td><td>阿字ケ浦町</td></tr>
+<tr><td>船窪地区</td><td>船窪・東本町・富士ノ上・富士ノ下・廻り目・湊泉町・狢谷津</td></tr>
+</table>
+<p class="bt-src">町名は区域の一部を含むことを示すもので、町全体が区域内という意味ではありません。区域の範囲は、ひたちなか市にご確認ください。</p>
+
+<h2>区画整理区域の土地を売るときの基本</h2>
+<h3>1. 「従前地」と「仮換地」</h3>
+<p>区画整理では、もともとの土地（従前地）の代わりに、将来使う土地（仮換地）が指定されます。登記簿は換地処分が終わるまで従前地のままなので、売買では従前地の地番と仮換地の街区番号などを並べて書き、どの土地の取引かをはっきりさせます。価格は、実際に使うことになる仮換地の条件をもとに考えるのが一般的です。</p>
+<h3>2. 「使用収益開始」が決まっているか</h3>
+<p>仮換地が指定されていても、すぐに使えるとは限りません。工事が進み、使用収益（実際に使い始めること）を開始できる日が決まって初めて、建物を建てたり駐車場にしたりできます。<strong>使用収益が開始しているかどうかで、買い手の付きやすさも価格も大きく変わります。</strong></p>
+<h3>3. 清算金の取り決め</h3>
+<p>事業の最後（換地処分）に、土地の価値の差を調整するため、清算金の支払いや受け取りが生じることがあります。清算金は換地処分の時点の所有者との間で精算されるため、売買のときに<strong>売主・買主のどちらが負担するか（受け取るか）を契約書で決めておく</strong>ことが大切です。</p>
+<h3>4. 建物を建てるときの許可</h3>
+<p>区画整理の区域内で建物を建てたり、土地の形を変えたりするときは、市の許可が必要になることがあります。買い手が家を建てる予定なら、この点も含めて説明が必要です。</p>
+
+<h2>区画整理区域の土地は、プロでも価格の判断が難しい</h2>
+<p>同じ町名でも、区画整理の区域の内か外か、区域内なら事業の進行状況がどの段階かによって、価格の考え方がまったく変わります。過去の取引データの平均だけで売り出すと、高すぎて売れ残ったり、安く手放してしまったりするおそれがあります。</p>
+<p>ビーイングは、ひたちなか市中根に本社を置く地元の不動産会社です。市役所での区画整理の確認（仮換地・使用収益開始の予定など）を含めて、価格をお調べします。</p>
+
+<div class="bt-mid"><p>区画整理区域の土地の価格を、仮換地や使用収益開始の確認を含めて無料でお調べします。</p><div><a class="bt-mid-tel" href="tel:0293544000">☎ 電話で相談<br>029-354-4000</a><a class="bt-mid-form" href="https://www.beingfudousan.com/satei/">フォームで<br>無料査定を依頼</a></div></div>
+
+<h2>売る前に手元で確認したいこと</h2>
+<p>・仮換地の指定通知書（仮換地の場所と面積が分かります）<br>・使用収益開始が決定しているか（決定していれば、その日付）<br>・登記簿（従前地の地番・面積・地目）<br>・相続した土地の場合、相続登記が済んでいるか</p>
+<p>書類が見つからなくても大丈夫です。分かる範囲でお知らせいただければ、ビーイングが確認します。</p>
+
+<h2>町別の土地相場もご覧ください</h2>
+<p><a href="https://www.beingfudousan.com/blog/entry-871468/" style="color:#007b7a;font-weight:700;">ひたちなか市中根の土地相場（区画整理の区域を含む町） ›</a></p>
+
+<div class="bt-cta">
+<p style="margin:0 0 4px;font-size:20px;font-weight:700;">区画整理区域の土地・建物の売却は、地元のビーイングへ</p>
+<p style="margin:0;font-size:14px;color:#eceff1;">「売れるかどうか分からない」段階からご相談ください。ご相談・査定は無料です。</p>
+<a class="bt-tel" href="tel:0293544000"><span style="font-size:14px;">お電話で相談する（無料）</span><strong>029-354-4000</strong><span style="font-size:12px;">9:00〜18:00（水曜・GW・お盆・年末年始を除く）</span></a>
+<a class="bt-sub" href="https://www.beingfudousan.com/satei/">フォームで無料査定を依頼する ›</a>
+<a class="bt-sub" href="https://www.beingfudousan.com/blog/entry-855000/">連絡不要のかんたん査定で目安を見る ›</a>
+</div>
+
+<p class="bt-src" style="margin-top:18px;">参考：ひたちなか市「区画整理事業施行地区の紹介（施行中地区及び施行済み地区）」（2026年10月18日確認）。区域の範囲、仮換地、使用収益開始の時期、清算金の見込みなどは、地区・土地ごとに異なります。個別の内容は、ひたちなか市の区画整理の担当課にご確認ください。</p>
+</div>

@@ -28,7 +28,7 @@ const html=`<div id="being-jisseki" style="max-width:860px;margin:auto;color:#26
 <div class="bt-top"><span>ご自宅や土地の価格を無料でお調べします</span><a class="bt-top-tel" href="tel:0293544000">☎ 029-354-4000</a><a class="bt-top-link" href="https://www.beingfudousan.com/satei/">フォームで査定依頼 ›</a></div>
 <div class="bj-sum"><span>掲載実績 <b>${rows.length}</b> 件</span><span>${typeTxt}</span></div>
 <h2>売却実績マップ</h2>
-<p>地図の円をタップすると、その周辺の実績（契約年月・概算価格・面積）が表示されます。お客様のプライバシーのため、場所は約2km単位（実績の少ない町は約4km単位）にぼかしています。</p>
+<p>地図の円をタップすると、その周辺の実績が表示されます。</p>
 <iframe src="https://morokawa79-cpu.github.io/hitachinaka-map/being-jisseki/?embed=1" title="有限会社ビーイングの売却実績マップ" width="100%" height="900" loading="lazy" style="border:1px solid #dce7e7;border-radius:8px;display:block;"></iframe>
 <h2>地域別の売却実績</h2>
 <p>${cityTxt}の売却実績があります。</p>
@@ -39,7 +39,7 @@ const html=`<div id="being-jisseki" style="max-width:860px;margin:auto;color:#26
 <tr><th>契約年月</th><th>所在地（町名まで）</th><th>種別</th><th>価格</th><th>面積</th></tr>
 ${trs}
 </table></div>
-<p class="bj-src" style="margin-top:8px;">価格・面積は幅で表示しています（例：500〜550万円、500〜550㎡。300万円以下はまとめて表示）。地番・建物名・お客様のお名前など、物件が特定できる情報は掲載していません。面積は分かるものだけ載せています。</p>
+<p class="bj-src" style="margin-top:8px;">お客様の個人情報保護のため、価格・面積・場所はおおよその表示にしています。</p>
 <h2>売却をご検討の方へ</h2>
 <p>同じ町でも、土地の形や道路の付き方、区画整理の区域か、市街化調整区域かなどで価格は大きく変わります。実績の数字は目安として、実際の価格は物件ごとにお調べします。</p>
 <p><a href="${B}entry-873404/">区画整理区域の土地を売るには ›</a><br><a href="${B}entry-873405/">相続した家・土地、どうする？ ›</a><br><a href="${B}entry-873406/">市街化調整区域の土地は売れる？ ›</a></p>

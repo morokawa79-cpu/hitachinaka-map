@@ -20,9 +20,13 @@ const m=h.match(/(<script id="initial-data" type="application\/json">)([\s\S]*?)
 let recs=JSON.parse(m[2]);
 if(extra){const add=JSON.parse(fs.readFileSync(extra,'utf8')).map(({memo,...r})=>({...r,latitude:rnd(r.latitude,0.02),longitude:rnd(r.longitude,0.025)}));const ids=new Set(recs.map(r=>r.id));recs=recs.concat(add.filter(r=>!ids.has(r.id)));recs.sort((a,b)=>b.contract_month.localeCompare(a.contract_month));c.added=add.length}const excluded=recs.filter(r=>r.approx_price_man_yen<CFG.MIN_PRICE).map(r=>r.id);
 recs=recs.filter(r=>!excluded.includes(r.id));
+// 海岸線の東端（国土地理院の標高APIで陸地と確認した値）。ぼかした点が海に出たら西へ寄せる
+const COAST=[[36.28,140.57],[36.32,140.59],[36.36,140.61],[36.40,140.61],[36.44,140.60],[36.48,140.61],[36.52,140.63],[36.56,140.64],[36.60,140.66],[36.70,140.70]];
+const coastLon=lat=>{if(lat<=COAST[0][0])return COAST[0][1];for(let i=1;i<COAST.length;i++){const[a,x]=COAST[i-1],[b,y]=COAST[i];if(lat<=b)return x+(y-x)*(lat-a)/(b-a)}return COAST.at(-1)[1]};
 const townCount={};recs.forEach(r=>townCount[r.address]=(townCount[r.address]||0)+1);
 for(const r of recs){
   if(townCount[r.address]<=CFG.SMALL_TOWN&&r.latitude!=null){r.latitude=rnd(r.latitude,CFG.SMALL_LAT);r.longitude=rnd(r.longitude,CFG.SMALL_LON);cnt('blurred')}
+  if(r.latitude!=null){const c=coastLon(r.latitude);while(r.longitude>c){r.longitude=+(r.longitude-0.025).toFixed(3);cnt('coast')}}
   r.approx_price_man_yen=r.approx_price_man_yen<=CFG.LOW_PRICE?CFG.LOW_PRICE:(([a,b])=>(a+b)/2)(rng(r.approx_price_man_yen,CFG.pstep));
   for(const k of ['land_area_m2','building_area_m2','occupied_area_m2'])if(r[k]!=null){r[k]=(([a,b])=>(a+b)/2)(rng(r[k],CFG.astep));cnt('area')}
 }
@@ -42,5 +46,6 @@ const js=`const rangeOf=(n,st)=>{n=+n;const s=st(n-0.001);const hi=Math.ceil(n/s
 h=h.replace("const priceText=r=>'約'+number(r.approx_price_man_yen)+'万円';",()=>{cnt('jsprice');return js+"const priceText=r=>priceBand(r.approx_price_man_yen);"});
 h=h.replace("約 <strong>${number(r.approx_price_man_yen)}</strong> 万円",()=>{cnt('jscard');return "<strong>${priceBand(r.approx_price_man_yen)}</strong>"});
 h=h.replace("${label} ${number(r[field])}㎡${withTsubo?'（約'+number(Math.round(r[field]/3.305785*10)/10)+'坪）':''}",()=>{cnt('jsarea');return "${label} ${areaBand(r[field])}"});
-h=h.replace('価格・面積は概算を含みます。地図は約2km単位にぼかした周辺地域を示しています。',()=>{cnt('note');return '価格・面積は幅で表示しています（例：500〜550万円、500〜550㎡。300万円以下はまとめて表示）。地図は約2km単位（実績の少ない町は約4km単位）にぼかした周辺地域を示しています。'});
+h=h.replace('価格・面積は概算を含みます。地図は約2km単位にぼかした周辺地域を示しています。',()=>{cnt('note');return 'お客様の個人情報保護のため、価格・面積・場所はおおよその表示にしています。'});
+h=h.replace('地番・番地・建物名・正確な物件位置は公開していません。','');
 fs.writeFileSync(out,h);console.log(JSON.stringify(c));

@@ -1,0 +1,57 @@
+<div id="being-pillar-kyoyu" style="max-width:820px;margin:auto;color:#263238;font-size:16px;line-height:1.9;">
+<style>#being-pillar-kyoyu *{box-sizing:border-box}#being-pillar-kyoyu h2{font-size:24px;line-height:1.5;color:#263238;margin:36px 0 14px;padding:0 0 8px;border:0;border-bottom:2px solid #00acab;background:none;font-weight:700}#being-pillar-kyoyu h3{font-size:18px;color:#007b7a;margin:20px 0 6px;padding:0;border:0;background:none;font-weight:700}#being-pillar-kyoyu p{margin:0 0 14px}#being-pillar-kyoyu table{width:100%;border-collapse:collapse;margin:0 0 10px;font-size:15px}#being-pillar-kyoyu th,#being-pillar-kyoyu td{border:1px solid #dce7e7;padding:8px 10px;text-align:left}#being-pillar-kyoyu th{background:#f1f9f9;font-weight:700}#being-pillar-kyoyu .bt-src{font-size:12px;color:#56676a}#being-pillar-kyoyu .bt-top{display:flex;flex-wrap:wrap;align-items:center;gap:8px 14px;padding:12px 16px;margin:0 0 22px;border:2px solid #00acab;border-radius:10px;font-size:15px}#being-pillar-kyoyu .bt-top span{font-weight:700;flex:1 1 220px}#being-pillar-kyoyu .bt-top a{text-decoration:none;font-weight:700;display:inline-flex;align-items:center;justify-content:center;min-height:42px;padding:0 14px;border:2px solid #00acab;border-radius:6px;line-height:1.3}#being-pillar-kyoyu .bt-top-tel{background:#00acab;color:#fff !important;font-size:17px}#being-pillar-kyoyu .bt-top-link{color:#007b7a !important;background:#fff;font-size:15px}#being-pillar-kyoyu .bt-mid{padding:20px;margin:18px 0 6px;background:#f1f9f9;border-radius:12px}#being-pillar-kyoyu .bt-mid p{margin:0 0 10px;font-weight:700}#being-pillar-kyoyu .bt-mid div{display:grid;grid-template-columns:1fr 1fr;gap:10px}#being-pillar-kyoyu .bt-mid a{display:block;text-align:center;border-radius:6px;padding:12px 8px;font-weight:700;text-decoration:none;line-height:1.4}#being-pillar-kyoyu .bt-mid-tel{background:#00acab;color:#fff !important}#being-pillar-kyoyu .bt-mid-form{background:#fff;border:2px solid #00acab;color:#007b7a !important}#being-pillar-kyoyu .bt-cta{padding:26px 20px;background:#263238;color:#fff;border-radius:12px;margin-top:30px}#being-pillar-kyoyu .bt-cta a{display:block;text-align:center;border-radius:6px;padding:12px;margin-top:10px;font-weight:700;text-decoration:none}#being-pillar-kyoyu .bt-tel{background:#00acab}#being-pillar-kyoyu .bt-tel,#being-pillar-kyoyu .bt-tel *{color:#fff !important}#being-pillar-kyoyu .bt-tel strong{display:block;font-size:28px}#being-pillar-kyoyu .bt-sub{background:#fff;color:#007b7a !important}@media(max-width:600px){#being-pillar-kyoyu .bt-mid div{grid-template-columns:1fr}}</style>
+<style>#being-pillar-kyoyu .bt-pro{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:0 0 14px}#being-pillar-kyoyu .bt-pro div{border:1px solid #dce7e7;border-radius:10px;padding:14px 16px;background:#fff}#being-pillar-kyoyu .bt-pro b{display:block;color:#007b7a;font-size:17px}#being-pillar-kyoyu .bt-pro span{font-size:14px}#being-pillar-kyoyu .bt-ng{border-left:4px solid #c62828;background:#fff5f5;padding:14px 18px;border-radius:0 10px 10px 0;margin:0 0 14px}@media(max-width:600px){#being-pillar-kyoyu .bt-pro{grid-template-columns:1fr}}</style>
+
+<p>「とりあえず兄弟みんなの名義にしておこう」――相続した家や土地を<strong>共有名義</strong>にするのは、手続きが簡単でもめにくいように見えます。けれど実は、あとから<strong>売れない・直せない・持ち主がどんどん増える</strong>原因になりやすい分け方です。ひたちなか市で相続のご相談を受けてきた不動産会社として、共有名義を避けたほうがよい理由と、ほかの分け方をまとめました。</p>
+
+<div class="bt-top"><span>相続した家・土地の分け方を、無料で一緒に整理します</span><a class="bt-top-tel" href="tel:0293544000">☎ 029-354-4000</a><a class="bt-top-link" href="https://www.beingfudousan.com/satei/">フォームで相談 ›</a></div>
+
+<h2>共有名義にすると、こんなことが起きます</h2>
+<div class="bt-ng"><strong>1. 全員がそろわないと売れない</strong><br>共有の不動産を売る・建て替える・取り壊すには、原則として<strong>共有者全員の同意</strong>が必要です。一人でも反対したり、連絡が取れなかったりすると進められません。</div>
+<div class="bt-ng"><strong>2. 次の相続で、持ち主がどんどん増える</strong><br>共有者の一人が亡くなると、その持分がさらにその家族に分かれて相続されます。兄弟3人の共有が、20年後には甥や姪を含めて10人近い共有になることも珍しくありません。</div>
+<div class="bt-ng"><strong>3. 共有者が高齢・認知症になると止まる</strong><br>共有者の一人が判断能力を失うと、その人の同意が取れず、成年後見などの手続きが終わるまで売却ができなくなります。</div>
+<div class="bt-ng"><strong>4. 管理や費用の負担でもめやすい</strong><br>固定資産税や草刈り・修繕の費用を誰がどれだけ出すか、住んでいる人と住んでいない人の不公平など、時間がたつほど話し合いが難しくなります。</div>
+<div class="bt-ng"><strong>5. 持分だけ売られることがある</strong><br>自分の持分だけなら、他の共有者の同意なく売ることができます。知らない会社や第三者と共有になり、話し合いや裁判（共有物分割請求）に発展するケースもあります。</div>
+<p class="bt-src">令和5年4月から、所在が分からない共有者がいる場合の手続きなど、共有のルールは一部見直されました。それでも、共有名義が売却や管理の足かせになりやすいことに変わりはありません。</p>
+
+<h2>共有にしない分け方（3つの方法）</h2>
+<table>
+<tr><th>分け方</th><th>どんな方法？</th><th>向いているケース</th></tr>
+<tr><td>換価分割</td><td>不動産を売って、お金で分ける</td><td>誰も住む予定がない実家・空き家</td></tr>
+<tr><td>代償分割</td><td>一人が不動産を相続し、ほかの相続人にお金を払う</td><td>誰か一人が住み続けたい・使いたい</td></tr>
+<tr><td>現物分割</td><td>土地を分ける（分筆する）、別々の不動産をそれぞれが相続する</td><td>広い土地、複数の不動産がある</td></tr>
+</table>
+<p>どの方法がよいかは、不動産の価格、相続人の人数や事情、税金によって変わります。たとえば空き家を売ってお金で分ける場合、条件しだいで相続人それぞれが「空き家の3,000万円特別控除」を使えることがあります。また、土地を分ける場合は、ひたちなか市の地区計画で決まっている<strong>最低敷地面積</strong>にも注意が必要です。</p>
+<p><strong>まず「いくらで売れるか」が分かると、どの分け方が公平か、話し合いが進めやすくなります。</strong>遺産分割の前でも、査定はご相談いただけます。</p>
+
+<div class="bt-mid"><p>相続した家・土地の価格と、分け方の選択肢を無料でお調べします。</p><div><a class="bt-mid-tel" href="tel:0293544000">☎ 電話で相談<br>029-354-4000</a><a class="bt-mid-form" href="https://www.beingfudousan.com/satei/">フォームで<br>無料査定を依頼</a></div></div>
+
+<h2>ビーイングに相談するメリット：専門家への「橋渡し」</h2>
+<p>相続した不動産の問題は、不動産だけでは片づきません。名義変更は司法書士、税金は税理士、話し合いがまとまらなければ弁護士、書類づくりは行政書士――と、相談先がばらばらで、どこから手をつければいいか分からなくなりがちです。</p>
+<p>ビーイングは、ひたちなか市で長年いっしょに仕事をしてきた、<strong>信頼できる専門家</strong>とつながっています。</p>
+<div class="bt-pro">
+<div><b>司法書士</b><span>相続登記（名義変更）、共有の解消、売却時の登記</span></div>
+<div><b>税理士</b><span>相続税、売ったときの税金、特例が使えるかの確認</span></div>
+<div><b>弁護士</b><span>相続人どうしの話し合いがまとまらないとき、共有物の分割</span></div>
+<div><b>行政書士</b><span>遺産分割協議書などの書類づくり、農地の手続き</span></div>
+</div>
+<h3>窓口がひとつなので、話がスムーズです</h3>
+<p>・<strong>最初の相談先はビーイングだけ</strong>。状況をうかがい、必要な専門家をご紹介します<br>・不動産の価格や売り方が分かっているので、専門家との打合せが<strong>具体的な数字で</strong>進みます<br>・名義変更 → 査定 → 売却（または管理）まで、<strong>順番と段取り</strong>をこちらで整理します<br>・遠方にお住まいのご家族にも、進み具合を分かりやすくお伝えします</p>
+<p class="bt-src">法律・登記・税金の判断は、それぞれの専門家が行います。ビーイングは不動産の査定・売却・管理を担当し、専門家へのご紹介と段取りのお手伝いをします。</p>
+
+<h2>すでに共有名義になっている場合も、ご相談ください</h2>
+<p>「もう兄弟の共有になっている」「親の代からの共有がそのまま」という場合も、全員で売る、一人に持分を集める、などの方法で整理できることがあります。共有者の人数や連絡先、それぞれのご意向をうかがいながら、進め方をご提案します。</p>
+
+<h2>関連する記事</h2>
+<p><a href="https://www.beingfudousan.com/blog/entry-873405/" style="color:#007b7a;font-weight:700;">相続した家・土地、どうする？（売る・管理する・貸す） ›</a><br><a href="https://www.beingfudousan.com/blog/entry-635975/" style="color:#007b7a;font-weight:700;">ひたちなか市の空き家管理（月額7,700円〜） ›</a><br><a href="https://www.beingfudousan.com/blog/entry-873404/" style="color:#007b7a;font-weight:700;">区画整理区域の土地を売るには ›</a></p>
+
+<div class="bt-cta">
+<p style="margin:0 0 4px;font-size:20px;font-weight:700;">ひたちなか市の相続不動産のご相談は、ビーイングへ</p>
+<p style="margin:0;font-size:14px;color:#eceff1;">共有名義のこと、分け方のこと、専門家のこと。まとめてご相談いただけます。ご相談・査定は無料です。</p>
+<a class="bt-tel" href="tel:0293544000"><span style="font-size:14px;">お電話で相談する（無料）</span><strong>029-354-4000</strong><span style="font-size:12px;">9:00〜18:00（水曜・GW・お盆・年末年始を除く）</span></a>
+<a class="bt-sub" href="https://www.beingfudousan.com/satei/">フォームで無料査定を依頼する ›</a>
+<a class="bt-sub" href="https://www.beingfudousan.com/blog/entry-855000/">連絡不要のかんたん査定で目安を見る ›</a>
+</div>
+
+<p class="bt-src" style="margin-top:18px;">参考：民法（共有物の変更・管理・分割、令和5年4月施行の共有制度の見直し）、法務省「相続登記の申請義務化」、国税庁 タックスアンサーNo.3306。一般的な内容をまとめたもので、個別のケースは司法書士・税理士・弁護士などの専門家にご確認ください。</p>
+</div>

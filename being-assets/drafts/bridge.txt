@@ -1,0 +1,14 @@
+<style>#being-pillar-souzoku .bt-pro{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:0 0 14px}#being-pillar-souzoku .bt-pro div{border:1px solid #dce7e7;border-radius:10px;padding:14px 16px;background:#fff}#being-pillar-souzoku .bt-pro b{display:block;color:#007b7a;font-size:17px}#being-pillar-souzoku .bt-pro span{font-size:14px}@media(max-width:600px){#being-pillar-souzoku .bt-pro{grid-template-columns:1fr}}</style>
+<h2>ビーイングに相談するメリット：専門家への「橋渡し」</h2>
+<p>相続した不動産の問題は、不動産だけでは片づきません。名義変更は司法書士、税金は税理士、話し合いがまとまらなければ弁護士、書類づくりは行政書士――と、相談先がばらばらで、どこから手をつければいいか分からなくなりがちです。</p>
+<p>ビーイングは、ひたちなか市で長年いっしょに仕事をしてきた、<strong>信頼できる専門家</strong>とつながっています。</p>
+<div class="bt-pro">
+<div><b>司法書士</b><span>相続登記（名義変更）、共有の解消、売却時の登記</span></div>
+<div><b>税理士</b><span>相続税、売ったときの税金、特例が使えるかの確認</span></div>
+<div><b>弁護士</b><span>相続人どうしの話し合いがまとまらないとき、共有物の分割</span></div>
+<div><b>行政書士</b><span>遺産分割協議書などの書類づくり、農地の手続き</span></div>
+</div>
+<h3>窓口がひとつなので、話がスムーズです</h3>
+<p>・<strong>最初の相談先はビーイングだけ</strong>。状況をうかがい、必要な専門家をご紹介します<br>・不動産の価格や売り方が分かっているので、専門家との打合せが<strong>具体的な数字で</strong>進みます<br>・名義変更 → 査定 → 売却（または管理）まで、<strong>順番と段取り</strong>をこちらで整理します<br>・遠方にお住まいのご家族にも、進み具合を分かりやすくお伝えします</p>
+<p class="bt-src">法律・登記・税金の判断は、それぞれの専門家が行います。ビーイングは不動産の査定・売却・管理を担当し、専門家へのご紹介と段取りのお手伝いをします。</p>
+

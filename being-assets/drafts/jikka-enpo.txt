@@ -1,0 +1,50 @@
+<div id="being-jikka-enpo" style="max-width:820px;margin:auto;color:#263238;font-size:16px;line-height:1.9;">
+<style>#being-jikka-enpo *{box-sizing:border-box}#being-jikka-enpo h2{font-size:24px;line-height:1.5;color:#263238;margin:36px 0 14px;padding:0 0 8px;border:0;border-bottom:2px solid #00acab;background:none;font-weight:700}#being-jikka-enpo h3{font-size:18px;color:#007b7a;margin:20px 0 6px;padding:0;border:0;background:none;font-weight:700}#being-jikka-enpo p{margin:0 0 14px}#being-jikka-enpo table{width:100%;border-collapse:collapse;margin:0 0 10px;font-size:15px}#being-jikka-enpo th,#being-jikka-enpo td{border:1px solid #dce7e7;padding:8px 10px;text-align:center}#being-jikka-enpo th{background:#f1f9f9;font-weight:700}#being-jikka-enpo .bt-key{padding:22px;background:#f1f9f9;border-radius:12px;margin:0 0 18px}#being-jikka-enpo .bt-key strong{font-size:30px;color:#007b7a}#being-jikka-enpo .bt-src{font-size:12px;color:#56676a}#being-jikka-enpo .bt-cta{padding:26px 20px;background:#263238;color:#fff;border-radius:12px;margin-top:30px}#being-jikka-enpo .bt-cta a{display:block;text-align:center;border-radius:6px;padding:12px;margin-top:10px;font-weight:700;text-decoration:none}#being-jikka-enpo .bt-tel{background:#00acab}#being-jikka-enpo .bt-tel,#being-jikka-enpo .bt-tel *{color:#fff !important}#being-jikka-enpo .bt-tel strong{display:block;font-size:28px}#being-jikka-enpo .bt-sub{background:#fff;color:#007b7a !important}#being-jikka-enpo .bt-top{display:flex;flex-wrap:wrap;align-items:center;gap:8px 14px;padding:12px 16px;margin:0 0 22px;border:2px solid #00acab;border-radius:10px;font-size:15px}#being-jikka-enpo .bt-top span{font-weight:700;flex:1 1 220px}#being-jikka-enpo .bt-top a{text-decoration:none;font-weight:700;display:inline-flex;align-items:center;justify-content:center;min-height:42px;padding:0 14px;border:2px solid #00acab;border-radius:6px;line-height:1.3}#being-jikka-enpo .bt-top-tel{background:#00acab;color:#fff !important;font-size:17px}#being-jikka-enpo .bt-top-link{color:#007b7a !important;background:#fff;font-size:15px}#being-jikka-enpo .bt-mid{padding:20px;margin:18px 0 6px;background:#f1f9f9;border-radius:12px}#being-jikka-enpo .bt-mid p{margin:0 0 10px;font-weight:700}#being-jikka-enpo .bt-mid div{display:grid;grid-template-columns:1fr 1fr;gap:10px}#being-jikka-enpo .bt-mid a{display:block;text-align:center;border-radius:6px;padding:12px 8px;font-weight:700;text-decoration:none;line-height:1.4}#being-jikka-enpo .bt-mid-tel{background:#00acab;color:#fff !important}#being-jikka-enpo .bt-mid-form{background:#fff;border:2px solid #00acab;color:#007b7a !important}@media(max-width:600px){#being-jikka-enpo .bt-mid div{grid-template-columns:1fr}}</style>
+
+<p>東京など遠くに住んでいて、ひたちなか市の実家を売ることになった方へ。「何度も帰れない」「誰に相談すればいいか分からない」という声を、地元の不動産会社ビーイングはよくお聞きします。実家の売却は、<strong>現地に何度も行かなくても進められます</strong>。手続きの流れと、離れて暮らす方が気をつけたいことをまとめました。</p>
+
+<div class="bt-top"><span>遠方からのご相談は、オンライン・電話・郵送でも承ります</span><a class="bt-top-tel" href="tel:0293544000">☎ 029-354-4000</a><a class="bt-top-link" href="https://www.beingfudousan.com/satei/">フォームで査定依頼 ›</a></div>
+
+<h2>遠方でも、売却は進められます</h2>
+<p>ビーイングでは、遠くにお住まいの方とは<strong>電話・メール・郵送・オンライン</strong>でやり取りをしています。ご相談はオンラインでもできますし、書類のやり取りは郵送でできます。現地の確認や役所での調査は、ビーイングが行います。</p>
+
+<h2>売却の流れと、現地に行く必要があるか</h2>
+<table>
+<tr><th>流れ</th><th>内容</th><th>現地に行く必要</th></tr>
+<tr><td>1. 相談・おおよその査定</td><td>住所や広さから、価格の目安をお伝えします</td><td>不要（電話・メール・オンライン）</td></tr>
+<tr><td>2. 現地の確認・査定</td><td>建物や道路、役所での調査をして、査定額をお伝えします</td><td>立ち会いはご相談のうえ</td></tr>
+<tr><td>3. 売り出しの契約</td><td>売り出す価格や方法を決めて、書類を交わします</td><td>不要（郵送でもできます）</td></tr>
+<tr><td>4. 売買契約</td><td>買主が決まったら、売買契約を結びます</td><td>ご相談（郵送で進める方法もあります）</td></tr>
+<tr><td>5. 引き渡し</td><td>代金を受け取り、鍵を渡して完了です</td><td>ご相談（司法書士による本人確認があります）</td></tr>
+</table>
+<p class="bt-src">どこまで郵送で進められるかは、売主の人数や取引の内容によって変わります。最初のご相談のときに、何回くらい来ていただく必要があるかをお伝えします。</p>
+
+<div class="bt-mid"><p>遠方にお住まいでも、まずはお電話かフォームで。おおよその価格からお伝えします。</p><div><a class="bt-mid-tel" href="tel:0293544000">☎ 電話で相談<br>029-354-4000</a><a class="bt-mid-form" href="https://www.beingfudousan.com/satei/">フォームで<br>無料査定を依頼</a></div></div>
+
+<h2>離れて暮らす方が、先に確認しておきたいこと</h2>
+<h3>名義はだれになっているか</h3>
+<p>親から相続した実家は、名義を相続人に変える<strong>相続登記</strong>をしないと売れません。相続登記は2024年4月から義務になり、相続を知った日から3年以内に申請が必要です。</p>
+<h3>兄弟姉妹と、どう分けるか</h3>
+<p>相続人が何人かいる場合、売るかどうか、売ったお金をどう分けるかを、先に話し合っておくと進めやすくなります。とりあえず全員の名義（共有）にすると、売るときに全員の同意が必要になります。</p>
+<h3>家の中の荷物</h3>
+<p>家具や荷物が残ったままでも、査定はできます。片付けをいつ、どこまでするかは、売り方に合わせてご相談ください。</p>
+<h3>税金の特例の期限</h3>
+<p>相続した実家を売るとき、条件を満たせば、売った利益から最大3,000万円を差し引ける特例があります。<strong>相続した日から3年がたつ年の12月31日まで</strong>に売る必要があるなど、期限があります。くわしくは税理士や税務署にご確認ください。</p>
+
+<h2>空き家のままにしておくと</h2>
+<p>人が住まない家は、思ったより早く傷みます。庭の草や木が伸びて、近所から連絡が来ることもあります。売るまでの間の見回りが心配な方は、ビーイングの空き家管理もご利用いただけます。</p>
+<p><a href="https://www.beingfudousan.com/blog/entry-635975/">ビーイングの空き家管理 ›</a></p>
+
+<h2>関連する記事</h2>
+<p><a href="https://www.beingfudousan.com/blog/entry-873405/">ひたちなか市で相続した家・土地を売るには ›</a><br><a href="https://www.beingfudousan.com/blog/entry-874945/">相続した家・土地を共有名義にしてはいけない理由 ›</a><br><a href="https://www.beingfudousan.com/blog/entry-874036/">ひたちなか市の町別 土地相場マップ ›</a><br><a href="https://www.beingfudousan.com/blog/entry-875225/">ビーイングの売却実績マップ（120件以上） ›</a></p>
+
+<div class="bt-cta">
+<p style="margin:0 0 4px;font-size:20px;font-weight:700;">ひたちなかの実家の売却は、地元のビーイングへ</p>
+<p style="margin:0;font-size:14px;color:#eceff1;">遠方にお住まいの方も、オンライン・電話・郵送でご相談いただけます。ご相談・査定は無料です。</p>
+<a class="bt-tel" href="tel:0293544000"><span style="font-size:14px;">お電話で相談する（無料）</span><strong>029-354-4000</strong><span style="font-size:12px;">9:00〜18:00（水曜・GW・お盆・年末年始を除く）</span></a>
+<a class="bt-sub" href="https://www.beingfudousan.com/satei/">フォームで無料査定を依頼する ›</a>
+<a class="bt-sub" href="https://www.beingfudousan.com/blog/entry-855000/">連絡不要のかんたん査定で目安を見る ›</a>
+</div>
+
+<p class="bt-src" style="margin-top:18px;">相続登記の義務化・税金の特例の内容は2026年10月時点のものです。個別の手続きや税金は、司法書士・税理士などの専門家にご確認ください。</p>
+</div>

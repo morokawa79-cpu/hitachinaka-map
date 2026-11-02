@@ -11,18 +11,18 @@
     .hub { text-align: center; padding: 40px 20px; }
     .hub-title { font-size: 26px; font-weight: 800; color: #fff; margin-bottom: 6px; letter-spacing: .02em; }
     .hub-sub { font-size: 14px; color: #9fb3c8; margin-bottom: 40px; }
-    .cities { display: flex; gap: 24px; justify-content: center; flex-wrap: wrap; }
+    .cities { display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; max-width: 1000px; }
     .city-card {
       display: flex; flex-direction: column; align-items: center; justify-content: center;
-      width: 200px; padding: 32px 20px; border-radius: 16px;
+      width: 150px; padding: 18px 12px; border-radius: 12px;
       background: #1f2933; border: 2px solid #2d3946;
       text-decoration: none; color: #e6e9ed;
-      transition: border-color .18s, transform .18s, box-shadow .18s;
+      transition: border-color .18s;
       cursor: pointer;
     }
-    .city-card:hover { border-color: #16a34a; transform: translateY(-4px); box-shadow: 0 12px 32px rgba(22,163,74,.22); }
+    .city-card:hover { border-color: #16a34a; }
     .city-icon { font-size: 48px; margin-bottom: 14px; line-height: 1; }
-    .city-name { font-size: 20px; font-weight: 800; color: #fff; margin-bottom: 6px; }
+    .city-name { font-size: 16px; font-weight: 800; color: #fff; margin-bottom: 4px; }
     .city-sub { font-size: 11px; color: #6b7a8a; line-height: 1.6; }
     .credit { margin-top: 48px; font-size: 11px; color: #4b5563; }
   </style>
@@ -33,18 +33,179 @@
     <div class="hub-sub">都市を選択してください</div>
     <div class="cities">
       <a href="mito.html" class="city-card">
-        <span class="city-icon">🏯</span>
         <span class="city-name">水戸市</span>
         <span class="city-sub">大字 / 用途地域<br>学区 / 施設</span>
       </a>
+      <a href="hitachi.html" class="city-card">
+        <span class="city-name">日立市</span>
+        <span class="city-sub">大字 / 用途地域<br>学区 / 施設</span>
+      </a>
+      <a href="tsuchiura.html" class="city-card">
+        <span class="city-name">土浦市</span>
+        <span class="city-sub">大字 / 用途地域<br>学区 / 施設</span>
+      </a>
+      <a href="koga.html" class="city-card">
+        <span class="city-name">古河市</span>
+        <span class="city-sub">大字 / 用途地域<br>学区 / 施設</span>
+      </a>
+      <a href="ishioka.html" class="city-card">
+        <span class="city-name">石岡市</span>
+        <span class="city-sub">大字 / 用途地域<br>学区 / 施設</span>
+      </a>
+      <a href="yuki.html" class="city-card">
+        <span class="city-name">結城市</span>
+        <span class="city-sub">大字 / 用途地域<br>学区 / 施設</span>
+      </a>
+      <a href="ryugasaki.html" class="city-card">
+        <span class="city-name">龍ケ崎市</span>
+        <span class="city-sub">大字 / 用途地域<br>学区 / 施設</span>
+      </a>
+      <a href="shimotsuma.html" class="city-card">
+        <span class="city-name">下妻市</span>
+        <span class="city-sub">大字 / 用途地域<br>学区 / 施設</span>
+      </a>
+      <a href="joso.html" class="city-card">
+        <span class="city-name">常総市</span>
+        <span class="city-sub">大字 / 用途地域<br>学区 / 施設</span>
+      </a>
+      <a href="hitachiota.html" class="city-card">
+        <span class="city-name">常陸太田市</span>
+        <span class="city-sub">大字 / 用途地域<br>学区 / 施設</span>
+      </a>
+      <a href="takahagi.html" class="city-card">
+        <span class="city-name">高萩市</span>
+        <span class="city-sub">大字 / 用途地域<br>学区 / 施設</span>
+      </a>
+      <a href="kitaibaraki.html" class="city-card">
+        <span class="city-name">北茨城市</span>
+        <span class="city-sub">大字 / 用途地域<br>学区 / 施設</span>
+      </a>
+      <a href="kasama.html" class="city-card">
+        <span class="city-name">笠間市</span>
+        <span class="city-sub">大字 / 用途地域<br>学区 / 施設</span>
+      </a>
+      <a href="toride.html" class="city-card">
+        <span class="city-name">取手市</span>
+        <span class="city-sub">大字 / 用途地域<br>学区 / 施設</span>
+      </a>
+      <a href="ushiku.html" class="city-card">
+        <span class="city-name">牛久市</span>
+        <span class="city-sub">大字 / 用途地域<br>学区 / 施設</span>
+      </a>
+      <a href="tsukuba.html" class="city-card">
+        <span class="city-name">つくば市</span>
+        <span class="city-sub">大字 / 用途地域<br>学区 / 施設</span>
+      </a>
       <a href="hitachinaka.html" class="city-card">
-        <span class="city-icon">🌊</span>
         <span class="city-name">ひたちなか市</span>
         <span class="city-sub">大字 / 用途地域<br>学区 / 施設</span>
       </a>
+      <a href="kashima.html" class="city-card">
+        <span class="city-name">鹿嶋市</span>
+        <span class="city-sub">大字 / 用途地域<br>学区 / 施設</span>
+      </a>
+      <a href="itako.html" class="city-card">
+        <span class="city-name">潮来市</span>
+        <span class="city-sub">大字 / 用途地域<br>学区 / 施設</span>
+      </a>
+      <a href="moriya.html" class="city-card">
+        <span class="city-name">守谷市</span>
+        <span class="city-sub">大字 / 用途地域<br>学区 / 施設</span>
+      </a>
+      <a href="hitachiomiya.html" class="city-card">
+        <span class="city-name">常陸大宮市</span>
+        <span class="city-sub">大字 / 用途地域<br>学区 / 施設</span>
+      </a>
       <a href="naka.html" class="city-card">
-        <span class="city-icon">🚉</span>
         <span class="city-name">那珂市</span>
+        <span class="city-sub">大字 / 用途地域<br>学区 / 施設</span>
+      </a>
+      <a href="chikusei.html" class="city-card">
+        <span class="city-name">筑西市</span>
+        <span class="city-sub">大字 / 用途地域<br>学区 / 施設</span>
+      </a>
+      <a href="bando.html" class="city-card">
+        <span class="city-name">坂東市</span>
+        <span class="city-sub">大字 / 用途地域<br>学区 / 施設</span>
+      </a>
+      <a href="inashiki.html" class="city-card">
+        <span class="city-name">稲敷市</span>
+        <span class="city-sub">大字 / 用途地域<br>学区 / 施設</span>
+      </a>
+      <a href="kasumigaura.html" class="city-card">
+        <span class="city-name">かすみがうら市</span>
+        <span class="city-sub">大字 / 用途地域<br>学区 / 施設</span>
+      </a>
+      <a href="sakuragawa.html" class="city-card">
+        <span class="city-name">桜川市</span>
+        <span class="city-sub">大字 / 用途地域<br>学区 / 施設</span>
+      </a>
+      <a href="kamisu.html" class="city-card">
+        <span class="city-name">神栖市</span>
+        <span class="city-sub">大字 / 用途地域<br>学区 / 施設</span>
+      </a>
+      <a href="namegata.html" class="city-card">
+        <span class="city-name">行方市</span>
+        <span class="city-sub">大字 / 用途地域<br>学区 / 施設</span>
+      </a>
+      <a href="hokota.html" class="city-card">
+        <span class="city-name">鉾田市</span>
+        <span class="city-sub">大字 / 用途地域<br>学区 / 施設</span>
+      </a>
+      <a href="tsukubamirai.html" class="city-card">
+        <span class="city-name">つくばみらい市</span>
+        <span class="city-sub">大字 / 用途地域<br>学区 / 施設</span>
+      </a>
+      <a href="omitama.html" class="city-card">
+        <span class="city-name">小美玉市</span>
+        <span class="city-sub">大字 / 用途地域<br>学区 / 施設</span>
+      </a>
+      <a href="ibarakimachi.html" class="city-card">
+        <span class="city-name">茨城町</span>
+        <span class="city-sub">大字 / 用途地域<br>学区 / 施設</span>
+      </a>
+      <a href="oarai.html" class="city-card">
+        <span class="city-name">大洗町</span>
+        <span class="city-sub">大字 / 用途地域<br>学区 / 施設</span>
+      </a>
+      <a href="shirosato.html" class="city-card">
+        <span class="city-name">城里町</span>
+        <span class="city-sub">大字 / 用途地域<br>学区 / 施設</span>
+      </a>
+      <a href="tokai.html" class="city-card">
+        <span class="city-name">東海村</span>
+        <span class="city-sub">大字 / 用途地域<br>学区 / 施設</span>
+      </a>
+      <a href="daigo.html" class="city-card">
+        <span class="city-name">大子町</span>
+        <span class="city-sub">大字 / 用途地域<br>学区 / 施設</span>
+      </a>
+      <a href="miho.html" class="city-card">
+        <span class="city-name">美浦村</span>
+        <span class="city-sub">大字 / 用途地域<br>学区 / 施設</span>
+      </a>
+      <a href="ami.html" class="city-card">
+        <span class="city-name">阿見町</span>
+        <span class="city-sub">大字 / 用途地域<br>学区 / 施設</span>
+      </a>
+      <a href="kawachi.html" class="city-card">
+        <span class="city-name">河内町</span>
+        <span class="city-sub">大字 / 用途地域<br>学区 / 施設</span>
+      </a>
+      <a href="yachiyo.html" class="city-card">
+        <span class="city-name">八千代町</span>
+        <span class="city-sub">大字 / 用途地域<br>学区 / 施設</span>
+      </a>
+      <a href="goka.html" class="city-card">
+        <span class="city-name">五霞町</span>
+        <span class="city-sub">大字 / 用途地域<br>学区 / 施設</span>
+      </a>
+      <a href="sakai.html" class="city-card">
+        <span class="city-name">境町</span>
+        <span class="city-sub">大字 / 用途地域<br>学区 / 施設</span>
+      </a>
+      <a href="tone.html" class="city-card">
+        <span class="city-name">利根町</span>
         <span class="city-sub">大字 / 用途地域<br>学区 / 施設</span>
       </a>
     </div>

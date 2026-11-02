@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>筑西市 不動産マップ（大字・用途地域・学区・施設）</title>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <div class="app">
+    <aside class="sidebar" id="sidebar">
+      <div class="side-head">
+        <div class="city-nav">
+          <a href="index.html" class="city-nav-back">◀ 都市選択</a>
+          <div class="city-nav-switch">
+            <select class="city-nav-select" aria-label="市町村を切り替え" onchange="location.href=this.value">
+              <option value="mito.html">水戸市</option>
+              <option value="hitachi.html">日立市</option>
+              <option value="tsuchiura.html">土浦市</option>
+              <option value="koga.html">古河市</option>
+              <option value="ishioka.html">石岡市</option>
+              <option value="yuki.html">結城市</option>
+              <option value="ryugasaki.html">龍ケ崎市</option>
+              <option value="shimotsuma.html">下妻市</option>
+              <option value="joso.html">常総市</option>
+              <option value="hitachiota.html">常陸太田市</option>
+              <option value="takahagi.html">高萩市</option>
+              <option value="kitaibaraki.html">北茨城市</option>
+              <option value="kasama.html">笠間市</option>
+              <option value="toride.html">取手市</option>
+              <option value="ushiku.html">牛久市</option>
+              <option value="tsukuba.html">つくば市</option>
+              <option value="hitachinaka.html">ひたちなか市</option>
+              <option value="kashima.html">鹿嶋市</option>
+              <option value="itako.html">潮来市</option>
+              <option value="moriya.html">守谷市</option>
+              <option value="hitachiomiya.html">常陸大宮市</option>
+              <option value="naka.html">那珂市</option>
+              <option value="chikusei.html" selected>筑西市</option>
+              <option value="bando.html">坂東市</option>
+              <option value="inashiki.html">稲敷市</option>
+              <option value="kasumigaura.html">かすみがうら市</option>
+              <option value="sakuragawa.html">桜川市</option>
+              <option value="kamisu.html">神栖市</option>
+              <option value="namegata.html">行方市</option>
+              <option value="hokota.html">鉾田市</option>
+              <option value="tsukubamirai.html">つくばみらい市</option>
+              <option value="omitama.html">小美玉市</option>
+              <option value="ibarakimachi.html">茨城町</option>
+              <option value="oarai.html">大洗町</option>
+              <option value="shirosato.html">城里町</option>
+              <option value="tokai.html">東海村</option>
+              <option value="daigo.html">大子町</option>
+              <option value="miho.html">美浦村</option>
+              <option value="ami.html">阿見町</option>
+              <option value="kawachi.html">河内町</option>
+              <option value="yachiyo.html">八千代町</option>
+              <option value="goka.html">五霞町</option>
+              <option value="sakai.html">境町</option>
+              <option value="tone.html">利根町</option>
+            </select>
+          </div>
+        </div>
+        <div class="title">筑西市マップ</div>
+        <div class="subtitle">大字 / 用途地域 / 学区 / 施設</div>
+      </div>
+
+      <!-- 検索 -->
+      <div class="panel">
+        <label class="panel-label">地区を検索</label>
+        <div class="search-row">
+          <input list="oazaList" id="oazaSearch" placeholder="例：丙" autocomplete="off" />
+          <button id="oazaSearchBtn">表示</button>
+        </div>
+        <datalist id="oazaList"></datalist>
+      </div>
+
+      <!-- 区域（面） -->
+      <div class="panel">
+        <label class="panel-label">区域（面）</label>
+        <label class="toggle"><input type="checkbox" id="tg-oaza" checked /> <span class="sw sw-oaza"></span>大字の区切り線</label>
+        <label class="toggle"><input type="checkbox" id="tg-label" checked /> <span class="sw sw-label"></span>地名ラベル</label>
+        <label class="toggle"><input type="checkbox" id="tg-yochi" /> <span class="sw sw-yochi"></span>用途地域</label>
+        <div class="yochi-ctrl" id="yochiCtrl" hidden>
+          <div class="opacity-row">
+            <span>濃さ</span>
+            <input type="range" id="yochiOpacity" min="0" max="80" value="45" />
+          </div>
+          <div class="yochi-legend" id="yochiLegend"></div>
+        </div>
+        <label class="toggle"><input type="checkbox" id="tg-elem" /> <span class="sw sw-elem"></span>小学校区</label>
+        <label class="toggle"><input type="checkbox" id="tg-jun" /> <span class="sw sw-jun"></span>中学校区</label>
+      </div>
+
+      <!-- 学校・施設（点） -->
+      <div class="panel">
+        <label class="panel-label">学校・施設（点）</label>
+        <div class="poi-grid" id="poiGrid"></div>
+      </div>
+
+      <!-- 背景地図 -->
+      <div class="panel">
+        <label class="panel-label">背景地図</label>
+        <div class="seg" id="baseSeg">
+          <button data-base="pale" class="active">淡色</button>
+          <button data-base="std">標準</button>
+          <button data-base="photo">写真</button>
+        </div>
+      </div>
+
+      <!-- 選択中の地区情報 -->
+      <div class="panel info-panel" id="infoPanel" hidden>
+        <div class="info-head">
+          <span class="info-name" id="infoName"></span>
+          <button class="info-close" id="infoClose">✕</button>
+        </div>
+        <div class="info-meta" id="infoMeta"></div>
+        <div class="info-school" id="infoSchool"></div>
+        <div class="info-neighbors-label">隣接する地区（クリックで移動）</div>
+        <div class="info-neighbors" id="infoNeighbors"></div>
+      </div>
+
+      <div class="credit">
+        出典：国土地理院タイル ／ 総務省 令和2年国勢調査 町丁・字等別境界データ ／
+        国土交通省 国土数値情報（用途地域A29・小学校区A27・中学校区A32）／ © OpenStreetMap contributors
+      </div>
+    </aside>
+
+    <div id="map"></div>
+    <button class="sidebar-toggle" id="sidebarToggle" title="パネル開閉">☰</button>
+  </div>
+
+  <script>window.CITY_CONFIG = { center: [36.289, 139.980], zoom: 12 }</script>
+  <script src="data/chikusei-oaza.js"></script>
+  <script src="data/chikusei-chome.js"></script>
+  <script src="data/chikusei-yochi.js"></script>
+  <script src="data/chikusei-elementary.js"></script>
+  <script src="data/chikusei-junior.js"></script>
+  <script src="data/chikusei-poi.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>

@@ -7,6 +7,21 @@
 - Node.js
 - 作業フォルダ（どこでも可。例: `C:\hitachinaka-build`）
 
+## 茨城県の市町村を一括で作る（2026-11 追加・おすすめ）
+作業フォルダ例: `C:\mito-build`。A27/A32/A29 の展開済みフォルダと `npm install topojson-client @turf/turf` が必要です。
+
+```powershell
+node build-all.mjs nopoi   # 大字境界・丁目・学区・用途地域（速い。<key>-oaza.js がある市町村は飛ばす）
+node build-all.mjs         # 施設（OSM Overpass。1市町村 5〜10分。<key>-poi.js がある市町村は飛ばす）
+node make-bounds.mjs       # 市町村ごとの範囲 → 査定書工房 src/renderer/src/data/ibarakiCityBounds.ts
+node make-city-html.mjs    # <key>.html を naka.html から作り、都市ナビ（プルダウン）と index.html を更新
+```
+
+- 1市町村だけなら `node city-build.mjs <市町村コード> <key> [poi]`（例: `node city-build.mjs 08216 kasama poi`）。
+- `<key>` は査定書工房の `src/renderer/src/data/ibarakiCities.ts` と同じ（ひたちなか市だけ頭なしの `oaza.js` など）。
+- 国のデータに用途地域が無い町村（城里町・大子町・五霞町・河内町・常陸太田市）は `<key>-yochi.js` を作りません。マップでは空のデータを入れて表示します。
+- 境界データ（geoshape）は取得に失敗することがあります。`build-all.mjs` をもう一度回せば、できていない市町村だけ作り直します。
+
 ## 手順
 作業フォルダ内で順に実行します（スクリプトはこの `scripts/` からコピーして使用）。
 

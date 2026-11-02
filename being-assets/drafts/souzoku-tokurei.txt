@@ -1,0 +1,70 @@
+<div id="being-souzoku-tokurei" style="max-width:820px;margin:auto;color:#263238;font-size:16px;line-height:1.9;">
+<style>#being-souzoku-tokurei *{box-sizing:border-box}#being-souzoku-tokurei h2{font-size:24px;line-height:1.5;color:#263238;margin:36px 0 14px;padding:0 0 8px;border:0;border-bottom:2px solid #00acab;background:none;font-weight:700}#being-souzoku-tokurei h3{font-size:18px;color:#007b7a;margin:20px 0 6px;padding:0;border:0;background:none;font-weight:700}#being-souzoku-tokurei p{margin:0 0 14px}#being-souzoku-tokurei table{width:100%;border-collapse:collapse;margin:0 0 10px;font-size:15px}#being-souzoku-tokurei th,#being-souzoku-tokurei td{border:1px solid #dce7e7;padding:8px 10px;text-align:center}#being-souzoku-tokurei th{background:#f1f9f9;font-weight:700}#being-souzoku-tokurei .bt-key{padding:22px;background:#f1f9f9;border-radius:12px;margin:0 0 18px}#being-souzoku-tokurei .bt-key strong{font-size:30px;color:#007b7a}#being-souzoku-tokurei .bt-src{font-size:12px;color:#56676a}#being-souzoku-tokurei .bt-cta{padding:26px 20px;background:#263238;color:#fff;border-radius:12px;margin-top:30px}#being-souzoku-tokurei .bt-cta a{display:block;text-align:center;border-radius:6px;padding:12px;margin-top:10px;font-weight:700;text-decoration:none}#being-souzoku-tokurei .bt-tel{background:#00acab}#being-souzoku-tokurei .bt-tel,#being-souzoku-tokurei .bt-tel *{color:#fff !important}#being-souzoku-tokurei .bt-tel strong{display:block;font-size:28px}#being-souzoku-tokurei .bt-sub{background:#fff;color:#007b7a !important}#being-souzoku-tokurei .bt-top{display:flex;flex-wrap:wrap;align-items:center;gap:8px 14px;padding:12px 16px;margin:0 0 22px;border:2px solid #00acab;border-radius:10px;font-size:15px}#being-souzoku-tokurei .bt-top span{font-weight:700;flex:1 1 220px}#being-souzoku-tokurei .bt-top a{text-decoration:none;font-weight:700;display:inline-flex;align-items:center;justify-content:center;min-height:42px;padding:0 14px;border:2px solid #00acab;border-radius:6px;line-height:1.3}#being-souzoku-tokurei .bt-top-tel{background:#00acab;color:#fff !important;font-size:17px}#being-souzoku-tokurei .bt-top-link{color:#007b7a !important;background:#fff;font-size:15px}#being-souzoku-tokurei .bt-mid{padding:20px;margin:18px 0 6px;background:#f1f9f9;border-radius:12px}#being-souzoku-tokurei .bt-mid p{margin:0 0 10px;font-weight:700}#being-souzoku-tokurei .bt-mid div{display:grid;grid-template-columns:1fr 1fr;gap:10px}#being-souzoku-tokurei .bt-mid a{display:block;text-align:center;border-radius:6px;padding:12px 8px;font-weight:700;text-decoration:none;line-height:1.4}#being-souzoku-tokurei .bt-mid-tel{background:#00acab;color:#fff !important}#being-souzoku-tokurei .bt-mid-form{background:#fff;border:2px solid #00acab;color:#007b7a !important}@media(max-width:600px){#being-souzoku-tokurei .bt-mid div{grid-template-columns:1fr}}</style>
+
+<p>親から相続した家や土地を売ると、利益が出た分に税金がかかります。ただし、相続した不動産には<strong>税金を大きく減らせる特例</strong>があり、その多くに<strong>期限</strong>があります。「まだ売るか決めていない」という方こそ、期限だけは先に知っておいてください。ひたちなか市の地元の不動産会社ビーイングが、主な4つの特例と期限をまとめました。</p>
+
+<div class="bt-top"><span>相続した家・土地の価格を無料でお調べします</span><a class="bt-top-tel" href="tel:0293544000">☎ 029-354-4000</a><a class="bt-top-link" href="https://www.beingfudousan.com/satei/">フォームで査定依頼 ›</a></div>
+
+<h2>相続した不動産を売ったときの税金のしくみ</h2>
+<p>不動産を売って利益（譲渡所得）が出ると、所得税と住民税がかかります。譲渡所得は次の式で計算します。</p>
+<div class="bt-key"><p style="margin:0;font-weight:700;">譲渡所得 ＝ 売った金額 －（取得費 ＋ 売るときの費用）</p></div>
+<p>相続の場合に知っておきたい点が2つあります。</p>
+<p>・<strong>持っていた期間は、亡くなった方から引き継ぎます。</strong>親が長く持っていた家なら、相続してすぐに売っても、税率の低い「長期」（所得税・住民税あわせて20.315％）になるのがふつうです。<br>・<strong>親が買ったときの金額が分からない</strong>ときは、売った金額の5％を取得費とみなします。取得費が小さくなるぶん税金が増えるため、昔の売買契約書や領収書が残っていないか探しておくと安心です。</p>
+
+<h2>相続した家・土地で使える主な特例は4つ</h2>
+<table>
+<tr><th style="width:30%">特例</th><th>主に使える人</th><th>期限の目安</th></tr>
+<tr><td>① 取得費加算の特例</td><td>相続税を納めた人</td><td>相続から3年10か月以内に売る</td></tr>
+<tr><td>② 空き家の3,000万円控除</td><td>一人暮らしの親の家を相続した人</td><td>相続から3年目の年末までに売る（2027年末までの売却が対象）</td></tr>
+<tr><td>③ マイホームの3,000万円控除</td><td>自分も住んでいた家を売る人</td><td>住まなくなってから3年目の年末までに売る</td></tr>
+<tr><td>④ マイホームの軽減税率</td><td>③の人のうち、持っていた期間が10年を超える人</td><td>③と同じ</td></tr>
+</table>
+
+<h3>① 取得費加算の特例</h3>
+<p>相続税を納めた人が、相続した不動産を<strong>相続から3年10か月以内</strong>（相続税の申告期限の翌日から3年以内）に売ると、納めた相続税のうち一定の額を取得費に足せます。取得費が増えるぶん、譲渡所得が減り、税金が少なくなります。相続税がかからなかった方は使えません。</p>
+
+<h3>② 空き家の3,000万円控除（被相続人の居住用財産の特例）</h3>
+<p>亡くなった方が一人で住んでいた家とその土地を相続して売ると、譲渡所得から<strong>最高3,000万円</strong>を差し引けます。主な条件は次のとおりです。</p>
+<p>・昭和56年（1981年）5月31日以前に建てられた家（マンションは対象外）<br>・相続の直前まで、亡くなった方が一人で住んでいたこと（老人ホームに入っていた場合も、一定の条件で対象）<br>・耐震リフォームをして売るか、家を取り壊して土地で売る。2024年1月1日以降の売却では、<strong>売った翌年の2月15日までに買主が取り壊しや耐震改修をする場合</strong>も対象<br>・売った金額が1億円以下<br>・<strong>相続から3年目の年末まで</strong>に売る。特例そのものは<strong>2027年12月31日までの売却</strong>が対象<br>・2024年1月1日以降の売却で、家と土地を相続した人が3人以上のときは、1人あたり最高2,000万円</p>
+
+<h3>③ マイホームの3,000万円控除</h3>
+<p>親と同居していて、相続した家が<strong>自分の住まい</strong>でもあった場合は、ふつうのマイホームと同じ特例が使えます。住まなくなってから3年目の年末までに売ることが条件です。</p>
+
+<h3>④ マイホームの軽減税率</h3>
+<p>③の特例を使う人のうち、持っていた期間（親から引き継いだ期間を含む）が売った年の1月1日時点で10年を超える場合は、3,000万円を差し引いたあとの利益のうち6,000万円以下の部分の税率が、20.315％から<strong>14.21％</strong>に下がります。</p>
+
+<h2>組み合わせには注意</h2>
+<p>特例は、どれでも一緒に使えるわけではありません。たとえば、<strong>①取得費加算の特例と②空き家の3,000万円控除は、どちらか一方しか使えません。</strong>どちらが得かは、相続税の額や売る金額で変わります。また、特例を使うには、売った翌年に<strong>確定申告</strong>が必要です。</p>
+<p>実際にどの特例が使えるか、どれを選ぶと得かは、税理士や税務署に確認してから売り出すのが安心です。</p>
+
+<div class="bt-mid"><p>期限に間に合うように、まず価格の目安を知っておきませんか。</p><div><a class="bt-mid-tel" href="tel:0293544000">☎ 電話で相談<br>029-354-4000</a><a class="bt-mid-form" href="https://www.beingfudousan.com/satei/">フォームで<br>無料査定を依頼</a></div></div>
+
+<h2>相続から売却までの期限まとめ</h2>
+<table>
+<tr><th style="width:34%">相続から</th><th>こと</th></tr>
+<tr><td>10か月以内</td><td>相続税の申告・納付（相続税がかかる場合）</td></tr>
+<tr><td>3年以内</td><td>相続登記（名義変更）。2024年4月から義務になりました</td></tr>
+<tr><td>3年10か月以内</td><td>①取得費加算の特例を使って売る期限</td></tr>
+<tr><td>3年目の年末まで</td><td>②空き家の3,000万円控除を使って売る期限</td></tr>
+</table>
+<p>不動産の売却には、ふつう3〜6か月ほどかかります。家の片付けや、相続人どうしの話し合いの時間も考えると、<strong>期限ぎりぎりに動き始めると間に合わない</strong>ことがあります。売るかどうか決めていなくても、早めに価格の目安を知っておくと、判断がしやすくなります。</p>
+
+<h2>空き家のまま置いておくと</h2>
+<p>相続した家を使わずに置いておくと、傷みが進むだけでなく、管理が不十分だと市から指導を受け、土地の固定資産税の軽減がなくなることもあります。くわしくは<a href="https://www.beingfudousan.com/blog/entry-880024/">ひたちなか市で空き家を放置するとどうなる？</a>をご覧ください。</p>
+
+<h2>ビーイングにできること</h2>
+<p>ビーイングでは、相続した不動産の価格をお調べしたうえで、<strong>特例の期限に間に合う売却の段取り</strong>をご一緒に考えます。税金の細かな計算や申告は税理士、名義変更は司法書士と、必要な専門家へのご相談もつなぎます。遠方にお住まいの方は、電話・郵送・オンラインでもご相談いただけます。</p>
+
+<h2>関連する記事</h2>
+<p><a href="https://www.beingfudousan.com/blog/entry-873405/">ひたちなか市で相続した家・土地、どうする？（まずやることと全体の流れ） ›</a><br><a href="https://www.beingfudousan.com/blog/entry-874945/">相続で共有名義はやめた方がいい？ ›</a><br><a href="https://www.beingfudousan.com/blog/entry-877034/">東京など遠方からひたちなか市の実家を売るには ›</a><br><a href="https://www.beingfudousan.com/blog/entry-880024/">ひたちなか市で空き家を放置するとどうなる？ ›</a></p>
+
+<div class="bt-cta">
+<p style="margin:0 0 4px;font-size:20px;font-weight:700;">相続した家・土地のご相談は、地元のビーイングへ</p>
+<p style="margin:0;font-size:14px;color:#eceff1;">売るかどうか決めていなくても大丈夫です。ご相談・査定は無料です。</p>
+<a class="bt-tel" href="tel:0293544000"><span style="font-size:14px;">お電話で相談する（無料）</span><strong>029-354-4000</strong><span style="font-size:12px;">9:00〜18:00（水曜・GW・お盆・年末年始を除く）</span></a>
+<a class="bt-sub" href="https://www.beingfudousan.com/satei/">フォームで無料査定を依頼する ›</a>
+<a class="bt-sub" href="https://www.beingfudousan.com/blog/entry-855000/">連絡不要のかんたん査定で目安を見る ›</a>
+</div>
+
+<p class="bt-src" style="margin-top:18px;">参考：国税庁タックスアンサー No.3267（相続財産を譲渡した場合の取得費の特例）、No.3306（被相続人の居住用財産（空き家）を売ったときの特例）、No.3302（マイホームを売ったときの特例）、No.3305（マイホームを売ったときの軽減税率の特例）、No.3258（取得費が分からないとき）。2026年11月時点の内容です（2024年6月公開、2026年11月に内容を新しくしました）。特例が使えるかどうかは個別の条件で変わります。必ず税理士・税務署にご確認ください。</p>
+</div>

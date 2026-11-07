@@ -1,0 +1,54 @@
+<div id="being-town-takano" style="max-width:820px;margin:auto;color:#263238;font-size:16px;line-height:1.9;">
+<style>#being-town-takano *{box-sizing:border-box}#being-town-takano h2{font-size:24px;line-height:1.5;color:#263238;margin:36px 0 14px;padding:0 0 8px;border:0;border-bottom:2px solid #00acab;background:none;font-weight:700}#being-town-takano h3{font-size:18px;color:#007b7a;margin:20px 0 6px;padding:0;border:0;background:none;font-weight:700}#being-town-takano p{margin:0 0 14px}#being-town-takano table{width:100%;border-collapse:collapse;margin:0 0 10px;font-size:15px}#being-town-takano th,#being-town-takano td{border:1px solid #dce7e7;padding:8px 10px;text-align:center}#being-town-takano th{background:#f1f9f9;font-weight:700}#being-town-takano .bt-key{padding:22px;background:#f1f9f9;border-radius:12px;margin:0 0 18px}#being-town-takano .bt-key strong{font-size:30px;color:#007b7a}#being-town-takano .bt-src{font-size:12px;color:#56676a}#being-town-takano .bt-cta{padding:26px 20px;background:#263238;color:#fff;border-radius:12px;margin-top:30px}#being-town-takano .bt-cta a{display:block;text-align:center;border-radius:6px;padding:12px;margin-top:10px;font-weight:700;text-decoration:none}#being-town-takano .bt-tel{background:#00acab}#being-town-takano .bt-tel,#being-town-takano .bt-tel *{color:#fff !important}#being-town-takano .bt-tel strong{display:block;font-size:28px}#being-town-takano .bt-sub{background:#fff;color:#007b7a !important}#being-town-takano .bt-top{display:flex;flex-wrap:wrap;align-items:center;gap:8px 14px;padding:12px 16px;margin:0 0 22px;border:2px solid #00acab;border-radius:10px;font-size:15px}#being-town-takano .bt-top span{font-weight:700;flex:1 1 220px}#being-town-takano .bt-top a{text-decoration:none;font-weight:700;display:inline-flex;align-items:center;justify-content:center;min-height:42px;padding:0 14px;border:2px solid #00acab;border-radius:6px;line-height:1.3}#being-town-takano .bt-top-tel{background:#00acab;color:#fff !important;font-size:17px}#being-town-takano .bt-top-link{color:#007b7a !important;background:#fff;font-size:15px}#being-town-takano .bt-mid{padding:20px;margin:18px 0 6px;background:#f1f9f9;border-radius:12px}#being-town-takano .bt-mid p{margin:0 0 10px;font-weight:700}#being-town-takano .bt-mid div{display:grid;grid-template-columns:1fr 1fr;gap:10px}#being-town-takano .bt-mid a{display:block;text-align:center;border-radius:6px;padding:12px 8px;font-weight:700;text-decoration:none;line-height:1.4}#being-town-takano .bt-mid-tel{background:#00acab;color:#fff !important}#being-town-takano .bt-mid-form{background:#fff;border:2px solid #00acab;color:#007b7a !important}@media(max-width:600px){#being-town-takano .bt-mid div{grid-template-columns:1fr}}</style>
+
+<p>ひたちなか市高野（こうや）で、土地や家の売却を考えている方へ。国土交通省が公開している取引データをもとに、高野の土地がいくらくらいで取引されているかをまとめました。高野は、家を建てられる<strong>市街化区域</strong>と、原則として家を建てられない<strong>市街化調整区域</strong>の両方がある町で、どちらにあるかで価格も売り方も大きく変わります。ひたちなか市の不動産を扱うビーイングが、地域の事情を踏まえてご説明します。</p>
+
+<div class="bt-key">
+<p style="margin:0;">高野の土地の取引の中心（坪あたり）</p>
+<p style="margin:0;">市街化区域 <strong>約13万円</strong>／坪　・　市街化調整区域の宅地 <strong>約5万円</strong>／坪</p>
+<p style="margin:6px 0 0;font-size:14px;">2023年1月〜2025年9月の土地取引の中央値（市街化区域7件、市街化調整区域の宅地6件）。</p>
+</div>
+<div class="bt-top"><span>高野の土地・建物を無料で査定します</span><a class="bt-top-tel" href="tel:0293544000">☎ 029-354-4000</a><a class="bt-top-link" href="https://www.beingfudousan.com/satei/">フォームで査定依頼 ›</a></div>
+
+<h2>区域で価格が大きく違います</h2>
+<table>
+<tr><th>区域</th><th>件数</th><th>坪あたり（目安）</th></tr>
+<tr><td>市街化区域（第一種低層住居専用地域など）</td><td>7件</td><td>約9万〜14万円（中心は約13万円）</td></tr>
+<tr><td>市街化調整区域の宅地</td><td>6件</td><td>約2万〜9万円（中心は約5万円）</td></tr>
+<tr><td>市街化調整区域の広い土地（宅地にする前の土地）</td><td>8件</td><td>1万円前後かそれ以下</td></tr>
+</table>
+<p class="bt-src">広い土地の取引は、多くが2,000㎡以上の土地で、2024年4〜6月にまとまって取引されています。このほか、2023年以降に土地付きの家の取引が11件ありました。高野には国の地価公示の地点はありません。</p>
+<p>同じ高野の中でも、市街化区域と調整区域では、坪あたりの価格に2倍以上の差があります。売る前に、まず<strong>土地がどちらの区域にあるか</strong>を確認することが大切です。</p>
+
+<h2>市街化区域の土地：最低敷地面積に注意</h2>
+<p>高野の市街化区域は、多くが<strong>第一種低層住居専用地域</strong>の静かな住宅地です。取引の多くは280〜310㎡（約85〜95坪）ほどの土地で、1,100万〜1,300万円前後で取引されています。</p>
+<p>高野の一部は「高野小貫山地区」の地区計画の区域で、<strong>敷地の最低面積が200㎡（約60坪）</strong>と決められています。広い土地を分けて売る場合、1区画が200㎡を下回るような分け方はできません。分け方によって、売れる区画の数や価格が変わります。</p>
+
+<h2>市街化調整区域の土地：建てられるかで価格が変わる</h2>
+<p>調整区域では、原則として新しく家を建てることができません。ただし、もともと家が建っていた土地などは、条件によって建て替えや新築が認められる場合があります。<strong>誰が買えるか、どんな建物が建てられるか</strong>は、土地の経緯や許可の条件で変わり、それがそのまま価格の差になります。</p>
+<p>調整区域の家を売る場合は、建物が建てられた時の許可の内容や、建て替えができるかどうかを、市役所で確認してから売り出すのが安全です。</p>
+
+<div class="bt-mid"><p>高野の土地の価格を、区域や許可の確認も含めて無料でお調べします。</p><div><a class="bt-mid-tel" href="tel:0293544000">☎ 電話で相談<br>029-354-4000</a><a class="bt-mid-form" href="https://www.beingfudousan.com/satei/">フォームで<br>無料査定を依頼</a></div></div>
+
+<h2>高野の土地を売る前に確認したいこと</h2>
+<p>・市街化区域か、市街化調整区域か<br>・調整区域の場合、建物が建てられた時の許可や、建て替えができるか<br>・地区計画の区域内かどうか（敷地の最低面積など）<br>・前面道路の幅と、道路が公道か私道か<br>・相続した土地の場合、相続登記が済んでいるか</p>
+<p>ご自身で全部を調べる必要はありません。ビーイングが市役所での調査も含めて確認します。</p>
+
+<h2>ビーイングの高野での売却実績</h2>
+<p>ビーイングでは、高野の土地・戸建ての売却をお手伝いしてきました。近くでどんな不動産が売れているかは、売却実績マップでご覧いただけます。</p>
+<p><a href="https://www.beingfudousan.com/blog/entry-875225/">ビーイングの売却実績マップ（120件以上） ›</a></p>
+
+<h2>関連する記事</h2>
+<p><a href="https://www.beingfudousan.com/blog/entry-873406/">市街化調整区域の土地は売れる？ ›</a><br><a href="https://www.beingfudousan.com/blog/entry-873387/">足崎の土地相場 ›</a><br><a href="https://www.beingfudousan.com/blog/entry-871720/">高場の土地相場 ›</a><br><a href="https://www.beingfudousan.com/blog/entry-874036/">ひたちなか市の町別 土地相場マップ ›</a></p>
+
+<div class="bt-cta">
+<p style="margin:0 0 4px;font-size:20px;font-weight:700;">高野の土地・家の売却は、地元のビーイングへ</p>
+<p style="margin:0;font-size:14px;color:#eceff1;">調整区域の土地や、広い土地も、まずはご相談ください。ご相談・査定は無料です。</p>
+<a class="bt-tel" href="tel:0293544000"><span style="font-size:14px;">お電話で相談する（無料）</span><strong>029-354-4000</strong><span style="font-size:12px;">9:00〜18:00（水曜・GW・お盆・年末年始を除く）</span></a>
+<a class="bt-sub" href="https://www.beingfudousan.com/satei/">フォームで無料査定を依頼する ›</a>
+<a class="bt-sub" href="https://www.beingfudousan.com/blog/entry-875225/">ビーイングの売却実績（地図・120件以上）を見る ›</a>
+<a class="bt-sub" href="https://www.beingfudousan.com/blog/entry-855000/">連絡不要のかんたん査定で目安を見る ›</a>
+</div>
+
+<p class="bt-src" style="margin-top:18px;">出典：国土交通省「不動産情報ライブラリ」の不動産取引価格情報をビーイングが集計（高野・2023年1月〜2025年9月）。地区計画はひたちなか市「高野小貫山地区 地区計画」。個別の土地の価格を示すものではありません。区域・許可の内容は土地ごとに異なるため、ひたちなか市の窓口でご確認ください。</p>
+</div>

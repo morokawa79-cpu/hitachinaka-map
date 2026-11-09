@@ -1,0 +1,64 @@
+<div id="being-oya-ninchi" style="max-width:820px;margin:auto;color:#263238;font-size:16px;line-height:1.9;">
+<style>#being-oya-ninchi *{box-sizing:border-box}#being-oya-ninchi h2{font-size:24px;line-height:1.5;color:#263238;margin:36px 0 14px;padding:0 0 8px;border:0;border-bottom:2px solid #00acab;background:none;font-weight:700}#being-oya-ninchi h3{font-size:18px;color:#007b7a;margin:20px 0 6px;padding:0;border:0;background:none;font-weight:700}#being-oya-ninchi p{margin:0 0 14px}#being-oya-ninchi table{width:100%;border-collapse:collapse;margin:0 0 10px;font-size:15px}#being-oya-ninchi th,#being-oya-ninchi td{border:1px solid #dce7e7;padding:8px 10px;text-align:center}#being-oya-ninchi th{background:#f1f9f9;font-weight:700}#being-oya-ninchi .bt-key{padding:22px;background:#f1f9f9;border-radius:12px;margin:0 0 18px}#being-oya-ninchi .bt-key strong{font-size:30px;color:#007b7a}#being-oya-ninchi .bt-src{font-size:12px;color:#56676a}#being-oya-ninchi .bt-cta{padding:26px 20px;background:#263238;color:#fff;border-radius:12px;margin-top:30px}#being-oya-ninchi .bt-cta a{display:block;text-align:center;border-radius:6px;padding:12px;margin-top:10px;font-weight:700;text-decoration:none}#being-oya-ninchi .bt-tel{background:#00acab}#being-oya-ninchi .bt-tel,#being-oya-ninchi .bt-tel *{color:#fff !important}#being-oya-ninchi .bt-tel strong{display:block;font-size:28px}#being-oya-ninchi .bt-sub{background:#fff;color:#007b7a !important}#being-oya-ninchi .bt-top{display:flex;flex-wrap:wrap;align-items:center;gap:8px 14px;padding:12px 16px;margin:0 0 22px;border:2px solid #00acab;border-radius:10px;font-size:15px}#being-oya-ninchi .bt-top span{font-weight:700;flex:1 1 220px}#being-oya-ninchi .bt-top a{text-decoration:none;font-weight:700;display:inline-flex;align-items:center;justify-content:center;min-height:42px;padding:0 14px;border:2px solid #00acab;border-radius:6px;line-height:1.3}#being-oya-ninchi .bt-top-tel{background:#00acab;color:#fff !important;font-size:17px}#being-oya-ninchi .bt-top-link{color:#007b7a !important;background:#fff;font-size:15px}#being-oya-ninchi .bt-mid{padding:20px;margin:18px 0 6px;background:#f1f9f9;border-radius:12px}#being-oya-ninchi .bt-mid p{margin:0 0 10px;font-weight:700}#being-oya-ninchi .bt-mid div{display:grid;grid-template-columns:1fr 1fr;gap:10px}#being-oya-ninchi .bt-mid a{display:block;text-align:center;border-radius:6px;padding:12px 8px;font-weight:700;text-decoration:none;line-height:1.4}#being-oya-ninchi .bt-mid-tel{background:#00acab;color:#fff !important}#being-oya-ninchi .bt-mid-form{background:#fff;border:2px solid #00acab;color:#007b7a !important}@media(max-width:600px){#being-oya-ninchi .bt-mid div{grid-template-columns:1fr}}</style>
+
+<p>親が介護施設に入ることになった。最近、物忘れが増えてきた。そんなとき、子どもとして気になるのが、ひたちなか市の<strong>実家をどうするか</strong>です。実は、実家を売るなら<strong>親の判断力がしっかりしているうち</strong>に動くことが、とても大切です。地元の不動産会社ビーイングが、その理由と進め方をまとめました。</p>
+
+<div class="bt-top"><span>親御さんの家のご相談は、お子さまからでも承ります</span><a class="bt-top-tel" href="tel:0293544000">☎ 029-354-4000</a><a class="bt-top-link" href="https://www.beingfudousan.com/satei/">フォームで査定依頼 ›</a></div>
+
+<h2>認知症が進むと、実家は「売れなくなる」</h2>
+<p>実家の名義が親の場合、売るのは親本人です。子どもが代わりに売ることはできません。そして、売買の契約は<strong>本人が内容を理解して決める</strong>ことが前提です。認知症が進んで判断する力が十分でなくなると、本人が結んだ契約は無効になるおそれがあるため、<strong>そのままでは売ることができなくなります</strong>。</p>
+<p>「家族みんなが売ることに賛成している」「子どもが委任状を書けばいい」と思われがちですが、本人の判断力がなければ、委任することもできません。</p>
+
+<h2>売れなくなったら、どうなるか（成年後見）</h2>
+<p>親の判断力が十分でなくなってから売るには、家庭裁判所に申し立てて<strong>成年後見人</strong>を選んでもらい、後見人が親の代わりに売ることになります。</p>
+<table>
+<tr><th>成年後見で知っておきたいこと</th><th>内容</th></tr>
+<tr><td>時間がかかる</td><td>申し立ての準備から後見人が決まるまで、数か月かかることがあります</td></tr>
+<tr><td>家庭裁判所の許可がいる</td><td>親が住んでいた家を売るには、家庭裁判所の許可が必要です</td></tr>
+<tr><td>自由には使えない</td><td>後見人は「親のため」に財産を守る役目です。家族の都合で売ったり、お金を使ったりはできません</td></tr>
+<tr><td>家族が選ばれるとは限らない</td><td>弁護士や司法書士などの専門家が選ばれることもあり、その場合は報酬がかかり続けます</td></tr>
+<tr><td>途中でやめられない</td><td>家を売り終わっても、後見は原則として親が亡くなるまで続きます</td></tr>
+</table>
+<p>成年後見は親の財産を守る大切な仕組みですが、「実家を売りたい」という目的だけで考えると、<strong>時間も手間もかかる道</strong>になります。</p>
+
+<div class="bt-mid"><p>親御さんがお元気なうちに。実家がいくらくらいか、無料でお調べします。</p><div><a class="bt-mid-tel" href="tel:0293544000">☎ 電話で相談<br>029-354-4000</a><a class="bt-mid-form" href="https://www.beingfudousan.com/satei/">フォームで<br>無料査定を依頼</a></div></div>
+
+<h2>親が元気なうちにできること</h2>
+<h3>① 今のうちに売る</h3>
+<p>施設に入ることが決まっている、実家に戻る予定がない、という場合は、親の判断力がしっかりしているうちに売るのが、いちばん手続きが簡単です。施設の費用にあてることもできます。</p>
+<h3>② 売る時期を決めておく</h3>
+<p>すぐに売らない場合でも、「いくらくらいで売れるか」「だれが手続きを進めるか」を家族で話し合っておくと、いざというときにあわてずに済みます。</p>
+<h3>③ 家族信託や任意後見を検討する</h3>
+<p>親が元気なうちに、子どもに財産の管理を任せる契約（家族信託）や、将来の後見人を決めておく契約（任意後見）を結んでおく方法もあります。どちらも親の判断力がしっかりしているうちでないと結べません。くわしくは司法書士などの専門家にご相談ください。</p>
+
+<h2>親の家を売るとき、確認したいこと</h2>
+<p>・<strong>名義</strong>：実家の名義が親か、さらに前の代のままになっていないか<br>・<strong>本人の意思</strong>：売ることを親本人が理解し、納得しているか。契約や登記の前に、本人の意思を確認します<br>・<strong>税金の特例の期限</strong>：親が住んでいた家を売るときは、条件を満たせば利益から最大3,000万円を差し引ける特例があります。施設に入るなどして<strong>住まなくなった日から3年目の年末まで</strong>に売る必要があります<br>・<strong>空き家になった後の管理</strong>：施設に入ったあとの実家は、空き家として傷みやすくなります</p>
+
+<h2>ビーイングにできること</h2>
+<p>ビーイングでは、親御さんの家の売却について、<strong>お子さまからのご相談</strong>もお受けしています。価格の目安をお伝えするところから、親御さんへのご説明、司法書士など専門家との段取りまで、ご家族と一緒に進めます。遠方にお住まいの方は、オンライン・電話・郵送でもご相談いただけます。</p>
+
+<h2>よくある質問</h2>
+<h3>親が少し物忘れをするようになりました。まだ売れますか？</h3>
+<p>物忘れがあっても、売ることの意味を理解して判断できれば、売れる場合があります。判断できるかどうかは、契約や登記に関わる司法書士などが本人とお会いして確認します。迷ったら、早めにご相談ください。</p>
+<h3>親は売ることに迷っています。子どもだけで相談してもいいですか？</h3>
+<p>もちろんです。まずは価格の目安を知り、ご家族で話し合う材料にしてください。</p>
+<h3>家族信託をしている実家は、売れますか？</h3>
+<p>信託の契約で、財産を任された子ども（受託者）に売る権限があれば、親の判断力が衰えたあとでも、受託者が売ることができます。契約の内容によって売れる範囲が変わるため、信託の契約書と登記を一緒に確認します。</p>
+<h3>施設に入ったあと、実家を貸すのはどうですか？</h3>
+<p>貸す方法もありますが、修理や管理の手間、税金の特例が使えなくなる場合があることなど、注意点もあります。売る場合と比べてご説明します。</p>
+
+<h2>関連する記事</h2>
+<p><a href="https://www.beingfudousan.com/blog/entry-877034/">東京など遠方からひたちなか市の実家を売るには ›</a><br><a href="https://www.beingfudousan.com/blog/entry-873405/">ひたちなか市で相続した家・土地を売るには ›</a><br><a href="https://www.beingfudousan.com/blog/entry-635975/">ビーイングの空き家管理 ›</a><br><a href="https://www.beingfudousan.com/blog/entry-877035/">リースバックと普通の売却の違い ›</a></p>
+
+<div class="bt-cta">
+<p style="margin:0 0 4px;font-size:20px;font-weight:700;">親御さんの家のこと、早めに地元のビーイングへ</p>
+<p style="margin:0;font-size:14px;color:#eceff1;">お子さまからのご相談も歓迎です。遠方の方はオンライン・電話・郵送でも。ご相談・査定は無料です。</p>
+<a class="bt-tel" href="tel:0293544000"><span style="font-size:14px;">お電話で相談する（無料）</span><strong>029-354-4000</strong><span style="font-size:12px;">9:00〜18:00（水曜・GW・お盆・年末年始を除く）</span><span style="display:block;font-size:13px;margin-top:4px;">「ホームページを見た」とお伝えいただくと、お話がスムーズです</span></a>
+<a class="bt-sub" href="https://www.beingfudousan.com/satei/">フォームで無料査定を依頼する ›</a>
+<a class="bt-sub" href="https://www.beingfudousan.com/blog/entry-855000/">連絡不要のかんたん査定で目安を見る ›</a>
+</div>
+<div class="bt-author" style="margin:22px 0 0;padding:14px 16px;border:1px solid #dce7e7;border-radius:10px;font-size:14px;line-height:1.7;background:#fff;"><strong>この記事の執筆・監修</strong><br>杉山 正（宅地建物取引士・一級建築士／有限会社ビーイング 代表）<br><a href="https://www.beingfudousan.com/blog/entry-884455/">ビーイングについて ›</a></div>
+
+
+<p class="bt-src" style="margin-top:18px;">表紙の写真はイメージです。内容は2026年10月時点のものです。成年後見・家族信託・税金などの個別の判断は、司法書士・弁護士・税理士などの専門家や家庭裁判所にご確認ください。</p>
+</div>

@@ -1,0 +1,82 @@
+<div id="being-kukaku-mawatari" style="max-width:820px;margin:auto;color:#263238;font-size:16px;line-height:1.9;">
+<style>#being-kukaku-mawatari *{box-sizing:border-box}#being-kukaku-mawatari h2{font-size:24px;line-height:1.5;color:#263238;margin:36px 0 14px;padding:0 0 8px;border:0;border-bottom:2px solid #00acab;background:none;font-weight:700}#being-kukaku-mawatari h3{font-size:18px;color:#007b7a;margin:20px 0 6px;padding:0;border:0;background:none;font-weight:700}#being-kukaku-mawatari p{margin:0 0 14px}#being-kukaku-mawatari table{width:100%;border-collapse:collapse;margin:0 0 10px;font-size:15px}#being-kukaku-mawatari th,#being-kukaku-mawatari td{border:1px solid #dce7e7;padding:8px 10px;text-align:left}#being-kukaku-mawatari th{background:#f1f9f9;font-weight:700}#being-kukaku-mawatari .bt-src{font-size:12px;color:#56676a}#being-kukaku-mawatari .bt-top{display:flex;flex-wrap:wrap;align-items:center;gap:8px 14px;padding:12px 16px;margin:0 0 22px;border:2px solid #00acab;border-radius:10px;font-size:15px}#being-kukaku-mawatari .bt-top span{font-weight:700;flex:1 1 220px}#being-kukaku-mawatari .bt-top a{text-decoration:none;font-weight:700;display:inline-flex;align-items:center;justify-content:center;min-height:42px;padding:0 14px;border:2px solid #00acab;border-radius:6px;line-height:1.3}#being-kukaku-mawatari .bt-top-tel{background:#00acab;color:#fff !important;font-size:17px}#being-kukaku-mawatari .bt-top-link{color:#007b7a !important;background:#fff;font-size:15px}#being-kukaku-mawatari .bt-mid{padding:20px;margin:18px 0 6px;background:#f1f9f9;border-radius:12px}#being-kukaku-mawatari .bt-mid p{margin:0 0 10px;font-weight:700}#being-kukaku-mawatari .bt-mid div{display:grid;grid-template-columns:1fr 1fr;gap:10px}#being-kukaku-mawatari .bt-mid a{display:block;text-align:center;border-radius:6px;padding:12px 8px;font-weight:700;text-decoration:none;line-height:1.4}#being-kukaku-mawatari .bt-mid-tel{background:#00acab;color:#fff !important}#being-kukaku-mawatari .bt-mid-form{background:#fff;border:2px solid #00acab;color:#007b7a !important}#being-kukaku-mawatari .bt-cta{padding:26px 20px;background:#263238;color:#fff;border-radius:12px;margin-top:30px}#being-kukaku-mawatari .bt-cta a{display:block;text-align:center;border-radius:6px;padding:12px;margin-top:10px;font-weight:700;text-decoration:none}#being-kukaku-mawatari .bt-tel{background:#00acab}#being-kukaku-mawatari .bt-tel,#being-kukaku-mawatari .bt-tel *{color:#fff !important}#being-kukaku-mawatari .bt-tel strong{display:block;font-size:28px}#being-kukaku-mawatari .bt-sub{background:#fff;color:#007b7a !important}@media(max-width:600px){#being-kukaku-mawatari .bt-mid div{grid-template-columns:1fr}}</style>
+
+<p>ひたちなか市馬渡のうち、はにわ公園のまわりの向野周辺は、市が進めている<strong>東部第2土地区画整理事業（東部第2地区）</strong>の区域です。昭和通り線が通り、新しい家も増えている地区ですが、事業はまだ半分ほどの段階です。区画整理の区域の土地は、ふつうの土地と売り方や確認することが違います。馬渡の土地や家を売りたい方に向けて、知っておきたいことをまとめました。</p>
+
+<div class="bt-top"><span>馬渡の土地・建物を無料で査定します</span><a class="bt-top-tel" href="tel:0293544000">☎ 029-354-4000</a><a class="bt-top-link" href="https://www.beingfudousan.com/satei/">フォームで査定依頼 ›</a></div>
+
+<h2>東部第2地区の区画整理のあらまし</h2>
+<table>
+<tr><th style="width:34%">場所</th><td>JR勝田駅の東約3.5km（北は都市計画道路 東石川長砂線、西は東部第1地区、南は本郷台団地）</td></tr>
+<tr><th>施行者</th><td>ひたちなか市</td></tr>
+<tr><th>面積</th><td>約106.8ha</td></tr>
+<tr><th>事業期間</th><td>平成3年〜令和29年度</td></tr>
+<tr><th>平均減歩率</th><td>28.65％（公共21.40％・保留地7.25％）</td></tr>
+<tr><th>地区計画の最低敷地面積</th><td>180㎡（約55坪）</td></tr>
+</table>
+<p class="bt-src">減歩率は、道路・公園などの公共用地と保留地のために、元の土地の面積が平均してどれくらい減るかを示す数字です。実際の仮換地の面積は土地ごとに違います。</p>
+
+<h2>事業はどこまで進んでいる？</h2>
+<p>市の資料（令和8年5月）によると、令和7年度末の<strong>平均進捗率は43.8％</strong>です。</p>
+<table>
+<tr><th style="width:34%">区分</th><th>全体</th><th>令和7年度末までの実績</th></tr>
+<tr><td>都市計画道路</td><td>5,036m</td><td>1,958m（38.9％）</td></tr>
+<tr><td>区画道路</td><td>23,815m</td><td>9,054m（38.0％）</td></tr>
+<tr><td>建物の移転</td><td>226戸</td><td>123戸（54.4％）</td></tr>
+<tr><td>保留地の売却</td><td>439区画</td><td>138区画（面積で31.0％）</td></tr>
+</table>
+<p>令和8年度は、区画道路の改良・舗装工事や雨水管の工事を行い、新しい財源を確保するために事業計画の変更も進める予定です。</p>
+<p>事業期間は令和29年度までと長く、<strong>工事が終わって使い始められる場所（使用収益開始）と、まだ手がついていない場所の差が大きい</strong>地区です。「区画整理が終わるまで待つか、今の状態で売るか」は、土地がどの段階にあるかで答えが変わります。</p>
+
+<h2>東部第2地区は4つのゾーンに分かれています</h2>
+<p>地区計画で、東部第2地区は次の4つに分けられ、建てられる建物が違います。買い手が「何を建てられるか」に直結するので、売る前に確認しておきたい点です。</p>
+<table>
+<tr><th style="width:34%">ゾーン</th><th>用途地域</th><th>容積率／建ぺい率</th></tr>
+<tr><td>低層住宅ゾーン（いちばん広い）</td><td>第一種・第二種低層住居専用地域</td><td>100％／50％ または 150％／60％（高さ10mまで）</td></tr>
+<tr><td>中高層住宅ゾーン</td><td>第一種・第二種中高層住居専用地域</td><td>200％／60％（高さ15mまで）</td></tr>
+<tr><td>沿道サービスゾーン（幹線道路沿い）</td><td>第一種住居地域</td><td>200％／60％（高さ15mまで）</td></tr>
+<tr><td>商業・業務ゾーン（昭和通り線沿い）</td><td>近隣商業地域</td><td>200％／80％</td></tr>
+</table>
+
+<h2>馬渡の区画整理区域の土地を売るときに確認したいこと</h2>
+<h3>1. 仮換地が決まっているか、使い始められるか</h3>
+<p>登記簿は元の土地（従前地）のままでも、実際に使うのは市が指定した仮換地です。買い手が家を建てられるのは、仮換地の使用収益が始まってからです。東部第2地区はまだ工事中の場所が多いため、<strong>いつ使い始められるかの見通し</strong>が価格に大きく影響します。</p>
+<h3>2. 最低敷地面積は180㎡（約55坪）</h3>
+<p>東部第2地区の地区計画では、<strong>建物を建てる土地は180㎡以上</strong>と決まっています（4つのゾーンすべて）。広い土地を分けて売るとき、相続で分けるときに、片方が180㎡に足りないと家が建てられません。もともと180㎡以下の土地（区画整理の換地を含む）を、分けずに一つの敷地として使う場合は、この制限は適用されません。</p>
+<p>このほか、道路から建物の外壁を1m以上離す（商業・業務ゾーンを除く）、道路側の塀は原則生け垣（ブロック塀は高さ1.2m未満）、外壁・屋根の色は落ち着いた色、といったルールがあります。</p>
+<h3>3. 土地を分ける（分筆する）ときは事前に市へ相談</h3>
+<p>区画整理の途中で元の土地を分筆すると、分けたそれぞれの土地に減歩がかかるため、予定していた仮換地の形や面積にならないことがあります。分ける前に、市の担当課へ相談するのが安心です。</p>
+<h3>4. 売買・相続で名義が変わったら、市にも届出</h3>
+<p>市は事業の期間中、区画整理区域内の土地の権利を独自の台帳で管理しています。法務局で名義を変えても台帳は自動では変わらないため、<strong>売買や相続のあとは市（区画整理二課）への届出</strong>が必要です。届出がないと、税金や、事業が終わったあとの登記に支障が出ることがあります。</p>
+<h3>5. 保留地を買った方は、手続きが市になります</h3>
+<p>保留地は区画整理で新しく生まれた土地で、事業が終わるまでは市が保留地台帳で権利を管理しています。保留地を売る（権利を譲る）ときの手続きは、すべて市を通して行います。</p>
+<h3>6. 建物や塀を建てるときは許可が必要</h3>
+<p>事業の途中で建物・塀・車庫などを建てたり建て替えたりするときは、土地区画整理法の許可が必要です。買い手が家を建てる予定なら、この点も含めて説明します。</p>
+
+<div class="bt-mid"><p>馬渡の土地の価格を、仮換地や地区計画の確認も含めて無料でお調べします。</p><div><a class="bt-mid-tel" href="tel:0293544000">☎ 電話で相談<br>029-354-4000</a><a class="bt-mid-form" href="https://www.beingfudousan.com/satei/">フォームで<br>無料査定を依頼</a></div></div>
+
+<h2>はにわ公園を囲むまち</h2>
+<p>東部第2地区のまん中には、古墳時代に埴輪をつくっていた工房の跡で、国の史跡の<strong>「馬渡埴輪製作遺跡」</strong>を整備した「馬渡はにわ公園」があります。区画整理では、この公園と隣の向野中央公園を中心に、まわりにいくつもの街区公園が配置されています。公園が多く、落ち着いた住宅地になっていくことも、この地区の土地の魅力です。</p>
+
+<h2>馬渡の土地相場</h2>
+<p>国土交通省の取引データでは、馬渡の市街化区域の土地は<strong>坪あたり約11万円</strong>が取引の中心です。また、市が令和8年5月に東部第2地区で抽選販売した保留地3区画（約252〜292㎡）は、<strong>すべて売れています</strong>。新しく整った区画には、買い手がついている地区です。</p>
+<p>ただし、区画整理の区域の内か外か、使用収益が始まっているか、どのゾーンかで、価格の考え方は変わります。同じ馬渡でも、工事が終わった区画とこれからの区画では、買い手の受け止め方がまったく違います。</p>
+<p><a href="https://www.beingfudousan.com/blog/entry-872998/">馬渡の土地相場（取引データの詳しい内容） ›</a><br><a href="https://www.beingfudousan.com/blog/entry-873404/">区画整理区域の土地を売るには（基本のまとめ） ›</a><br><a href="https://www.beingfudousan.com/blog/entry-875958/">武田の区画整理（武田地区） ›</a><br><a href="https://www.beingfudousan.com/blog/entry-874877/">高場の区画整理（佐和駅東・六ッ野地区） ›</a></p>
+
+<h2>売る前に手元にあると助かるもの</h2>
+<p>・仮換地の指定通知書（仮換地の場所と面積が分かります）<br>・使用収益開始の通知（届いていれば）<br>・登記簿（元の土地の地番・面積）<br>・相続した土地なら、相続登記が済んでいるか</p>
+<p>書類が見つからなくても大丈夫です。ビーイングが市役所で確認します。</p>
+
+<div class="bt-cta">
+<p style="margin:0 0 4px;font-size:20px;font-weight:700;">馬渡の区画整理区域の土地・家の売却は、地元のビーイングへ</p>
+<p style="margin:0;font-size:14px;color:#eceff1;">「工事がまだだけど売れる？」という段階からご相談ください。ご相談・査定は無料です。</p>
+<a class="bt-tel" href="tel:0293544000"><span style="font-size:14px;">お電話で相談する（無料）</span><strong>029-354-4000</strong><span style="font-size:12px;">9:00〜18:00（水曜・GW・お盆・年末年始を除く）</span><span style="display:block;font-size:13px;margin-top:4px;">「ホームページを見た」とお伝えいただくと、お話がスムーズです</span></a>
+<a class="bt-sub" href="https://www.beingfudousan.com/satei/">フォームで無料査定を依頼する ›</a>
+<a class="bt-sub" href="https://www.beingfudousan.com/blog/entry-875225/">ビーイングの売却実績（地図・120件以上）を見る ›</a>
+<a class="bt-sub" href="https://www.beingfudousan.com/blog/entry-855000/">連絡不要のかんたん査定で目安を見る ›</a>
+</div>
+<div class="bt-author" style="margin:22px 0 0;padding:14px 16px;border:1px solid #dce7e7;border-radius:10px;font-size:14px;line-height:1.7;background:#fff;"><strong>この記事の執筆・監修</strong><br>杉山 正（宅地建物取引士・一級建築士／有限会社ビーイング 代表）<br><a href="https://www.beingfudousan.com/blog/entry-884455/">ビーイングについて ›</a></div>
+
+
+<p class="bt-src" style="margin-top:18px;">参考：ひたちなか市「東部第2土地区画整理事業」事業概要、「東部第2土地区画整理事業 区画整理だより（令和8年5月）」、地区計画「東部第2地区」（平成31年3月14日変更）。2026年11月2日確認。区域の範囲、仮換地、使用収益開始の時期、ゾーンは土地ごとに異なります。個別の内容は、ひたちなか市 区画整理二課にご確認ください。土地相場は国土交通省「不動産情報ライブラリ」の取引価格情報をビーイングが集計したもので、個別の土地の価格を示すものではありません。</p>
+</div>
